@@ -34,7 +34,7 @@ const Navbar = () => {
   ];
 
   const getIcon = (iconName: string) => {
-    const iconClass = "w-5 h-5 text-gray-700 hover:text-gray-900 transition-colors duration-200";
+    const iconClass = "w-6 h-6 text-gray-700 hover:text-gray-900 transition-colors duration-200";
     
     switch (iconName) {
       case 'linkedin':
@@ -73,10 +73,10 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 p-4">
+    <nav className="fixed top-4 left-0 right-0 z-50 p-4">
       <div className="max-w-7xl mx-auto">
         <div
-          className={`flex items-center justify-between h-16 px-6 rounded-lg transition-all duration-300 ${
+          className={`flex items-center justify-between h-20 px-6 rounded-3xl transition-all duration-300 ${
             scrolled
               ? 'bg-white/95 backdrop-blur-md shadow-lg border border-gray-200/50'
               : 'bg-white/80 backdrop-blur-sm shadow-md border border-gray-100/50'
@@ -84,8 +84,8 @@ const Navbar = () => {
         >
           {/* Logo */}
           <div className="flex-shrink-0">
-            <h1 className="text-2xl font-bold text-gray-900">
-              DULAJ UPANANDA
+            <h1 className="text-3xl font-bold text-gray-900">
+              DULAJ PERSONAL
             </h1>
           </div>
 
@@ -97,11 +97,7 @@ const Navbar = () => {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 ${
-                    item.isButton
-                      ? 'bg-gray-900 text-white hover:bg-gray-800 shadow-sm'
-                      : 'text-gray-700 hover:text-gray-900'
-                  }`}
+                  className="px-4 py-2 rounded-full text-lg font-medium transition-all duration-200 text-gray-700 hover:text-gray-900"
                 >
                   {item.name}
                 </Link>
@@ -109,10 +105,10 @@ const Navbar = () => {
             </div>
 
             {/* Separator */}
-            <div className="h-6 w-px bg-gray-300"></div>
+            <div className="h-6 w-px bg-black"></div>
 
             {/* Social Icons */}
-            <div className="flex items-center space-x-4">
+            <div className="flex items-center space-x-8">
               {socialLinks.map((social) => (
                 <a
                   key={social.name}
@@ -152,11 +148,7 @@ const Navbar = () => {
               <Link
                 key={item.name}
                 href={item.href}
-                className={`block px-4 py-3 rounded-xl text-base font-medium transition-colors duration-200 ${
-                  item.isButton
-                    ? 'bg-gray-900 text-white'
-                    : 'text-gray-700 hover:text-gray-900 hover:bg-gray-50'
-                }`}
+                className="block px-4 py-3 rounded-xl text-lg font-medium transition-colors duration-200 text-gray-700 hover:text-gray-900 hover:bg-gray-50"
                 onClick={() => setIsOpen(false)}
               >
                 {item.name}

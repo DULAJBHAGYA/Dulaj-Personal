@@ -60,14 +60,14 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" ref={skillsRef} className="py-20 bg-slate-900/50">
+    <section id="skills" ref={skillsRef} className="py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold text-white mb-4">
-            My <span className="text-purple-400">Skills</span>
+          <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
+            My <span className="text-purple-600">Skills</span>
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-purple-500 to-pink-500 mx-auto rounded-full mb-4"></div>
-          <p className="text-gray-300 text-lg max-w-2xl mx-auto">
+          <p className="text-gray-600 text-xl sm:text-2xl max-w-2xl mx-auto">
             Here are the technologies and tools I work with to bring ideas to life
           </p>
         </div>
@@ -81,7 +81,7 @@ const Skills = () => {
               }`}
               style={{ transitionDelay: `${categoryIndex * 200}ms` }}
             >
-              <h3 className="text-2xl font-bold text-white mb-6 text-center">
+              <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">
                 {category.title}
               </h3>
               
@@ -89,8 +89,8 @@ const Skills = () => {
                 {category.skills.map((skill, skillIndex) => (
                   <div key={skill.name} className="group">
                     <div className="flex justify-between items-center mb-2">
-                      <span className="text-gray-300 font-medium">{skill.name}</span>
-                      <span className="text-purple-400 font-semibold">{skill.level}%</span>
+                      <span className="text-gray-600 font-medium">{skill.name}</span>
+                      <span className="text-purple-600 font-semibold">{skill.level}%</span>
                     </div>
                     <div className="w-full bg-slate-700 rounded-full h-2 overflow-hidden">
                       <div
@@ -114,7 +114,7 @@ const Skills = () => {
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
           }`}
         >
-          <h3 className="text-2xl font-bold text-white mb-8">Additional Skills</h3>
+          <h3 className="text-2xl font-bold text-gray-900 mb-8">Additional Skills</h3>
           <div className="flex flex-wrap justify-center gap-4">
             {[
               'UI/UX Design', 'Responsive Design', 'Agile Methodologies', 

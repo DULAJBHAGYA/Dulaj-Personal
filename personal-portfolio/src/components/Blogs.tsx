@@ -2,6 +2,12 @@
 
 import { useEffect, useRef, useState } from 'react';
 import { CalendarIcon, ClockIcon, ArrowRightIcon } from '@heroicons/react/24/outline';
+import blogDioImage from '@/assets/images/blog-dio.png';
+import blogBlocImage from '@/assets/images/blog-bloc.png';
+import blogMongoImage from '@/assets/images/blog-mongodb.png';
+import blogNodeImage from '@/assets/images/blog-NodeCRUD.png';
+import blogAIImage from '@/assets/images/blog-AI.jpg';
+import blogWFHImage from '@/assets/images/blog-WFH.jpg';
 
 const Blogs = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -26,165 +32,154 @@ const Blogs = () => {
 
   const blogs = [
     {
-      title: 'Building Scalable React Applications with TypeScript',
-      excerpt: 'Learn how to structure large React applications using TypeScript for better type safety and developer experience.',
-      content: 'In this comprehensive guide, we explore the best practices for building scalable React applications with TypeScript...',
+      title: 'Making HTTP Requests in Flutter: Using the Dio Package',
+      excerpt: 'In modern app development, interacting with APIs is a crucial task. Flutter, with its rich ecosystem, provides several ways to...',
+      content: 'In modern app development, interacting with APIs is a crucial task. Flutter, with its rich ecosystem, provides several ways to make HTTP requests. One of the most popular and powerful packages for this purpose is Dio...',
       author: 'Dulaj Upananda',
       date: '2024-01-15',
-      readTime: '8 min read',
-      category: 'React',
-      image: '/api/placeholder/400/250',
-      slug: 'building-scalable-react-applications-typescript'
+      readTime: '3 min read',
+      category: 'Flutter',
+      image: blogDioImage,
+      slug: 'making-http-requests-flutter-dio-package',
+      link: 'https://medium.com/@dulajupananda/making-http-requests-in-flutter-using-the-dio-package-09d2af361f36'
     },
     {
-      title: 'Mastering CSS Grid: A Complete Guide',
-      excerpt: 'Everything you need to know about CSS Grid layout, from basic concepts to advanced techniques.',
-      content: 'CSS Grid has revolutionized how we create layouts on the web. This guide covers everything from basic grid concepts...',
+      title: 'Flutter BLoC State Management: A step-by-step guide',
+      excerpt: 'In this blog post, we\'re going to take a detailed look at Flutter\'s BLoC (Business Logic Component) state management approach...',
+      content: 'In this blog post, we\'re going to take a detailed look at Flutter\'s BLoC (Business Logic Component) state management approach. BLoC is a powerful pattern that helps you separate business logic from UI...',
       author: 'Dulaj Upananda',
       date: '2024-01-10',
-      readTime: '12 min read',
-      category: 'CSS',
-      image: '/api/placeholder/400/250',
-      slug: 'mastering-css-grid-complete-guide'
+      readTime: '6 min read',
+      category: 'Flutter',
+      image: blogBlocImage,
+      slug: 'flutter-bloc-state-management-guide',
+      link: 'https://medium.com/@dulajupananda/flutter-bloc-state-management-a-step-by-step-guide-1f1ab1c358f7'
     },
     {
-      title: 'The Future of Web Development: Trends to Watch in 2024',
-      excerpt: 'Exploring the latest trends and technologies that will shape web development in 2024 and beyond.',
-      content: 'As we move into 2024, several exciting trends are emerging in web development that developers should be aware of...',
+      title: 'Mastering MongoDB: Unleashing the Power of a Document Database',
+      excerpt: 'MongoDB, a popular NoSQL database, has gained significant traction in recent years due to its flexibility, scalability...',
+      content: 'MongoDB, a popular NoSQL database, has gained significant traction in recent years due to its flexibility, scalability, and ease of use. In this comprehensive guide, we\'ll explore the key concepts and features...',
       author: 'Dulaj Upananda',
       date: '2024-01-05',
-      readTime: '6 min read',
-      category: 'Web Development',
-      image: '/api/placeholder/400/250',
-      slug: 'future-web-development-trends-2024'
+      readTime: '5 min read',
+      category: 'MongoDB',
+      image: blogMongoImage,
+      slug: 'mastering-mongodb-document-database',
+      link: 'https://medium.com/@dulajupananda/simplifying-data-management-with-crud-operations-in-node-js-eb7da8ed61d9'
     },
     {
-      title: 'Optimizing Performance in Next.js Applications',
-      excerpt: 'Best practices and techniques for improving the performance of your Next.js applications.',
-      content: 'Next.js provides many built-in optimizations, but there are additional techniques you can use to further improve performance...',
+      title: 'Simplifying Data Management with CRUD Operations in Node.js',
+      excerpt: 'Node.js has become a popular platform for building efficient and scalable web applications. One essential aspect of web...',
+      content: 'Node.js has become a popular platform for building efficient and scalable web applications. One essential aspect of web development is data management through CRUD (Create, Read, Update, Delete) operations...',
       author: 'Dulaj Upananda',
       date: '2024-01-01',
-      readTime: '10 min read',
-      category: 'Next.js',
-      image: '/api/placeholder/400/250',
-      slug: 'optimizing-performance-nextjs-applications'
+      readTime: '2 min read',
+      category: 'Node.js',
+      image: blogNodeImage,
+      slug: 'crud-operations-nodejs',
+      link: 'https://medium.com/@dulajupananda/simplifying-data-management-with-crud-operations-in-node-js-eb7da8ed61d9'
+    },
+    {
+      title: 'Emerging Trends in Artificial Intelligence (AI)',
+      excerpt: 'Artificial Intelligence (AI) has emerged as a transformative technology, revolutionizing various industries and reshaping...',
+      content: 'Artificial Intelligence (AI) has emerged as a transformative technology, revolutionizing various industries and reshaping the way we live and work. As we move forward, several exciting trends are emerging...',
+      author: 'Dulaj Upananda',
+      date: '2023-12-28',
+      readTime: '3 min read',
+      category: 'AI',
+      image: blogAIImage,
+      slug: 'emerging-trends-artificial-intelligence',
+      link: 'https://medium.com/@dulajupananda/emerging-trends-in-artificial-inteligence-ai-784479b5e72a'
+    },
+    {
+      title: 'The rise of remote work and its impact on the IT industry',
+      excerpt: 'Due to the COVID-19 epidemic, there has been a significant change in how we work, with remote work now the norm for many...',
+      content: 'Due to the COVID-19 epidemic, there has been a significant change in how we work, with remote work now the norm for many organizations. This shift has had profound implications for the IT industry...',
+      author: 'Dulaj Upananda',
+      date: '2023-12-25',
+      readTime: '3 min read',
+      category: 'Remote Work',
+      image: blogWFHImage,
+      slug: 'remote-work-impact-it-industry',
+      link: 'https://medium.com/@dulajupananda/the-rise-of-remote-work-and-its-impact-on-the-it-industry-30c5a39fc60c'
     }
   ];
 
-  const categories = ['All', 'React', 'CSS', 'Web Development', 'Next.js', 'JavaScript'];
+
 
   return (
-    <section id="blogs" ref={blogsRef} className="py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
-            My <span className="text-blue-600">Blogs</span>
+    <section id="blogs" ref={blogsRef} className="pt-36 pb-20">
+      <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
+        <div className="text-left mb-10">
+        <h2 className="text-3xl sm:text-4xl font-semibold text-gray-900 mb-6">
+            My Blogs
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full mb-4"></div>
-          <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-            Thoughts, tutorials, and insights about web development, design, and technology
+          <p className="text-black text-xl sm:text-2xl max-w-2xl">
+            Thoughts, tutorials, and insights about Full-Stack Development , DevOps, AI, and Technologies
           </p>
         </div>
 
-        {/* Category Filter */}
-        <div
-          className={`flex flex-wrap justify-center gap-4 mb-12 transition-all duration-1000 ${
-            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-          }`}
-        >
-          {categories.map((category, index) => (
-            <button
-              key={category}
-              className={`px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
-                category === 'All'
-                  ? 'bg-blue-600 text-white shadow-lg'
-                  : 'bg-white text-gray-600 hover:bg-blue-50 hover:text-blue-600 border border-gray-200'
-              }`}
-              style={{ transitionDelay: `${index * 100}ms` }}
-            >
-              {category}
-            </button>
-          ))}
-        </div>
 
-        {/* Blog Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* Blog List */}
+        <div className="space-y-8">
           {blogs.map((blog, index) => (
             <article
               key={blog.slug}
-              className={`bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 ${
+              className={`bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 ${
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
               }`}
               style={{ transitionDelay: `${index * 150}ms` }}
             >
-              {/* Blog Image */}
-              <div className="relative h-48 bg-gradient-to-br from-blue-500 to-purple-600 overflow-hidden">
-                <div className="absolute inset-0 bg-black/20"></div>
-                <div className="absolute top-4 left-4">
-                  <span className="bg-white/90 text-gray-800 px-3 py-1 rounded-full text-xs font-semibold">
-                    {blog.category}
-                  </span>
+              <div className="flex flex-col md:flex-row">
+                {/* Blog Image */}
+                <div className="relative h-72 md:h-96 md:w-[42rem] overflow-hidden flex-shrink-0 rounded-3xl">
+                  <img 
+                    src={blog.image.src} 
+                    alt={blog.title}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-6xl font-bold text-white/20">
-                    {blog.title.charAt(0)}
-                  </div>
-                </div>
-              </div>
 
-              {/* Blog Content */}
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-3 line-clamp-2">
+                {/* Blog Content */}
+                <div className="p-10 flex-1">
+                <h3 className="text-2xl font-semibold text-black mb-4 line-clamp-2">
                   {blog.title}
                 </h3>
                 
-                <p className="text-gray-600 mb-4 line-clamp-3">
+                <p className="text-gray-600 mb-4 text-xl line-clamp-3">
                   {blog.excerpt}
                 </p>
 
                 {/* Blog Meta */}
                 <div className="flex items-center justify-between text-sm text-gray-500 mb-4">
-                  <div className="flex items-center gap-4">
-                    <div className="flex items-center gap-1">
-                      <CalendarIcon className="w-4 h-4" />
-                      <span>{new Date(blog.date).toLocaleDateString()}</span>
-                    </div>
-                    <div className="flex items-center gap-1">
-                      <ClockIcon className="w-4 h-4" />
+                  
+                    <div className="flex text-xl items-center gap-1">
+                      <ClockIcon className="w-6 h-6" />
                       <span>{blog.readTime}</span>
                     </div>
-                  </div>
                 </div>
 
                 {/* Author and Read More */}
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-3">
-                    <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white text-sm font-bold">
-                      {blog.author.charAt(0)}
-                    </div>
-                    <span className="text-sm text-gray-600">{blog.author}</span>
-                  </div>
+                <div className="flex items-center text-xl justify-between">
                   
-                  <button className="flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium text-sm transition-colors duration-200">
+                  
+                  <a 
+                    href={blog.link} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-blue-600 hover:text-blue-700 font-xl transition-colors duration-200"
+                  >
                     Read More
                     <ArrowRightIcon className="w-4 h-4" />
-                  </button>
+                  </a>
                 </div>
+              </div>
               </div>
             </article>
           ))}
         </div>
 
-        {/* View All Blogs Button */}
-        <div
-          className={`text-center mt-12 transition-all duration-1000 delay-500 ${
-            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-          }`}
-        >
-          <button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-blue-500/25">
-            View All Blogs
-          </button>
-        </div>
+        
       </div>
     </section>
   );
