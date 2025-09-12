@@ -183,48 +183,46 @@ const About = () => {
            <div className="space-y-6">
              <h3 className="text-2xl font-regular text-black mb-6">Education</h3>
              
-             {/* Row 1: 50% - 50% */}
-             <div className="grid grid-cols-2 gap-6">
-               <div className="bg-white/50 rounded-lg h-72 flex flex-col justify-center">
-                 <h4 className="text-xl  font-semibold text-gray-900 mb-2">University of Moratuwa (2021 - 2025)</h4>
-                 <p className="text-gray-600 text-xl mb-2">
-                  Pursued Bachelor of Science (Hons) in Information Technology & Management from Faculty of IT, <a href="https://uom.lk/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">University of Moratuwa</a>. 
-                  </p>
+             {/* Row 1: Image first, then text */}
+             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+               {/* Image Column */}
+               <div className="bg-white/50 rounded-lg h-80 flex items-center justify-center p-2">
+                 <div className="w-full h-full bg-gradient-to-br from-blue-500 to-purple-500 rounded-lg flex items-center justify-center overflow-hidden">
+                   <Image
+                     src={universityImage}
+                     alt="University of Moratuwa"
+                     className="w-full h-full object-cover rounded-lg"
+                   />
+                 </div>
                </div>
-                <div className="bg-white/50 rounded-lg h-80 flex items-center justify-center p-2">
-                   <div className="w-3/4 h-full bg-gradient-to-br from-blue-500 to-purple-500 rounded-lg flex items-center justify-center">
-                    <div className="text-center text-white">
-                    <Image
-                      src={universityImage}
-                      alt="School Certificate"
-                      className="w-full h-full object-cover rounded-lg"
-                    />
-                    </div>
-                  </div>
-                </div>
+               {/* Text Column */}
+               <div className="bg-white/50 rounded-lg h-80 flex flex-col justify-center p-6">
+                 <h4 className="text-xl font-semibold text-gray-900 mb-4">University of Moratuwa (2021 - 2025)</h4>
+                 <p className="text-gray-600 text-lg leading-relaxed">
+                  Pursued Bachelor of Science (Hons) in Information Technology & Management from Faculty of IT, <a href="https://uom.lk/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">University of Moratuwa</a>. 
+                 </p>
+               </div>
              </div>
 
-             {/* Row 2: 50% - 50% */}
-             <div className="grid grid-cols-2 gap-10 mt-10">
-             <div className="bg-white/50 rounded-lg h-80 flex items-center justify-center p-2">
-                    <div className="w-3/4 h-full bg-gradient-to-br from-blue-500 to-purple-500 rounded-lg flex items-center justify-center">
-                     <div className="text-center text-white">
-                     <Image
-                      src={schoolImage}
-                      alt="School Certificate"
-                      className="w-full h-full object-cover rounded-lg"
-                    />
-                     </div>
-                   </div>
+             {/* Row 2: Image first, then text */}
+             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+               {/* Image Column */}
+               <div className="bg-white/50 rounded-lg h-80 flex items-center justify-center p-2">
+                 <div className="w-full h-full bg-gradient-to-br from-blue-500 to-purple-500 rounded-lg flex items-center justify-center overflow-hidden">
+                   <Image
+                     src={schoolImage}
+                     alt="SIBA Campus"
+                     className="w-full h-full object-cover rounded-lg"
+                   />
                  </div>
-               <div className="bg-white/50 rounded-lg p-6 h-72 flex flex-col justify-center">
-                <h4 className="text-xl  font-semibold text-gray-900 mb-2">
-                    SIBA Campus (2019 - 2020)
-                </h4>
-                  <p className="text-gray-600 text-xl">
+               </div>
+               {/* Text Column */}
+               <div className="bg-white/50 rounded-lg h-80 flex flex-col justify-center p-6">
+                 <h4 className="text-xl font-semibold text-gray-900 mb-4">SIBA Campus (2019 - 2020)</h4>
+                 <p className="text-gray-600 text-lg leading-relaxed">
                    Completed Diploma in IT and Diploma in English at <a href="https://siba.edu.lk/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">SIBA Campus, Kandy</a>. 
-                   </p>
-                 </div>
+                 </p>
+               </div>
              </div>
 
              {/* Row 3: 50% - 50% */}
@@ -263,10 +261,10 @@ const About = () => {
                    Rugby & Cricket
                  </h4>
                  
-                 <div className="grid grid-cols-2 gap-6 mt-6">
-                   {/* Left Column - Image Carousel */}
-                   <div className="flex items-center justify-center">
-                     <div className="w-full h-96 rounded-lg overflow-hidden relative">
+                 <div className="flex flex-col md:grid md:grid-cols-2 gap-6 mt-6">
+                   {/* Image Carousel - Above text on mobile, left on desktop */}
+                   <div className="flex items-center justify-center order-1 md:order-1">
+                     <div className="w-full h-80 md:h-96 rounded-lg overflow-hidden relative">
                        <AnimatePresence mode="wait">
                          <motion.div
                            key={currentImageIndex}
@@ -301,8 +299,8 @@ const About = () => {
                      </div>
                    </div>
                    
-                   {/* Right Column - Paragraph */}
-                   <div className="flex items-center">
+                   {/* Paragraph - Below image on mobile, right on desktop */}
+                   <div className="flex items-center order-2 md:order-2">
                      <p className="text-gray-600 text-lg leading-relaxed text-justify">
                        I am a big fan of <span className="font-semibold">Kandy Sports Club</span> and <span className="font-semibold">Springboks</span> rugby teams. I also have a deep love for  
                         <span className="font-semibold"> Sri Lankan cricket</span> and follow the national team passionately. These sports have been an integral 
