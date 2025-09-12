@@ -21,7 +21,7 @@ import music3Image from '@/assets/images/music3.jpg';
 import music4Image from '@/assets/images/music4.jpg';
 import music5Image from '@/assets/images/music5.jpg';
 import music6Image from '@/assets/images/music6.jpg';
-import books1Image from '@/assets/images/books1.jpg';
+// import books1Image from '@/assets/images/books1.jpg'; // File not found
 import books2Image from '@/assets/images/books2.jpg';
 import movie1Image from '@/assets/images/movie.jpg';
 import tvseries1Image from '@/assets/images/tvseries.jpg';
