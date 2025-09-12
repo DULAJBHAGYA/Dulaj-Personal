@@ -38,20 +38,20 @@ export default function TechContent() {
     <section id="tech" ref={techRef} className="pt-36 pb-20">
        <div className="max-w-7xl mx-auto">
          <div className="text-left mb-10">
-           <p className="text-gray-700 text-xl max-w-7xl text-justify text-left mb-6">
+           <p className="text-gray-700 text-sm sm:text-base md:text-lg lg:text-xl max-w-7xl text-justify text-left mb-6">
              As a DevOps and Full-Stack developer, I specialize in creating end-to-end solutions that bridge 
              development and operations. I am passionate about the MERN stack, 
              .NET ecosystem, Java development, Next.js for modern web applications, and Flutter for cross-platform mobile development.
            </p> 
            
-           <h3 className="text-2xl font-regular mb-8 text-black text-left">Technologies</h3>
+           <h3 className="text-lg sm:text-xl md:text-2xl font-regular mb-8 text-black text-left">Technologies</h3>
          </div>
 
          {/* Two Column Layout */}
          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-2">
            {/* Left Column - Programming Languages */}
            <div className="mb-2">
-             <h2 className="text-xl font-regular text-black text-left mb-2">Programming Languages</h2>
+             <h2 className="text-base sm:text-lg md:text-xl font-regular text-black text-left mb-2">Programming Languages</h2>
              <div className="grid grid-cols-8 gap-4">
                {/* Java */}
                <div className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4">
@@ -114,7 +114,7 @@ export default function TechContent() {
 
            {/* Right Column - Frontend Technologies */}
            <div className="mb-2">
-             <h2 className="text-xl font-regular text-black text-left mb-2">Frontend Technologies</h2>
+             <h2 className="text-base sm:text-lg md:text-xl font-regular text-black text-left mb-2">Frontend Technologies</h2>
              <div className="grid grid-cols-8 gap-4">
                {/* React */}
                <div className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4">
@@ -165,7 +165,7 @@ export default function TechContent() {
          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-2">
            {/* Left Column - Backend Technologies */}
            <div className="mb-2">
-             <h2 className="text-xl font-regular text-black text-left mb-2">Backend Technologies</h2>
+             <h2 className="text-base sm:text-lg md:text-xl font-regular text-black text-left mb-2">Backend Technologies</h2>
              <div className="grid grid-cols-8 gap-4">
                {/* Node.js */}
                <div className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4">
@@ -194,7 +194,7 @@ export default function TechContent() {
 
            {/* Right Column - Databases & DevOps */}
            <div className="mb-2">
-             <h2 className="text-xl font-regular text-black text-left mb-2">Databases</h2>
+             <h2 className="text-base sm:text-lg md:text-xl font-regular text-black text-left mb-2">Databases</h2>
              <div className="grid grid-cols-8 gap-4">
                {/* MongoDB */}
                <div className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4">
@@ -233,7 +233,7 @@ export default function TechContent() {
          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-2">
            {/* Left Column - DevOps Tools */}
            <div className="mb-2">
-             <h2 className="text-xl font-regular text-black text-left mb-2">DevOps Tools</h2>
+             <h2 className="text-base sm:text-lg md:text-xl font-regular text-black text-left mb-2">DevOps Tools</h2>
              <div className="grid grid-cols-8 gap-4">
                {/* Git */}
                <div className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4">
@@ -274,7 +274,7 @@ export default function TechContent() {
 
            {/* Right Column - IDEs & Editors */}
            <div className="mb-2">
-             <h2 className="text-xl font-regular text-black text-left mb-2">IDEs & Editors</h2>
+             <h2 className="text-base sm:text-lg md:text-xl font-regular text-black text-left mb-2">IDEs & Editors</h2>
              <div className="grid grid-cols-8 gap-4">
                {/* Visual Studio */}
                <div className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4">
@@ -325,7 +325,7 @@ export default function TechContent() {
 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-2">
            {/* Left Column - DevOps Tools */}
            <div className="mb-2">
-             <h2 className="text-xl font-regular text-black text-left mb-2">Other Tools</h2>
+             <h2 className="text-base sm:text-lg md:text-xl font-regular text-black text-left mb-2">Other Tools</h2>
              <div className="grid grid-cols-8 gap-4">
                {/* Git */}
                <div className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4">
@@ -355,7 +355,7 @@ export default function TechContent() {
 
            {/* Right Column - IDEs & Editors */}
            <div className="mb-2">
-             <h2 className="text-xl font-regular text-black text-left mb-2">Operating Systems</h2>
+             <h2 className="text-base sm:text-lg md:text-xl font-regular text-black text-left mb-2">Operating Systems</h2>
              <div className="grid grid-cols-8 gap-4">
                {/* Visual Studio */}
                <div className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4">
@@ -385,15 +385,15 @@ export default function TechContent() {
 
          {/* Certifications Section */}
          <div className="mt-16">
-           <h3 className="text-2xl font-regular mb-8 text-black text-left">Certifications</h3>
+           <h3 className="text-lg sm:text-xl md:text-2xl font-regular mb-8 text-black text-left">Certifications</h3>
            <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
              {/* Kubernetes Certification */}
              <a href="https://kodekloud.com/certificate-verification/" target="_blank" rel="noopener noreferrer" className="bg-white/50 rounded-3xl p-6 flex flex-col items-center text-center hover:bg-white/70 transition-colors duration-200">
                <div className="w-16 h-16 mb-4 flex items-center justify-center">
                  <SiKubernetes className="text-4xl text-blue-700" />
                </div>
-               <h4 className="text-lg font-semibold text-gray-900 mb-2">Kubernetes</h4>
-               <p className="text-sm text-gray-600">Kodekloud</p>
+               <h4 className="text-sm sm:text-base md:text-lg font-semibold text-gray-900 mb-2">Kubernetes</h4>
+               <p className="text-xs sm:text-sm text-gray-600">Kodekloud</p>
                <span className="text-xs text-blue-600 mt-2 hover:underline">View Credential</span>
              </a>
 
@@ -402,8 +402,8 @@ export default function TechContent() {
                <div className="w-16 h-16 mb-4 flex items-center justify-center">
                  <FaDocker className="text-4xl text-blue-600" />
                </div>
-               <h4 className="text-lg font-semibold text-gray-900 mb-2">Docker</h4>
-               <p className="text-sm text-gray-600">Kodekloud</p>
+               <h4 className="text-sm sm:text-base md:text-lg font-semibold text-gray-900 mb-2">Docker</h4>
+               <p className="text-xs sm:text-sm text-gray-600">Kodekloud</p>
                <span className="text-xs text-blue-600 mt-2 hover:underline">View Credential</span>
              </a>
 
@@ -412,8 +412,8 @@ export default function TechContent() {
                <div className="w-16 h-16 mb-4 flex items-center justify-center">
                  <FaLinux className="text-4xl text-orange-500" />
                </div>
-               <h4 className="text-lg font-semibold text-gray-900 mb-2">Linux</h4>
-               <p className="text-sm text-gray-600">Kodekloud</p>
+               <h4 className="text-sm sm:text-base md:text-lg font-semibold text-gray-900 mb-2">Linux</h4>
+               <p className="text-xs sm:text-sm text-gray-600">Kodekloud</p>
                <span className="text-xs text-blue-600 mt-2 hover:underline">View Credential</span>
              </a>
 
@@ -422,8 +422,8 @@ export default function TechContent() {
                <div className="w-16 h-16 mb-4 flex items-center justify-center">
                  <FaJenkins className="text-4xl text-blue-500" />
                </div>
-               <h4 className="text-lg font-semibold text-gray-900 mb-2">Jenkins</h4>
-               <p className="text-sm text-gray-600">Kodekloud</p>
+               <h4 className="text-sm sm:text-base md:text-lg font-semibold text-gray-900 mb-2">Jenkins</h4>
+               <p className="text-xs sm:text-sm text-gray-600">Kodekloud</p>
                <span className="text-xs text-blue-600 mt-2 hover:underline">View Credential</span>
              </a>
 
@@ -432,8 +432,8 @@ export default function TechContent() {
                <div className="w-16 h-16 mb-4 flex items-center justify-center">
                  <FaGitAlt className="text-4xl text-orange-600" />
                </div>
-               <h4 className="text-lg font-semibold text-gray-900 mb-2">Git</h4>
-               <p className="text-sm text-gray-600">Kodekloud</p>
+               <h4 className="text-sm sm:text-base md:text-lg font-semibold text-gray-900 mb-2">Git</h4>
+               <p className="text-xs sm:text-sm text-gray-600">Kodekloud</p>
                <span className="text-xs text-blue-600 mt-2 hover:underline">View Credential</span>
              </a>
 
@@ -442,8 +442,8 @@ export default function TechContent() {
                <div className="w-16 h-16 mb-4 flex items-center justify-center">
                  <SiGnubash className="text-4xl text-gray-600" />
                </div>
-               <h4 className="text-lg font-semibold text-gray-900 mb-2">Shell Scripts</h4>
-               <p className="text-sm text-gray-600">Kodekloud</p>
+               <h4 className="text-sm sm:text-base md:text-lg font-semibold text-gray-900 mb-2">Shell Scripts</h4>
+               <p className="text-xs sm:text-sm text-gray-600">Kodekloud</p>
                <span className="text-xs text-blue-600 mt-2 hover:underline">View Credential</span>
              </a>
 
@@ -452,8 +452,8 @@ export default function TechContent() {
                <div className="w-16 h-16 mb-4 flex items-center justify-center">
                  <SiGooglecloud className="text-4xl text-blue-500" />
                </div>
-               <h4 className="text-lg font-semibold text-gray-900 mb-2">Introduction to Generative AI</h4>
-               <p className="text-sm text-gray-600">Google Cloud</p>
+               <h4 className="text-sm sm:text-base md:text-lg font-semibold text-gray-900 mb-2">Introduction to Generative AI</h4>
+               <p className="text-xs sm:text-sm text-gray-600">Google Cloud</p>
                <span className="text-xs text-blue-600 mt-2 hover:underline">View Credential</span>
              </a>
 
@@ -462,8 +462,8 @@ export default function TechContent() {
                <div className="w-16 h-16 mb-4 flex items-center justify-center">
                  <SiGooglecloud className="text-4xl text-blue-500" />
                </div>
-               <h4 className="text-lg font-semibold text-gray-900 mb-2">Introduction to Large Language Models</h4>
-               <p className="text-sm text-gray-600">Google Cloud</p>
+               <h4 className="text-sm sm:text-base md:text-lg font-semibold text-gray-900 mb-2">Introduction to Large Language Models</h4>
+               <p className="text-xs sm:text-sm text-gray-600">Google Cloud</p>
                <span className="text-xs text-blue-600 mt-2 hover:underline">View Credential</span>
              </a>
 
@@ -472,8 +472,8 @@ export default function TechContent() {
                <div className="w-16 h-16 mb-4 flex items-center justify-center">
                  <SiGooglecloud className="text-4xl text-blue-500" />
                </div>
-               <h4 className="text-lg font-semibold text-gray-900 mb-2">Introduction to AI and ML</h4>
-               <p className="text-sm text-gray-600">Google Cloud</p>
+               <h4 className="text-sm sm:text-base md:text-lg font-semibold text-gray-900 mb-2">Introduction to AI and ML</h4>
+               <p className="text-xs sm:text-sm text-gray-600">Google Cloud</p>
                <span className="text-xs text-blue-600 mt-2 hover:underline">View Credential</span>
              </a>
 
@@ -482,8 +482,8 @@ export default function TechContent() {
                <div className="w-16 h-16 mb-4 flex items-center justify-center">
                  <SiOracle className="text-4xl text-red-600" />
                </div>
-               <h4 className="text-lg font-semibold text-gray-900 mb-2">DevOps Foundations 2025</h4>
-               <p className="text-sm text-gray-600">Oracle</p>
+               <h4 className="text-sm sm:text-base md:text-lg font-semibold text-gray-900 mb-2">DevOps Foundations 2025</h4>
+               <p className="text-xs sm:text-sm text-gray-600">Oracle</p>
                <span className="text-xs text-blue-600 mt-2 hover:underline">View Credential</span>
              </a>
 
@@ -492,8 +492,8 @@ export default function TechContent() {
                <div className="w-16 h-16 mb-4 flex items-center justify-center">
                  <FaLinux className="text-4xl text-orange-500" />
                </div>
-               <h4 className="text-lg font-semibold text-gray-900 mb-2">Introduction to Linux</h4>
-               <p className="text-sm text-gray-600">Linux Foundation</p>
+               <h4 className="text-sm sm:text-base md:text-lg font-semibold text-gray-900 mb-2">Introduction to Linux</h4>
+               <p className="text-xs sm:text-sm text-gray-600">Linux Foundation</p>
                <span className="text-xs text-blue-600 mt-2 hover:underline">View Credential</span>
              </a>
            </div>

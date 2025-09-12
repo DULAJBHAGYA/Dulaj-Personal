@@ -67,15 +67,15 @@ const Hero = () => {
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
             <div>
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-gray-900 mb-2">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 mb-2">
                 Hey!
               </h1>
               
-              <h2 className="text-4xl sm:text-5xl lg:text-6xl font-semibold text-gray-900 mb-6">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-gray-900 mb-6">
                 I am Dulaj
               </h2>
               
-              <p className="text-xl sm:text-2xl text-black leading-relaxed mb-4">
+              <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-black leading-relaxed mb-4">
                 IT Undergraduate from{' '}
                 <a 
                   href="https://uom.lk" 
@@ -87,7 +87,7 @@ const Hero = () => {
                 </a>
               </p>
               
-              <p className="text-xl sm:text-2xl text-black leading-relaxed mb-4">
+              <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-black leading-relaxed mb-4">
                 Former Software Engineer Intern at{' '}
                 <a 
                   href="https://futurecx.com" 
@@ -99,11 +99,11 @@ const Hero = () => {
                 </a>
               </p>
               
-              <p className="text-xl sm:text-2xl text-black leading-relaxed mb-4">
+              <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-black leading-relaxed mb-4">
                 DevOps and Full-Stack enthusiast
               </p>
               
-              <p className="text-xl sm:text-2xl text-gray-500 leading-relaxed">
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-500 leading-relaxed">
                 Passionate about building sustainable, user-focused solutions that enhance productivity while prioritizing human well-being and environmental responsibility.
               </p>
             </div>

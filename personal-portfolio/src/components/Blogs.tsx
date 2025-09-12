@@ -112,7 +112,7 @@ const Blogs = () => {
       <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
         <div className="text-left mb-10">
         
-          <p className="text-black text-xl sm:text-2xl max-w-2xl">
+          <p className="text-black text-base sm:text-lg md:text-xl lg:text-2xl max-w-2xl">
             Thoughts, tutorials, and insights about Full-Stack Development , DevOps, AI, and Technologies
           </p>
         </div>
@@ -140,32 +140,32 @@ const Blogs = () => {
 
                 {/* Blog Content */}
                 <div className="p-10 flex-1">
-                <h3 className="text-2xl font-semibold text-black mb-4 line-clamp-2">
+                <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-black mb-4 line-clamp-2">
                   {blog.title}
                 </h3>
                 
-                <p className="text-gray-600 mb-4 text-xl line-clamp-3">
+                <p className="text-gray-600 mb-4 text-sm sm:text-base md:text-lg lg:text-xl line-clamp-3">
                   {blog.excerpt}
                 </p>
 
                 {/* Blog Meta */}
                 <div className="flex items-center justify-between text-sm text-gray-500 mb-4">
                   
-                    <div className="flex text-xl items-center gap-1">
+                    <div className="flex text-sm sm:text-base md:text-lg lg:text-xl items-center gap-1">
                       <ClockIcon className="w-6 h-6" />
                       <span>{blog.readTime}</span>
                     </div>
                 </div>
 
                 {/* Author and Read More */}
-                <div className="flex items-center text-xl justify-between">
+                <div className="flex items-center text-sm sm:text-base md:text-lg lg:text-xl justify-between">
                   
                   
                   <a 
                     href={blog.link} 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-blue-600 hover:text-blue-700 font-xl transition-colors duration-200"
+                    className="flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium transition-colors duration-200"
                   >
                     Read More
                     <ArrowRightIcon className="w-4 h-4" />

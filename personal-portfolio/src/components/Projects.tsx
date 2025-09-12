@@ -419,10 +419,10 @@ const Projects = () => {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl sm:text-4xl font-semibold text-gray-900 mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-900 mb-6">
             My Projects
           </h2>
-          <p className="text-black text-xl sm:text-2xl max-w-2xl leading-relaxed">
+          <p className="text-black text-base sm:text-lg md:text-xl lg:text-2xl max-w-2xl leading-relaxed">
             Here are some of my recent projects that showcase my skills and passion for development
           </p>
         </motion.div>
@@ -529,10 +529,10 @@ const Projects = () => {
                       
                             {/* Project Header */}
                             <div className="mb-2">
-                              <div className="text-xl font-semibold text-gray-500">
+                              <div className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold text-gray-500">
                                 {currentProject.category}
                               </div>
-                              <h3 className="text-2xl font-regular text-gray-900 group-hover:text-purple-600 transition-colors duration-300">
+                              <h3 className="text-lg sm:text-xl md:text-2xl font-regular text-gray-900 group-hover:text-purple-600 transition-colors duration-300">
                                 {currentProject.title}
                               </h3>
                             </div>
@@ -540,7 +540,7 @@ const Projects = () => {
                             {/* Project Content */}
                             <div className="space-y-4">
                               {/* Description */}
-                              <p className="text-gray-600 leading-relaxed text-xl">
+                              <p className="text-gray-600 leading-relaxed text-sm sm:text-base md:text-lg lg:text-xl">
                                 {currentProject.description}
                               </p>
                         
@@ -618,10 +618,10 @@ const Projects = () => {
                         
                               {/* Project Header */}
                               <div className="mb-2">
-                                <div className="text-xl font-semibold text-gray-500">
+                                <div className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold text-gray-500">
                                   {nextProject.category}
                                 </div>
-                                <h3 className="text-2xl font-regular text-gray-900 group-hover:text-purple-600 transition-colors duration-300">
+                                <h3 className="text-lg sm:text-xl md:text-2xl font-regular text-gray-900 group-hover:text-purple-600 transition-colors duration-300">
                                   {nextProject.title}
                                 </h3>
                               </div>
@@ -629,7 +629,7 @@ const Projects = () => {
                               {/* Project Content */}
                               <div className="space-y-4">
                                 {/* Description */}
-                                <p className="text-gray-600 leading-relaxed text-xl">
+                                <p className="text-gray-600 leading-relaxed text-sm sm:text-base md:text-lg lg:text-xl">
                                   {nextProject.description}
                                 </p>
                           
