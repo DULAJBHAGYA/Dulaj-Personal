@@ -23,6 +23,10 @@ import music6Image from '@/assets/images/music6.jpg';
 import books2Image from '@/assets/images/books2.jpg';
 import movie1Image from '@/assets/images/movie.jpg';
 import tvseries1Image from '@/assets/images/tvseries.jpg';
+import hobby1Image from '@/assets/images/hobby1.jpg';
+import hobby2Image from '@/assets/images/hobby2.png';
+import hobby3Image from '@/assets/images/hobby3.jpg';
+import hobby4Image from '@/assets/images/hobby4.jpg';
 
 
 
@@ -81,20 +85,16 @@ const About = () => {
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
             }`}
           >
-             <div className="grid grid-cols-12 gap-6 h-[500px]">
+             <div className="grid grid-cols-12 gap-3 sm:gap-4 md:gap-6 h-[400px] sm:h-[450px] md:h-[500px]">
               {/* First Column: 80% Image, 20% Blank */}
               <div className="col-span-3 flex flex-col h-full">
                 {/* 80% Image */}
-                <div className="h-[60%] bg-white rounded-3xl overflow-hidden">
-                  <div className="w-full h-full bg-gradient-to-br from-purple-400 to-pink-400 flex items-center justify-center">
-                    <div className="text-center text-white">
-                    <Image
-                      src={about2Image}
-                      alt="About 2"
-                      className="w-full h-full object-cover rounded-lg"
-                    />
-                    </div>
-                  </div>
+                <div className="h-[60%] bg-white rounded-2xl sm:rounded-3xl overflow-hidden">
+                  <Image
+                    src={about2Image}
+                    alt="About 2"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 {/* 20% Blank Space */}
                 <div className="h-[40%]"></div>
@@ -105,25 +105,21 @@ const About = () => {
                  {/* 60% Name */}
                  <div className="h-[30%] flex items-center justify-start">
                    <div className="text-left">
-                     <h1 className="text-4xl sm:text-5xl md:text-6xl font-semibold text-gray-900 leading-tight">
+                     <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold text-gray-900 leading-tight">
                        Dulaj
                      </h1>
-                     <h2 className="text-4xl sm:text-5xl md:text-6xl font-regular text-gray-900 leading-tight">
+                     <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-regular text-gray-900 leading-tight">
                        Upananda
                      </h2>
                    </div>
                  </div>
                 {/* 20% Image */}
-                <div className="h-[50%] bg-gradient-to-br from-blue-500 to-cyan-500 rounded-3xl overflow-hidden">
-                  <div className="w-full h-full bg-gradient-to-br from-blue-400 to-cyan-400 flex items-center justify-center">
-                    <div className="text-center text-white">
-                    <Image
-                      src={about1Image}
-                      alt="About 1"
-                      className="w-full h-full object-cover rounded-lg"
-                    />
-                    </div>
-                  </div>
+                <div className="h-[50%] bg-white rounded-2xl sm:rounded-3xl overflow-hidden">
+                  <Image
+                    src={about1Image}
+                    alt="About 1"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 {/* 20% Blank Space */}
                 <div className="h-[10%]"></div>
@@ -133,17 +129,13 @@ const About = () => {
               <div className="col-span-3 flex flex-col h-full">
                 {/* 40% Blank Space */}
                 <div className="h-[40%]"></div>
-                {/* 60% Image */}
-                <div className="h-[60%] bg-gradient-to-br from-emerald-500 to-teal-500 rounded-3xl overflow-hidden">
-                  <div className="w-full h-full bg-gradient-to-br from-emerald-400 to-teal-400 flex items-center justify-center">
-                    <div className="text-center text-white">
-                    <Image
-                      src={about4Image}
-                      alt="About 4"
-                      className="w-full h-full object-cover rounded-lg"
-                    />
-                    </div>
-                  </div>
+                {/* 60% Image - Left Aligned */}
+                <div className="h-[60%] bg-white rounded-2xl sm:rounded-3xl overflow-hidden flex justify-start">
+                  <Image
+                    src={about4Image}
+                    alt="About 4"
+                    className="h-full object-cover object-left"
+                  />
                 </div>
               </div>
             </div>
@@ -183,46 +175,48 @@ const About = () => {
            <div className="space-y-6">
              <h3 className="text-2xl font-regular text-black mb-6">Education</h3>
              
-             {/* Row 1: Image first, then text */}
-             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-               {/* Image Column */}
-               <div className="bg-white/50 rounded-lg h-80 flex items-center justify-center p-2">
-                 <div className="w-full h-full bg-gradient-to-br from-blue-500 to-purple-500 rounded-lg flex items-center justify-center overflow-hidden">
-                   <Image
-                     src={universityImage}
-                     alt="University of Moratuwa"
-                     className="w-full h-full object-cover rounded-lg"
-                   />
-                 </div>
-               </div>
-               {/* Text Column */}
-               <div className="bg-white/50 rounded-lg h-80 flex flex-col justify-center p-6">
-                 <h4 className="text-xl font-semibold text-gray-900 mb-4">University of Moratuwa (2021 - 2025)</h4>
-                 <p className="text-gray-600 text-lg leading-relaxed">
+             {/* Row 1: 50% - 50% */}
+             <div className="grid grid-cols-2 gap-6">
+               <div className="bg-white/50 rounded-lg h-72 flex flex-col justify-center">
+                 <h4 className="text-xl  font-semibold text-gray-900 mb-2">University of Moratuwa (2021 - 2025)</h4>
+                 <p className="text-gray-600 text-xl mb-2">
                   Pursued Bachelor of Science (Hons) in Information Technology & Management from Faculty of IT, <a href="https://uom.lk/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">University of Moratuwa</a>. 
-                 </p>
+                  </p>
                </div>
+                <div className="bg-white/50 rounded-lg h-80 flex items-center justify-center p-2">
+                   <div className="w-3/4 h-full bg-gradient-to-br from-blue-500 to-purple-500 rounded-lg flex items-center justify-center">
+                    <div className="text-center text-white">
+                    <Image
+                      src={universityImage}
+                      alt="School Certificate"
+                      className="w-full h-full object-cover rounded-lg"
+                    />
+                    </div>
+                  </div>
+                </div>
              </div>
 
-             {/* Row 2: Image first, then text */}
-             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
-               {/* Image Column */}
-               <div className="bg-white/50 rounded-lg h-80 flex items-center justify-center p-2">
-                 <div className="w-full h-full bg-gradient-to-br from-blue-500 to-purple-500 rounded-lg flex items-center justify-center overflow-hidden">
-                   <Image
-                     src={schoolImage}
-                     alt="SIBA Campus"
-                     className="w-full h-full object-cover rounded-lg"
-                   />
+             {/* Row 2: 50% - 50% */}
+             <div className="grid grid-cols-2 gap-10 mt-10">
+             <div className="bg-white/50 rounded-lg h-80 flex items-center justify-center p-2">
+                    <div className="w-3/4 h-full bg-gradient-to-br from-blue-500 to-purple-500 rounded-lg flex items-center justify-center">
+                     <div className="text-center text-white">
+                     <Image
+                      src={schoolImage}
+                      alt="School Certificate"
+                      className="w-full h-full object-cover rounded-lg"
+                    />
+                     </div>
+                   </div>
                  </div>
-               </div>
-               {/* Text Column */}
-               <div className="bg-white/50 rounded-lg h-80 flex flex-col justify-center p-6">
-                 <h4 className="text-xl font-semibold text-gray-900 mb-4">SIBA Campus (2019 - 2020)</h4>
-                 <p className="text-gray-600 text-lg leading-relaxed">
+               <div className="bg-white/50 rounded-lg p-6 h-72 flex flex-col justify-center">
+                <h4 className="text-xl  font-semibold text-gray-900 mb-2">
+                    SIBA Campus (2019 - 2020)
+                </h4>
+                  <p className="text-gray-600 text-xl">
                    Completed Diploma in IT and Diploma in English at <a href="https://siba.edu.lk/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">SIBA Campus, Kandy</a>. 
-                 </p>
-               </div>
+                   </p>
+                 </div>
              </div>
 
              {/* Row 3: 50% - 50% */}
@@ -252,9 +246,9 @@ const About = () => {
 
            {/* My Favorites Section */}
            <div className="space-y-8">
-             <h3 className="text-2xl font-regular text-black mb-8">My Favorites</h3>
+             <h3 className="text-2xl font-regular text-black mb-4 md:mb-8">My Favorites</h3>
              
-             <div className="space-y-6">
+             <div className="space-y-4 md:space-y-6">
                {/* Rugby and Cricket */}
                <div className="bg-white/50 rounded-lg p-10">
                  <h4 className="text-xl font-semibold text-gray-900 mb-4 flex items-center">
@@ -334,18 +328,18 @@ const About = () => {
                    
                    {/* Right Column - Complex Photo Grid */}
                    <div className="flex items-center justify-center">
-                     <div className="w-full h-[400px] overflow-hidden">
+                     <div className="w-full h-[420px] lg:h-[480px] xl:h-[520px] 2xl:h-[560px] overflow-hidden">
                        <div className="grid grid-cols-3 gap-2 h-full">
                          {/* First Column - 60% and 40% split */}
                          <div className="flex flex-col gap-2 h-full">
-                           <div className="rounded-lg overflow-hidden h-[240px]">
+                           <div className="rounded-lg overflow-hidden flex-[3] min-h-0">
                              <Image
                                src={music5Image}
                                alt="Music 1"
                                className="w-full h-full object-cover"
                              />
                            </div>
-                           <div className="rounded-lg overflow-hidden h-[160px]">
+                           <div className="rounded-lg overflow-hidden flex-[2] min-h-0">
                              <Image
                                src={music3Image}
                                alt="Music 2"
@@ -356,14 +350,14 @@ const About = () => {
                          
                          {/* Second Column */}
                          <div className="flex flex-col gap-2 h-full">
-                           <div className="rounded-lg overflow-hidden flex-1">
+                           <div className="rounded-lg overflow-hidden flex-1 min-h-0">
                              <Image
                                src={music4Image}
                                alt="Music 3"
                                className="w-full h-full object-cover"
                              />
                            </div>
-                           <div className="rounded-lg overflow-hidden flex-1">
+                           <div className="rounded-lg overflow-hidden flex-1 min-h-0">
                              <Image
                                src={music1Image}
                                alt="Music 4"
@@ -374,14 +368,14 @@ const About = () => {
                          
                          {/* Third Column - 30% and 70% split */}
                          <div className="flex flex-col gap-2 h-full">
-                           <div className="rounded-lg overflow-hidden h-[120px]">
+                           <div className="rounded-lg overflow-hidden flex-[1] min-h-0">
                              <Image
                                src={music2Image}
                                alt="Music 5"
                                className="w-full h-full object-cover"
                              />
                            </div>
-                           <div className="rounded-lg overflow-hidden h-[280px]">
+                           <div className="rounded-lg overflow-hidden flex-[3] min-h-0">
                              <Image
                                src={music6Image}
                                alt="Music 6"
@@ -481,7 +475,7 @@ const About = () => {
                    <div className="grid grid-cols-2 gap-4">
                      <div className="relative h-48 rounded-2xl overflow-hidden">
                        <Image
-                         src={sports1Image}
+                         src={hobby1Image}
                          alt="Hiking adventure"
                          fill
                          className="object-cover"
@@ -489,7 +483,7 @@ const About = () => {
                      </div>
                      <div className="relative h-48 rounded-2xl overflow-hidden">
                        <Image
-                         src={sports2Image}
+                         src={hobby3Image}
                          alt="Traveling"
                          fill
                          className="object-cover"
@@ -497,7 +491,7 @@ const About = () => {
                      </div>
                      <div className="relative h-48 rounded-2xl overflow-hidden">
                        <Image
-                         src={sports3Image}
+                         src={hobby4Image}
                          alt="Cricket match"
                          fill
                          className="object-cover"
@@ -505,7 +499,7 @@ const About = () => {
                      </div>
                      <div className="relative h-48 rounded-2xl overflow-hidden">
                        <Image
-                         src={sports4Image}
+                         src={hobby2Image}
                          alt="Rugby game"
                          fill
                          className="object-cover"
