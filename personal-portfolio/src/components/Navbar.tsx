@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import { XMarkIcon } from '@heroicons/react/24/outline';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,17 +20,18 @@ const Navbar = () => {
 
   const navItems = [
     { name: 'Portfolio', href: '/', isButton: true },
-    { name: 'Blogs', href: '/blogs', isButton: false },
     { name: 'About', href: '/about', isButton: false },
+    { name: 'Tech', href: '/tech', isButton: false },
+    { name: 'Blogs', href: '/blogs', isButton: false },
     { name: 'Contact', href: '/contact', isButton: false },
   ];
 
   const socialLinks = [
-    { name: 'LinkedIn', href: 'https://linkedin.com', icon: 'linkedin' },
-    { name: 'GitHub', href: 'https://github.com', icon: 'github' },
-    { name: 'Medium', href: 'https://medium.com', icon: 'medium' },
-    { name: 'Instagram', href: 'https://instagram.com', icon: 'instagram' },
-    { name: 'Facebook', href: 'https://facebook.com', icon: 'facebook' },
+    { name: 'LinkedIn', href: 'https://www.linkedin.com/in/dulajbhagya/', icon: 'linkedin' },
+    { name: 'GitHub', href: 'https://github.com/DULAJBHAGYA', icon: 'github' },
+    { name: 'Medium', href: 'https://medium.com/@dulajupananda', icon: 'medium' },
+    { name: 'Instagram', href: 'https://www.instagram.com/_dulaj.98/?hl=en', icon: 'instagram' },
+    { name: 'Facebook', href: 'https://www.facebook.com/profile.php?id=100005369356450', icon: 'facebook' },
   ];
 
   const getIcon = (iconName: string) => {
@@ -84,13 +85,13 @@ const Navbar = () => {
         >
           {/* Logo */}
           <div className="flex-shrink-0">
-            <h1 className="text-3xl font-bold text-gray-900">
-              DULAJ PERSONAL
+            <h1 className="text-3xl font-bold text-gray-700 font-blanka">
+              D U L A J
             </h1>
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden tablet:flex items-center space-x-8">
             {/* Navigation Items */}
             <div className="flex items-center space-x-6">
               {navItems.map((item) => (
@@ -125,7 +126,7 @@ const Navbar = () => {
           </div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden">
+          <div className="tablet:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="text-gray-700 hover:text-gray-900 focus:outline-none focus:text-gray-900"
@@ -133,7 +134,11 @@ const Navbar = () => {
               {isOpen ? (
                 <XMarkIcon className="h-6 w-6" />
               ) : (
-                <Bars3Icon className="h-6 w-6" />
+                <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                  <circle cx="6" cy="12" r="2"/>
+                  <circle cx="12" cy="12" r="2"/>
+                  <circle cx="18" cy="12" r="2"/>
+                </svg>
               )}
             </button>
           </div>
@@ -142,7 +147,7 @@ const Navbar = () => {
 
       {/* Mobile Navigation */}
       {isOpen && (
-        <div className="md:hidden mt-4 mx-4">
+        <div className="tablet:hidden mt-4 mx-4">
           <div className="px-4 pt-4 pb-4 space-y-2 bg-white/95 backdrop-blur-md rounded-2xl shadow-lg border border-gray-200/50">
             {navItems.map((item) => (
               <Link
@@ -156,7 +161,7 @@ const Navbar = () => {
             ))}
             
             {/* Mobile Social Icons */}
-            <div className="flex items-center justify-center space-x-4 pt-4 border-t border-gray-200/50">
+            <div className="flex items-center justify-center space-x-8 pt-4 border-t border-gray-200/50">
               {socialLinks.map((social) => (
                 <a
                   key={social.name}

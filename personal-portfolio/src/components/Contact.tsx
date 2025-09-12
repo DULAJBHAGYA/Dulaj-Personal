@@ -6,7 +6,8 @@ import { EnvelopeIcon, PhoneIcon, MapPinIcon, PaperAirplaneIcon } from '@heroico
 const Contact = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [formData, setFormData] = useState({
-    name: '',
+    firtsname: '',
+    lastname: '',
     email: '',
     subject: '',
     message: ''
@@ -48,7 +49,8 @@ const Contact = () => {
     
     // Reset form
     setFormData({
-      name: '',
+      firtsname: '',
+      lastname: '',
       email: '',
       subject: '',
       message: ''
@@ -63,32 +65,27 @@ const Contact = () => {
     {
       icon: EnvelopeIcon,
       title: 'Email',
-      value: 'dulaj@example.com',
-      href: 'mailto:dulaj@example.com'
+      value: 'dulajupananda@icloud.com',
+      href: 'mailto:dulajupananda@icloud.com'
     },
     {
       icon: PhoneIcon,
       title: 'Phone',
-      value: '+1 (555) 123-4567',
-      href: 'tel:+15551234567'
+      value: '+94 76 832 3678',
+      href: 'tel:+94768323678'
     },
     {
       icon: MapPinIcon,
       title: 'Location',
-      value: 'San Francisco, CA',
+      value: 'Colombo, Sri Lanka',
       href: '#'
     }
   ];
 
   return (
-    <section id="contact" ref={contactRef} className="flex-1 pt-16 flex items-center">
-      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-8">
-          <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
-            Get In <span className="text-purple-600">Touch</span>
-          </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-purple-500 to-pink-500 mx-auto rounded-full mb-4"></div>
-        </div>
+    <section id="contact" ref={contactRef} className="flex-1 pt-36 flex items-center">
+      <div className="w-full max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
+       
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Information */}
@@ -97,29 +94,29 @@ const Contact = () => {
               isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'
             }`}
           >
-            <h3 className="text-2xl font-bold text-gray-900 mb-8">Let's Connect</h3>
-            <p className="text-gray-600 text-xl sm:text-2xl mb-8 leading-relaxed">
-              I'm always interested in new opportunities and exciting projects. 
-              Whether you have a question or just want to say hi, I'll try my best 
-              to get back to you!
-            </p>
+             <div className="text-left mb-8">
+          
+          <p className="text-black text-xl sm:text-2xl max-w-2xl">
+            Let&apos;s discuss your next project or just say hello!
+          </p>
+        </div>
 
             <div className="space-y-6">
               {contactInfo.map((info, index) => (
                 <a
                   key={info.title}
                   href={info.href}
-                  className={`flex items-center gap-4 p-4 bg-slate-800/50 rounded-lg border border-slate-700/50 hover:border-purple-500/50 transition-all duration-300 group ${
+                  className={`flex items-center gap-6 p-4 rounded-lg  hover:border-purple-500/50 transition-all duration-300 group ${
                     isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'
                   }`}
                   style={{ transitionDelay: `${index * 200}ms` }}
                 >
-                  <div className="p-3 bg-purple-500/20 rounded-lg group-hover:bg-purple-500/30 transition-colors duration-300">
-                    <info.icon className="w-6 h-6 text-purple-600" />
+                  <div className="p-3 bg-gray-200 rounded-lg transition-colors duration-300">
+                    <info.icon className="w-8 h-8 text-purple-600" />
                   </div>
                   <div>
-                    <h4 className="text-gray-900 font-semibold">{info.title}</h4>
-                    <p className="text-gray-600">{info.value}</p>
+                    <h4 className="text-gray-900 text-xl font-semibold">{info.title}</h4>
+                    <p className="text-gray-600 text-xl">{info.value}</p>
                   </div>
                 </a>
               ))}
@@ -136,40 +133,56 @@ const Contact = () => {
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-600 mb-2">
-                    Name *
+                  <label htmlFor="firtsname" className="block text-xl text-gray-600 mb-2">
+                    First Name
                   </label>
                   <input
                     type="text"
-                    id="name"
-                    name="name"
-                    value={formData.name}
+                    id="firtsname"
+                    name="firtsname"
+                    value={formData.firtsname}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-3 bg-slate-800/50 border border-slate-700/50 rounded-lg text-gray-900 placeholder-gray-400 focus:border-purple-500 focus:ring-1 focus:ring-purple-500 focus:outline-none transition-colors duration-300"
-                    placeholder="Your Name"
+                    className="w-full px-4 py-3 border text-xl border-gray-200 rounded-lg text-gray-900 placeholder-gray-300 focus:border-purple-500 focus:ring-1 focus:ring-purple-500 focus:outline-none transition-colors duration-300"
+                    placeholder="Your First Name"
                   />
                 </div>
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-600 mb-2">
-                    Email *
+                  <label htmlFor="lastname" className="block text-xl text-gray-600 mb-2">
+                    Last Name
                   </label>
                   <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    value={formData.email}
+                    type="lastname"
+                    id="lastname"
+                    name="lastname"
+                    value={formData.lastname}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-3 bg-slate-800/50 border border-slate-700/50 rounded-lg text-gray-900 placeholder-gray-400 focus:border-purple-500 focus:ring-1 focus:ring-purple-500 focus:outline-none transition-colors duration-300"
-                    placeholder="your@email.com"
+                    className="w-full px-4 py-3 border border-gray-200 text-xl rounded-lg text-gray-900 placeholder-gray-300 focus:border-purple-500 focus:ring-1 focus:ring-purple-500 focus:outline-none transition-colors duration-300"
+                    placeholder="Your Last Name"
                   />
                 </div>
               </div>
+
+              <div>
+                <label htmlFor="email" className="block text-xl text-gray-600 mb-2">
+                  Email
+                </label>
+                <input
+                  type="text"
+                  id="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleInputChange}
+                  required
+                  className="w-full px-4 py-3 border border-gray-200 text-xl rounded-lg text-gray-900 placeholder-gray-300 focus:border-purple-500 focus:ring-1 focus:ring-purple-500 focus:outline-none transition-colors duration-300"
+                  placeholder="Your Email"
+                />
+              </div>
               
               <div>
-                <label htmlFor="subject" className="block text-sm font-medium text-gray-600 mb-2">
-                  Subject *
+                <label htmlFor="subject" className="block text-xl text-gray-600 mb-2">
+                  Subject
                 </label>
                 <input
                   type="text"
@@ -178,14 +191,14 @@ const Contact = () => {
                   value={formData.subject}
                   onChange={handleInputChange}
                   required
-                  className="w-full px-4 py-3 bg-slate-800/50 border border-slate-700/50 rounded-lg text-gray-900 placeholder-gray-400 focus:border-purple-500 focus:ring-1 focus:ring-purple-500 focus:outline-none transition-colors duration-300"
+                  className="w-full px-4 py-3  border border-gray-200 text-xl rounded-lg text-gray-900 placeholder-gray-300 focus:border-purple-500 focus:ring-1 focus:ring-purple-500 focus:outline-none transition-colors duration-300"
                   placeholder="What's this about?"
                 />
               </div>
               
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-600 mb-2">
-                  Message *
+                <label htmlFor="message" className="block text-xl text-gray-600 mb-2">
+                  Message
                 </label>
                 <textarea
                   id="message"
@@ -194,7 +207,7 @@ const Contact = () => {
                   onChange={handleInputChange}
                   required
                   rows={6}
-                  className="w-full px-4 py-3 bg-slate-800/50 border border-slate-700/50 rounded-lg text-gray-900 placeholder-gray-400 focus:border-purple-500 focus:ring-1 focus:ring-purple-500 focus:outline-none transition-colors duration-300 resize-none"
+                  className="w-full px-4 py-3 border border-gray-200 text-xl rounded-lg text-gray-900 placeholder-gray-300 focus:border-purple-500 focus:ring-1 focus:ring-purple-500 focus:outline-none transition-colors duration-300 resize-none"
                   placeholder="Tell me about your project or just say hello!"
                 />
               </div>
@@ -202,7 +215,8 @@ const Contact = () => {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 disabled:from-gray-500 disabled:to-gray-600 text-gray-900 font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-purple-500/25 disabled:transform-none disabled:shadow-none flex items-center justify-center gap-2"
+                className="w-full bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 disabled:from-gray-500 disabled:to-gray-600 text-xl text-gray-900 font-regular py-3 px-6 rounded-lg transition-all duration-300 
+                transform hover:scale-105 hover:shadow-lg hover:shadow-purple-500/25 disabled:transform-none disabled:shadow-none flex items-center justify-center gap-2"
               >
                 {isSubmitting ? (
                   <>
@@ -211,7 +225,6 @@ const Contact = () => {
                   </>
                 ) : (
                   <>
-                    <PaperAirplaneIcon className="w-5 h-5" />
                     Send Message
                   </>
                 )}

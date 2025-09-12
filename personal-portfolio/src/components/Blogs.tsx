@@ -111,9 +111,7 @@ const Blogs = () => {
     <section id="blogs" ref={blogsRef} className="pt-36 pb-20">
       <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
         <div className="text-left mb-10">
-        <h2 className="text-3xl sm:text-4xl font-semibold text-gray-900 mb-6">
-            My Blogs
-          </h2>
+        
           <p className="text-black text-xl sm:text-2xl max-w-2xl">
             Thoughts, tutorials, and insights about Full-Stack Development , DevOps, AI, and Technologies
           </p>
@@ -125,7 +123,7 @@ const Blogs = () => {
           {blogs.map((blog, index) => (
             <article
               key={blog.slug}
-              className={`bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 ${
+              className={`bg-from-emerald-50 to-teal-50 rounded-3xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 ${
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
               }`}
               style={{ transitionDelay: `${index * 150}ms` }}

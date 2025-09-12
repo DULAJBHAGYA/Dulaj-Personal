@@ -1,18 +1,47 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
+import { motion } from 'framer-motion';
+import Image from 'next/image';
+import heroImg from '@/assets/images/heroImg.png';
 
 const Hero = () => {
-  const [isVisible, setIsVisible] = useState(false);
+  // Animation variants
+  const leftContentVariants = {
+    hidden: { 
+      opacity: 0, 
+      x: -100,
+      y: 50
+    },
+    visible: { 
+      opacity: 1, 
+      x: 0,
+      y: 0
+    }
+  };
 
+  const rightImageVariants = {
+    hidden: { 
+      opacity: 0, 
+      x: 100,
+      y: 50
+    },
+    visible: { 
+      opacity: 1, 
+      x: 0,
+      y: 0
+    }
+  };
+
+  // Set title when Hero component mounts (as backup)
   useEffect(() => {
-    setIsVisible(true);
+    if (typeof document !== 'undefined') {
+      document.title = 'Dulaj Personal';
+    }
   }, []);
 
-  // Removed scroll functionality since we're using separate pages
-
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
+    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-40 md:pt-32">
       {/* Background Animation */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 opacity-10">
@@ -31,10 +60,11 @@ const Hero = () => {
       <div className="relative z-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Column - Text Content */}
-          <div
-            className={`transition-all duration-1000 ${
-              isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'
-            }`}
+          <motion.div
+            variants={leftContentVariants}
+            initial="hidden"
+            animate="visible"
+            transition={{ duration: 0.8, ease: "easeOut" }}
           >
             <div>
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-gray-900 mb-2">
@@ -77,21 +107,23 @@ const Hero = () => {
                 Passionate about building sustainable, user-focused solutions that enhance productivity while prioritizing human well-being and environmental responsibility.
               </p>
             </div>
-          </div>
+          </motion.div>
 
           {/* Right Column - Image */}
-          <div
-            className={`transition-all duration-1000 delay-300 ${
-              isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'
-            }`}
+          <motion.div
+            variants={rightImageVariants}
+            initial="hidden"
+            animate="visible"
+            transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
           >
             <div className="relative">
               {/* Your Image */}
-              <div className="w-full h-96 lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
-                <img 
-                  src="/HeroImg.jpg" 
+              <div className="w-full h-96 md:h-[450px] lg:h-[500px] rounded-3xl overflow-hidden shadow-2xl">
+                <Image 
+                  src={heroImg} 
                   alt="Dulaj Upananda" 
-                  className="w-full h-full object-cover"
+                  fill
+                  className="object-cover rounded-3xl"
                 />
               </div>
               
@@ -99,7 +131,7 @@ const Hero = () => {
               <div className="absolute -top-4 -right-4 w-24 h-24 bg-blue-500/20 rounded-full blur-xl"></div>
               <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-purple-500/20 rounded-full blur-xl"></div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
 

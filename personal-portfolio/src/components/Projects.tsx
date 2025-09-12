@@ -1,6 +1,9 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
+import ExpenseTrackerImg from '@/assets/images/ExpenseTracker.png';
+import EventManagementImg from '@/assets/images/EventMng.png';
+
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
@@ -39,13 +42,18 @@ import {
   faRaspberryPi as faRaspberryPiIcon
 } from '@fortawesome/free-brands-svg-icons';
 
+
 // React Icons as fallbacks
 import { FaReact, FaJava, FaNodeJs, FaFileAlt } from "react-icons/fa";
 import {
   SiTailwindcss,
   SiMongodb,
+  SiJupyter,
   SiMysql,
   SiFastapi,
+  SiHuggingface,
+  SiFirebase,
+  SiAxios,
   SiClerk,
   SiSpringboot,
   SiDjango,
@@ -59,7 +67,6 @@ import {
   SiDotnet,
   SiFlutter,
   SiDart,
-  SiFirebase,
   SiPostgresql,
   SiGoland,
   SiDocker,
@@ -71,8 +78,39 @@ import { BiLogoTypescript } from "react-icons/bi";
 import { DiDotnet, DiMsqlServer, DiPostgresql, DiDart, DiRedis } from "react-icons/di";
 import { VscGithub } from "react-icons/vsc";
 import { IoIosArrowForward } from "react-icons/io";
+import { TbBrandFramerMotion, TbBrandReactNative } from "react-icons/tb";
+
 
 const Projects = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const projectsRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          // Change title when Projects is visible (only on client)
+          if (typeof document !== 'undefined') {
+            document.title = 'Projects | Dulaj Personal';
+          }
+        } else {
+          // Change title back when Projects is not visible (only on client)
+          if (typeof document !== 'undefined') {
+            document.title = 'Dulaj Personal';
+          }
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    if (projectsRef.current) {
+      observer.observe(projectsRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
   // Function to get icon for technology
   const getTechIcon = (techName: string) => {
     const faIconMap: { [key: string]: any } = {
@@ -105,6 +143,7 @@ const Projects = () => {
       'Sketch': faSketch,
       'InVision': faInvision,
       'DigitalOcean': faDigitalOcean,
+
       'Linode': faLinode,
       'Raspberry Pi': faRaspberryPi
     };
@@ -117,18 +156,27 @@ const Projects = () => {
       'Spring Boot': SiSpringboot,
       'Django': SiDjango,
       'Vite': SiVite,
+      'Redis': DiRedis,
       'Nginx': SiNginx,
       'Spacy': SiSpacy,
       'Puppeteer': SiPuppeteer,
+      'Axios': SiAxios,
       'MAMP': SiMamp,
+      'PostgreSQL': DiPostgresql,
+      'Firebase': SiFirebase,
       'Flutter': SiFlutter,
       'FastAPI': SiFastapi,
+      'MySQL': SiMysql,
       'Dart': SiDart,
       'Go': SiGoland,
       'Clerk': SiClerk,
       '.NET': SiDotnet,
+      'MongoDB': SiMongodb,
+      'Hugging Face': SiHuggingface,
+      'Jupyter': SiJupyter,
       'SQL Server': DiMsqlServer,
-      'MongoDB': SiMongodb
+      'Framer Motion': TbBrandFramerMotion,
+      'React Native': TbBrandReactNative
     };
 
     return {
@@ -140,10 +188,10 @@ const Projects = () => {
   const projects = [
     {
       category: 'Final Year Project',
-      title: 'Exam Candidate Verification',
-      description: 'A hierarchical voting system for verifying exam candidates using signatures and handwriting analysis with machine learning.',
+      title: 'ATS Compatible Resume Generator',
+      description: 'A comprehensive AI-powered CV generation and optimization system that creates ATS-friendly resumes using advanced language models and modern web technologies.',
       image: '/api/placeholder/600/400',
-      technologies: ['Python', 'FastAPI', 'Next.js', ],
+      technologies: [ 'Next.js', 'Tailwind CSS', 'Python', 'FastAPI','Hugging Face', 'Jupyter'],
       liveUrl: 'https://github.com',
       githubUrl: 'https://github.com',
       gradient: 'from-emerald-400 to-teal-600',
@@ -156,115 +204,141 @@ const Projects = () => {
       title: 'This Website',
       description: 'A modern, responsive portfolio website built with Next.js, Tailwind CSS, and Framer Motion for smooth animations.',
       image: '/api/placeholder/600/400',
-      technologies: ['Next.js', 'Tailwind CSS', 'Framer Motion', 'TypeScript'],
+      technologies: ['Next.js', 'Tailwind CSS', 'Framer Motion'],
       liveUrl: 'https://github.com',
       githubUrl: 'https://github.com',
-      gradient: 'from-blue-400 to-indigo-600',
-      bgGradient: 'from-blue-50 to-indigo-50',
+      gradient: 'from-emerald-400 to-teal-600',
+      bgGradient: 'from-emerald-50 to-teal-50',
       icon: '💻',
       size: 'medium' // Regular card
     },
     {
-      category: 'ML Project',
-      title: 'Online Signature Verification',
-      description: 'An advanced signature verification system using deep learning and computer vision techniques for fraud detection.',
-      image: '/api/placeholder/600/400',
-      technologies: ['Python', 'TensorFlow', 'Keras', 'OpenCV', 'NumPy'],
+      category: 'Commercial Project',
+      title: 'Event Management and Ticketing Platform',
+      description: 'A comprehensive event management and ticketing platform built with Next.js frontend and .NET Core 9 backend, fully dockerized for production deployment.',
+      image: EventManagementImg,
+      technologies: ['Next.js', 'Tailwind CSS','.NET', 'Docker', 'SQL Server'],
       liveUrl: 'https://github.com',
       githubUrl: 'https://github.com',
-      gradient: 'from-amber-400 to-orange-500',
-      bgGradient: 'from-amber-50 to-orange-50',
+      gradient: 'from-emerald-400 to-teal-600',
+      bgGradient: 'from-emerald-50 to-teal-50',
       icon: '✍️',
       size: 'small' // Small card
     },
     {
       category: 'Blockchain Project',
       title: 'Tea Supply Chain',
-      description: 'A comprehensive database introspection tool that generates Ballerina data models from SQL schemas automatically.',
+      description: 'hybrid solution for managing supply chain workflows across all users, enabling greater transparency, security, and efficiency in the tea trade.',
       image: '/api/placeholder/600/400',
-      technologies: ['Next.js', 'Node.js', 'Tailwind CSS', 'Python', 'Docker', 'Hyperledger Fabric'],
+      technologies: ['Next.js', 'Tailwind CSS',, 'Node.js', 'Docker', 'Redis'],
       liveUrl: 'https://github.com',
       githubUrl: 'https://github.com',
-      gradient: 'from-purple-400 to-pink-500',
-      bgGradient: 'from-purple-50 to-pink-50',
+      gradient: 'from-emerald-400 to-teal-600',
+      bgGradient: 'from-emerald-50 to-teal-50',
       icon: '⚡',
       size: 'large' // 2-column card
     },
     {
-      category: 'Full-Stack Development',
-      title: 'EDEMY Learning Management System',
-      description: 'A complete e-commerce solution with payment processing, inventory management, and admin dashboard.',
+      category: 'Saas Project',
+      title: 'Real Estate Saas Application',
+      description: 'A full-stack Learning Management System built with the MERN stack featuring JWT role-based authentication and Docker containerization.',
       image: '/api/placeholder/600/400',
-      technologies: ['React', 'Node.js', 'MongoDB', 'Express', 'Tailwind CSS'],
+      technologies: ['Next.js', 'Tailwind CSS','.NET', 'MySQL', 'Docker' ],
       liveUrl: 'https://github.com',
       githubUrl: 'https://github.com',
-      gradient: 'from-rose-400 to-pink-500',
-      bgGradient: 'from-rose-50 to-pink-50',
+      gradient: 'from-emerald-400 to-teal-600',
+      bgGradient: 'from-emerald-50 to-teal-50',
       icon: '🛒',
       size: 'medium' // Regular card
     },
     {
-      category: 'Mobile App',
-      title: 'Weather Tracker',
-      description: 'A beautiful weather app with location-based forecasts and interactive maps.',
+      category: 'Full-Stack Development',
+      title: 'EDEMY Learning Management System',
+      description: 'A full-stack Learning Management System built with the MERN stack featuring JWT role-based authentication and Docker containerization.',
       image: '/api/placeholder/600/400',
-      technologies: ['React Native', 'Expo', 'OpenWeather API'],
+      technologies: ['React', 'Tailwind CSS','Node.js', 'Express', 'MongoDB', 'Docker' ],
       liveUrl: 'https://github.com',
       githubUrl: 'https://github.com',
-      gradient: 'from-cyan-400 to-blue-500',
-      bgGradient: 'from-cyan-50 to-blue-50',
+      gradient: 'from-emerald-400 to-teal-600',
+      bgGradient: 'from-emerald-50 to-teal-50',
+      icon: '🛒',
+      size: 'medium' // Regular card
+    },
+    {
+      category: 'Mobile Application',
+      title: 'Salon and Spa Appointment Booking App',
+      description: 'A beautiful weather app with location-based forecasts and interactive maps.',
+      image: '/api/placeholder/600/400',
+      technologies: ['Flutter', 'Firebase'],
+      liveUrl: 'https://github.com',
+      githubUrl: 'https://github.com',
+      gradient: 'from-emerald-400 to-teal-600',
+      bgGradient: 'from-emerald-50 to-teal-50',
       icon: '🌤️',
       size: 'small' // Small card
     },
     {
-      category: 'AI Chatbot',
-      title: 'Customer Support Assistant',
+      category: 'Intern Project',
+      title: 'E-Learning Application',
       description: 'An intelligent chatbot powered by OpenAI GPT for automated customer support.',
       image: '/api/placeholder/600/400',
-      technologies: ['Python', 'OpenAI API', 'FastAPI', 'Redis', 'Docker'],
+      technologies: ['Flutter', '.NET', 'MySQL'],
       liveUrl: 'https://github.com',
       githubUrl: 'https://github.com',
-      gradient: 'from-violet-400 to-purple-500',
-      bgGradient: 'from-violet-50 to-purple-50',
+      gradient: 'from-emerald-400 to-teal-600',
+      bgGradient: 'from-emerald-50 to-teal-50',
       icon: '🤖',
       size: 'wide' // Horizontal spanning card
     },
     {
-      category: 'Data Visualization',
-      title: 'Analytics Dashboard',
+      category: 'Second Year Software Project',
+      title: 'Highway Bus Management System',
       description: 'Interactive dashboards for business intelligence and data visualization.',
       image: '/api/placeholder/600/400',
-      technologies: ['React', 'D3.js', 'Chart.js', 'Node.js', 'MongoDB'],
+      technologies: ['React', 'React Native', 'Tailwind CSS', 'Node.js', 'Express', 'MongoDB', 'Firebase'],
       liveUrl: 'https://github.com',
       githubUrl: 'https://github.com',
-      gradient: 'from-indigo-400 to-blue-500',
-      bgGradient: 'from-indigo-50 to-blue-50',
+      gradient: 'from-emerald-400 to-teal-600',
+      bgGradient: 'from-emerald-50 to-teal-50',
       icon: '📈',
       size: 'medium' // Regular card
     },
     {
-      category: 'Blockchain',
-      title: 'NFT Marketplace',
-      description: 'A decentralized marketplace for buying and selling NFTs with smart contracts.',
-      image: '/api/placeholder/600/400',
-      technologies: ['Solidity', 'Web3.js', 'React', 'Ethereum', 'IPFS'],
+      category: 'Personal Project',
+      title: 'Expense Tracker',
+      description: 'Modern, responsive expense tracking application with dark mode, customizable dashboard widgets, real-time updates, and mobile-optimized design.',
+      image: ExpenseTrackerImg,
+      technologies: ['Next.js', 'Tailwind CSS', 'Node.js', 'Express', 'MongoDB', 'Clerk', 'Axios'],
       liveUrl: 'https://github.com',
       githubUrl: 'https://github.com',
-      gradient: 'from-yellow-400 to-orange-500',
-      bgGradient: 'from-yellow-50 to-orange-50',
+      gradient: 'from-emerald-400 to-teal-600',
+      bgGradient: 'from-emerald-50 to-teal-50',
       icon: '🎨',
       size: 'small' // Small card
     },
     {
-      category: 'DevOps',
-      title: 'CI/CD Pipeline',
+      category: 'Full-Stack Development',
+      title: 'Job Portal',
       description: 'Automated deployment pipeline with Docker, Kubernetes, and monitoring.',
       image: '/api/placeholder/600/400',
-      technologies: ['Docker', 'Kubernetes', 'Jenkins', 'AWS', 'Terraform'],
+      technologies: ['React', 'Tailwind CSS', 'Node.js', 'Express', 'MongoDB', 'Clerk'],
       liveUrl: 'https://github.com',
       githubUrl: 'https://github.com',
-      gradient: 'from-green-400 to-emerald-500',
-      bgGradient: 'from-green-50 to-emerald-50',
+      gradient: 'from-emerald-400 to-teal-600',
+      bgGradient: 'from-emerald-50 to-teal-50',
+      icon: '🚀',
+      size: 'large' // 2-column card
+    },
+    {
+      category: 'Full-Stack Development',
+      title: 'Task Management Application',
+      description: 'Automated deployment pipeline with Docker, Kubernetes, and monitoring.',
+      image: '/api/placeholder/600/400',
+      technologies: ['React', 'Tailwind CSS', 'Node.js', 'Express', 'MongoDB', 'Docker'],
+      liveUrl: 'https://github.com',
+      githubUrl: 'https://github.com',
+      gradient: 'from-emerald-400 to-teal-600',
+      bgGradient: 'from-emerald-50 to-teal-50',
       icon: '🚀',
       size: 'large' // 2-column card
     }
@@ -295,6 +369,36 @@ const Projects = () => {
     }
   };
 
+  const leftCardVariants = {
+    hidden: { 
+      opacity: 0, 
+      x: -100,
+      y: 50,
+      scale: 0.9
+    },
+    visible: { 
+      opacity: 1, 
+      x: 0,
+      y: 0,
+      scale: 1
+    }
+  };
+
+  const rightCardVariants = {
+    hidden: { 
+      opacity: 0, 
+      x: 100,
+      y: 50,
+      scale: 0.9
+    },
+    visible: { 
+      opacity: 1, 
+      x: 0,
+      y: 0,
+      scale: 1
+    }
+  };
+
   const hoverVariants = {
     hover: {
       y: -8,
@@ -303,7 +407,7 @@ const Projects = () => {
   };
 
   return (
-    <section id="projects" className="py-20">
+    <section id="projects" ref={projectsRef} className="py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header Section */}
         <motion.div 
@@ -321,14 +425,8 @@ const Projects = () => {
           </p>
         </motion.div>
 
-        {/* Alternating Row Layout */}
-        <motion.div 
-          className="space-y-6"
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
-        >
+        {/* Responsive Layout - Single column on mobile, alternating on desktop */}
+        <div className="space-y-6 md:space-y-6">
           {projects.map((project, index) => {
             // Determine if this is an even or odd row for alternating layout
             const isEvenRow = Math.floor(index / 2) % 2 === 0;
@@ -375,7 +473,7 @@ const Projects = () => {
 
             const isWideCard = project.size === 'wide';
 
-            // Only render every other project to create rows with 2 columns each
+            // On mobile: show single column, on desktop: show alternating layout
             if (index % 2 === 0) {
               const currentProject = project;
               const nextProject = projects[index + 1];
@@ -383,15 +481,18 @@ const Projects = () => {
               return (
                 <motion.div
                   key={`row-${index}`}
-                  variants={cardVariants}
-                  className="flex gap-6"
+                  className="flex flex-col md:flex-row gap-6"
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true, margin: "-50px" }}
                   transition={{ duration: 0.6, ease: "easeOut" }}
                 >
-                  {/* First Column */}
+                  {/* First Column - Always comes from left */}
                   <motion.div
                     whileHover="hover"
-                    className={`group ${getColumnWidths()}`}
-                    transition={{ duration: 0.3, ease: "easeOut" }}
+                    className={`group w-full md:${getColumnWidths()}`}
+                    variants={leftCardVariants}
+                    transition={{ duration: 0.6, ease: "easeOut" }}
                   >
                     <motion.div 
                       className={`bg-gradient-to-br ${currentProject.bgGradient} rounded-3xl p-4 h-full shadow-lg hover:shadow-2xl transition-shadow duration-300 border border-white/20`}
@@ -399,13 +500,29 @@ const Projects = () => {
                       transition={{ duration: 0.3, ease: "easeOut" }}
                     >
                       {/* Project Image/Visual */}
-                      <div className={`w-full h-80 bg-gradient-to-br ${currentProject.gradient} rounded-2xl mb-6 flex items-center justify-center relative overflow-hidden`}>
-                        <div className="text-5xl font-bold text-white/90">
-                          {currentProject.title.charAt(0)}
-                        </div>
-                        {/* Decorative elements */}
-                        <div className="absolute top-4 right-4 w-20 h-20 bg-white/20 rounded-full blur-2xl"></div>
-                        <div className="absolute bottom-4 left-4 w-16 h-16 bg-white/20 rounded-full blur-xl"></div>
+                      <div className={`w-full h-80 rounded-2xl mb-6 flex items-center justify-center relative overflow-hidden`}>
+                        {currentProject.image && typeof currentProject.image === 'string' && currentProject.image.startsWith('/') ? (
+                          <img 
+                            src={currentProject.image} 
+                            alt={currentProject.title}
+                            className="w-full h-full object-cover rounded-2xl"
+                          />
+                        ) : currentProject.image ? (
+                          <img 
+                            src={typeof currentProject.image === 'string' ? currentProject.image : currentProject.image.src} 
+                            alt={currentProject.title}
+                            className="w-full h-full object-cover rounded-2xl"
+                          />
+                        ) : (
+                          <div className={`w-full h-full bg-gradient-to-br ${currentProject.gradient} rounded-2xl flex items-center justify-center relative`}>
+                            <div className="text-5xl font-bold text-white/90">
+                              {currentProject.title.charAt(0)}
+                            </div>
+                            {/* Decorative elements */}
+                            <div className="absolute top-4 right-4 w-20 h-20 bg-white/20 rounded-full blur-2xl"></div>
+                            <div className="absolute bottom-4 left-4 w-16 h-16 bg-white/20 rounded-full blur-xl"></div>
+                          </div>
+                        )}
                       </div>
                       
                             {/* Project Header */}
@@ -427,7 +544,7 @@ const Projects = () => {
                         
                         {/* Technologies */}
                         <div className="flex flex-wrap gap-3">
-                          {currentProject.technologies.slice(0, 6).map((tech) => (
+                          {currentProject.technologies.map((tech) => (
                             <motion.div
                               key={tech}
                               className="text-gray-600 flex items-center justify-center"
@@ -435,16 +552,20 @@ const Projects = () => {
                               transition={{ duration: 0.2 }}
                               title={tech}
                             >
-                              {getTechIcon(tech).reactIcon ? (
-                                <div className="w-8 h-8">
-                                  {React.createElement(getTechIcon(tech).reactIcon, { className: "w-8 h-8" })}
-                                </div>
-                              ) : (
-                                <FontAwesomeIcon 
-                                  icon={getTechIcon(tech).faIcon} 
-                                  className="w-8 h-8"
-                                />
-                              )}
+                              {(() => {
+                                if (!tech) return null;
+                                const iconData = getTechIcon(tech);
+                                return iconData.reactIcon ? (
+                                  <div className="w-8 h-8">
+                                    {React.createElement(iconData.reactIcon as any, { className: "w-8 h-8" })}
+                                  </div>
+                                ) : (
+                                  <FontAwesomeIcon 
+                                    icon={iconData.faIcon} 
+                                    className="w-8 h-8"
+                                  />
+                                );
+                              })()}
                             </motion.div>
                           ))}
                         </div>
@@ -453,12 +574,13 @@ const Projects = () => {
                     </motion.div>
                   </motion.div>
 
-                  {/* Second Column */}
+                  {/* Second Column - Always comes from right */}
                   {nextProject && (
                     <motion.div
                       whileHover="hover"
-                      className={`group ${isEvenRow ? 'w-2/5' : 'w-3/5'}`}
-                      transition={{ duration: 0.3, ease: "easeOut" }}
+                      className={`group w-full md:${isEvenRow ? 'w-2/5' : 'w-3/5'}`}
+                      variants={rightCardVariants}
+                      transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
                     >
                       <motion.div 
                         className={`bg-gradient-to-br ${nextProject.bgGradient} rounded-3xl p-4 h-full shadow-lg hover:shadow-2xl transition-shadow duration-300 border border-white/20`}
@@ -466,13 +588,29 @@ const Projects = () => {
                         transition={{ duration: 0.3, ease: "easeOut" }}
                       >
                         {/* Project Image/Visual */}
-                        <div className={`w-full h-80 bg-gradient-to-br ${nextProject.gradient} rounded-2xl mb-6 flex items-center justify-center relative overflow-hidden`}>
-                          <div className="text-5xl font-bold text-white/90">
-                            {nextProject.title.charAt(0)}
-                          </div>
-                          {/* Decorative elements */}
-                          <div className="absolute top-4 right-4 w-20 h-20 bg-white/20 rounded-full blur-2xl"></div>
-                          <div className="absolute bottom-4 left-4 w-16 h-16 bg-white/20 rounded-full blur-xl"></div>
+                        <div className={`w-full h-80 rounded-2xl mb-6 flex items-center justify-center relative overflow-hidden`}>
+                          {nextProject.image && typeof nextProject.image === 'string' && nextProject.image.startsWith('/') ? (
+                            <img 
+                              src={nextProject.image} 
+                              alt={nextProject.title}
+                              className="w-full h-full object-cover rounded-2xl"
+                            />
+                          ) : nextProject.image ? (
+                            <img 
+                              src={typeof nextProject.image === 'string' ? nextProject.image : nextProject.image.src} 
+                              alt={nextProject.title}
+                              className="w-full h-full object-cover rounded-2xl"
+                            />
+                          ) : (
+                            <div className={`w-full h-full bg-gradient-to-br ${nextProject.gradient} rounded-2xl flex items-center justify-center relative`}>
+                              <div className="text-5xl font-bold text-white/90">
+                                {nextProject.title.charAt(0)}
+                              </div>
+                              {/* Decorative elements */}
+                              <div className="absolute top-4 right-4 w-20 h-20 bg-white/20 rounded-full blur-2xl"></div>
+                              <div className="absolute bottom-4 left-4 w-16 h-16 bg-white/20 rounded-full blur-xl"></div>
+                            </div>
+                          )}
                         </div>
                         
                               {/* Project Header */}
@@ -494,7 +632,7 @@ const Projects = () => {
                           
                           {/* Technologies */}
                           <div className="flex flex-wrap gap-3">
-                            {nextProject.technologies.slice(0, 6).map((tech) => (
+                            {nextProject.technologies.map((tech) => (
                               <motion.div
                                 key={tech}
                                 className="text-gray-600 flex items-center justify-center"
@@ -502,16 +640,20 @@ const Projects = () => {
                                 transition={{ duration: 0.2 }}
                                 title={tech}
                               >
-                                {getTechIcon(tech).reactIcon ? (
-                                  <div className="w-8 h-8">
-                                    {React.createElement(getTechIcon(tech).reactIcon, { className: "w-8 h-8" })}
-                                  </div>
-                                ) : (
-                                  <FontAwesomeIcon 
-                                    icon={getTechIcon(tech).faIcon} 
-                                    className="w-8 h-8"
-                                  />
-                                )}
+                                {(() => {
+                                  if (!tech) return null;
+                                  const iconData = getTechIcon(tech);
+                                  return iconData.reactIcon ? (
+                                    <div className="w-8 h-8">
+                                      {React.createElement(iconData.reactIcon as any, { className: "w-8 h-8" })}
+                                    </div>
+                                  ) : (
+                                    <FontAwesomeIcon 
+                                      icon={iconData.faIcon} 
+                                      className="w-8 h-8"
+                                    />
+                                  );
+                                })()}
                               </motion.div>
                             ))}
                           </div>
@@ -526,7 +668,7 @@ const Projects = () => {
             
             return null; // Skip odd-indexed projects as they're handled in pairs
           })}
-        </motion.div>
+        </div>
 
        
       </div>

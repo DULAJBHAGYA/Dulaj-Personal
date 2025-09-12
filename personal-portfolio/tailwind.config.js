@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        'tablet': '822px',
+      },
       colors: {
         'portfolio-blue': '#6366f1',
         'portfolio-purple': '#8b5cf6',
@@ -26,6 +29,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ['var(--font-poppins)', 'system-ui', 'sans-serif'],
+        blanka: ['var(--font-blanka)', 'monospace'],
       },
       animation: {
         'float': 'float 6s ease-in-out infinite',
