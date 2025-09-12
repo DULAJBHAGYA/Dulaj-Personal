@@ -113,6 +113,7 @@ const Projects = () => {
 
   // Function to get icon for technology
   const getTechIcon = (techName: string) => {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const faIconMap: { [key: string]: any } = {
       'Python': faPython,
       'React': faReact,
@@ -148,6 +149,7 @@ const Projects = () => {
       'Raspberry Pi': faRaspberryPi
     };
 
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const reactIconMap: { [key: string]: any } = {
       'TypeScript': BiLogoTypescript,
       'Tailwind CSS': SiTailwindcss,
@@ -557,6 +559,7 @@ const Projects = () => {
                                 const iconData = getTechIcon(tech);
                                 return iconData.reactIcon ? (
                                   <div className="w-8 h-8">
+                                    {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
                                     {React.createElement(iconData.reactIcon as any, { className: "w-8 h-8" })}
                                   </div>
                                 ) : (
@@ -645,7 +648,8 @@ const Projects = () => {
                                   const iconData = getTechIcon(tech);
                                   return iconData.reactIcon ? (
                                     <div className="w-8 h-8">
-                                      {React.createElement(iconData.reactIcon as any, { className: "w-8 h-8" })}
+                                      {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
+                                    {React.createElement(iconData.reactIcon as any, { className: "w-8 h-8" })}
                                     </div>
                                   ) : (
                                     <FontAwesomeIcon 
