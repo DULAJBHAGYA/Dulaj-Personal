@@ -7,7 +7,6 @@ import schoolImage from '@/assets/images/School.jpg';
 import universityImage from '@/assets/images/uniImg.png';
 import about1Image from '@/assets/images/about1.png';
 import about2Image from '@/assets/images/about2.png';
-import about3Image from '@/assets/images/About3.jpg';
 import about4Image from '@/assets/images/About4.jpg';
 import sports1Image from '@/assets/images/Sports1.jpeg';
 import sports2Image from '@/assets/images/Sports2.jpeg';
