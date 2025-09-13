@@ -23,6 +23,10 @@ import music6Image from '@/assets/images/music6.jpg';
 import books2Image from '@/assets/images/books2.jpg';
 import movie1Image from '@/assets/images/movie.jpg';
 import tvseries1Image from '@/assets/images/tvseries.jpg';
+import hobbies1Image from '@/assets/images/hobby1.jpg';
+import hobbies2Image from '@/assets/images/hobby2.png';
+import hobbies3Image from '@/assets/images/hobby3.jpg';
+import hobbies4Image from '@/assets/images/hobby4.jpg';
 
 
 
@@ -147,7 +151,7 @@ const About = () => {
               About Me
             </h3>
             
-            <p className="text-gray-600 text-xl  mb-6 leading-relaxed">
+            <p className="text-gray-600 text-base sm:text-lg md:text-xl mb-6 leading-relaxed">
               I&apos;m a fresh graduate from UOM with a passion for 
               Full Stack development and DevOps. I love building scalable applications and 
               implementing efficient deployment pipelines that enhance both development 
@@ -160,7 +164,7 @@ const About = () => {
              
              <div className="bg-white/50 rounded-lg">
                <h4 className="text-xl  font-semibold text-gray-900 mb-2">Software Engineer Intern (2024 Feb - 2024 Aug)</h4>
-                <p className="text-gray-600 text-xl  mb-2">
+                <p className="text-gray-600 text-base sm:text-lg md:text-xl mb-2">
                   Completed 6 months internship in <a href="https://futurecx.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 ">Future CX</a> as Software Engineer in the mobile development team.
                   You can find more about my internship project at <a href="#projects" className="text-blue-600 hover:text-blue-800 ">Projects</a> in the Projects section
                 </p>
@@ -306,13 +310,13 @@ const About = () => {
                    {/* Left Column - Text Content */}
                    <div className="flex items-center justify-center">
                      <div className="space-y-4">
-                       <p className="text-gray-600 leading-relaxed text-lg text-justify">
+                       <p className="text-gray-600 leading-relaxed text-base sm:text-lg md:text-xl text-justify">
                          I have a deep passion for Sri Lankan Classical Music, particularly the enchanting <span className="font-semibold">Nadhagama</span> vibe that captures the soul of our cultural heritage. The melodic rhythms and traditional instruments create a unique musical experience that I find truly captivating.
                        </p>
-                       <p className="text-gray-600 leading-relaxed text-lg text-justify">
+                       <p className="text-gray-600 leading-relaxed text-base sm:text-lg md:text-xl text-justify">
                          Among my favorite artists, <span className="font-semibold">Dhanith Sri</span> and <span className="font-semibold">Suni Edirisinghe</span> stand out for their exceptional vocal talent and ability to blend traditional elements with contemporary sounds. Their music resonates with me on both emotional and cultural levels.
                        </p>
-                       <p className="text-gray-600 leading-relaxed text-lg text-justify">
+                       <p className="text-gray-600 leading-relaxed text-base sm:text-lg md:text-xl text-justify">
                          I also enjoy exploring modern genres, especially EDM artists like <span className="font-semibold">Chainsmokers</span> and <span className="font-semibold">Coldplay</span>, who bring innovative electronic sounds and powerful lyrics. This diverse musical taste allows me to appreciate both the rich traditions of Sri Lankan music and the dynamic energy of contemporary global sounds.
                        </p>
                      </div>
@@ -465,33 +469,33 @@ const About = () => {
                      </p>
                    </div>
                    <div className="grid grid-cols-2 gap-4">
-                     <div className="relative h-48 rounded-2xl overflow-hidden">
+                     <div className="relative h-32 sm:h-40 md:h-48 rounded-2xl overflow-hidden">
                        <Image
-                         src={sports1Image}
+                         src={hobbies1Image}
                          alt="Hiking adventure"
                          fill
                          className="object-cover"
                        />
                      </div>
-                     <div className="relative h-48 rounded-2xl overflow-hidden">
+                     <div className="relative h-32 sm:h-40 md:h-48 rounded-2xl overflow-hidden">
                        <Image
-                         src={sports2Image}
+                         src={hobbies3Image}
                          alt="Traveling"
                          fill
                          className="object-cover"
                        />
                      </div>
-                     <div className="relative h-48 rounded-2xl overflow-hidden">
+                     <div className="relative h-32 sm:h-40 md:h-48 rounded-2xl overflow-hidden">
                        <Image
-                         src={sports3Image}
+                         src={hobbies4Image}
                          alt="Cricket match"
                          fill
                          className="object-cover"
                        />
                      </div>
-                     <div className="relative h-48 rounded-2xl overflow-hidden">
+                     <div className="relative h-32 sm:h-40 md:h-48 rounded-2xl overflow-hidden">
                        <Image
-                         src={sports4Image}
+                         src={hobbies2Image}
                          alt="Rugby game"
                          fill
                          className="object-cover"

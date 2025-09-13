@@ -502,7 +502,7 @@ const Projects = () => {
                       transition={{ duration: 0.3, ease: "easeOut" }}
                     >
                       {/* Project Image/Visual */}
-                      <div className={`w-full h-80 rounded-2xl mb-6 flex items-center justify-center relative overflow-hidden`}>
+                      <div className={`w-full h-64 sm:h-72 md:h-80 rounded-2xl mb-6 flex items-center justify-center relative overflow-hidden`}>
                         {currentProject.image && currentProject.image !== '/api/placeholder/600/400' ? (
                           <img 
                             src={typeof currentProject.image === 'string' ? currentProject.image : currentProject.image.src} 
@@ -585,7 +585,7 @@ const Projects = () => {
                         transition={{ duration: 0.3, ease: "easeOut" }}
                       >
                         {/* Project Image/Visual */}
-                        <div className={`w-full h-80 rounded-2xl mb-6 flex items-center justify-center relative overflow-hidden`}>
+                        <div className={`w-full h-64 sm:h-72 md:h-80 rounded-2xl mb-6 flex items-center justify-center relative overflow-hidden`}>
                           {nextProject.image && nextProject.image !== '/api/placeholder/600/400' ? (
                             <img 
                               src={typeof nextProject.image === 'string' ? nextProject.image : nextProject.image.src} 
