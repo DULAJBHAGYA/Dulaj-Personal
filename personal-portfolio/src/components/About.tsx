@@ -23,10 +23,6 @@ import music6Image from '@/assets/images/music6.jpg';
 import books2Image from '@/assets/images/books2.jpg';
 import movie1Image from '@/assets/images/movie.jpg';
 import tvseries1Image from '@/assets/images/tvseries.jpg';
-import hobby1Image from '@/assets/images/hobby1.jpg';
-import hobby2Image from '@/assets/images/hobby2.png';
-import hobby3Image from '@/assets/images/hobby3.jpg';
-import hobby4Image from '@/assets/images/hobby4.jpg';
 
 
 
@@ -85,11 +81,11 @@ const About = () => {
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
             }`}
           >
-             <div className="grid grid-cols-12 gap-3 sm:gap-4 md:gap-6 h-[400px] sm:h-[450px] md:h-[500px]">
+             <div className="grid grid-cols-12 gap-2 xs:gap-3 sm:gap-4 md:gap-5 lg:gap-6 h-[300px] xs:h-[350px] sm:h-[400px] md:h-[450px] lg:h-[500px] xl:h-[550px] 2xl:h-[600px]">
               {/* First Column: 80% Image, 20% Blank */}
               <div className="col-span-3 flex flex-col h-full">
                 {/* 80% Image */}
-                <div className="h-[60%] bg-white rounded-2xl sm:rounded-3xl overflow-hidden">
+                <div className="h-[60%] rounded-xl xs:rounded-2xl sm:rounded-3xl overflow-hidden">
                   <Image
                     src={about2Image}
                     alt="About 2"
@@ -105,16 +101,16 @@ const About = () => {
                  {/* 60% Name */}
                  <div className="h-[30%] flex items-center justify-start">
                    <div className="text-left">
-                     <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold text-gray-900 leading-tight">
+                     <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-gray-900 leading-tight">
                        Dulaj
                      </h1>
-                     <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-regular text-gray-900 leading-tight">
+                     <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-regular text-gray-900 leading-tight">
                        Upananda
                      </h2>
                    </div>
                  </div>
                 {/* 20% Image */}
-                <div className="h-[50%] bg-white rounded-2xl sm:rounded-3xl overflow-hidden">
+                <div className="h-[50%] rounded-xl xs:rounded-2xl sm:rounded-3xl overflow-hidden">
                   <Image
                     src={about1Image}
                     alt="About 1"
@@ -129,12 +125,12 @@ const About = () => {
               <div className="col-span-3 flex flex-col h-full">
                 {/* 40% Blank Space */}
                 <div className="h-[40%]"></div>
-                {/* 60% Image - Left Aligned */}
-                <div className="h-[60%] bg-white rounded-2xl sm:rounded-3xl overflow-hidden flex justify-start">
+                {/* 60% Image */}
+                <div className="h-[60%] rounded-xl xs:rounded-2xl sm:rounded-3xl overflow-hidden">
                   <Image
                     src={about4Image}
                     alt="About 4"
-                    className="h-full object-cover object-left"
+                    className="w-full h-full object-cover"
                   />
                 </div>
               </div>
@@ -147,11 +143,11 @@ const About = () => {
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
             }`}
           >
-            <h3 className="text-lg sm:text-xl md:text-2xl font-regular text-black mb-6">
+            <h3 className="text-2xl font-regular text-black mb-6">
               About Me
             </h3>
             
-            <p className="text-gray-600 text-base sm:text-lg md:text-xl mb-6 leading-relaxed">
+            <p className="text-gray-600 text-xl  mb-6 leading-relaxed">
               I&apos;m a fresh graduate from UOM with a passion for 
               Full Stack development and DevOps. I love building scalable applications and 
               implementing efficient deployment pipelines that enhance both development 
@@ -160,11 +156,11 @@ const About = () => {
           </div>
 
            <div className="space-y-6">
-             <h3 className="text-lg sm:text-xl md:text-2xl font-regular text-black mb-6">Experience</h3>
+             <h3 className="text-2xl font-regular text-black mb-6">Experience</h3>
              
              <div className="bg-white/50 rounded-lg">
-               <h4 className="text-base sm:text-lg md:text-xl font-semibold text-gray-900 mb-2">Software Engineer Intern (2024 Feb - 2024 Aug)</h4>
-                <p className="text-gray-600 text-base sm:text-lg md:text-xl mb-2">
+               <h4 className="text-xl  font-semibold text-gray-900 mb-2">Software Engineer Intern (2024 Feb - 2024 Aug)</h4>
+                <p className="text-gray-600 text-xl  mb-2">
                   Completed 6 months internship in <a href="https://futurecx.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 ">Future CX</a> as Software Engineer in the mobile development team.
                   You can find more about my internship project at <a href="#projects" className="text-blue-600 hover:text-blue-800 ">Projects</a> in the Projects section
                 </p>
@@ -173,13 +169,13 @@ const About = () => {
            </div>
 
            <div className="space-y-6">
-             <h3 className="text-lg sm:text-xl md:text-2xl font-regular text-black mb-6">Education</h3>
+             <h3 className="text-2xl font-regular text-black mb-6">Education</h3>
              
              {/* Row 1: 50% - 50% */}
              <div className="grid grid-cols-2 gap-6">
                <div className="bg-white/50 rounded-lg h-72 flex flex-col justify-center">
-                 <h4 className="text-base sm:text-lg md:text-xl font-semibold text-gray-900 mb-2">University of Moratuwa (2021 - 2025)</h4>
-                 <p className="text-gray-600 text-base sm:text-lg md:text-xl mb-2">
+                 <h4 className="text-xl  font-semibold text-gray-900 mb-2">University of Moratuwa (2021 - 2025)</h4>
+                 <p className="text-gray-600 text-xl mb-2">
                   Pursued Bachelor of Science (Hons) in Information Technology & Management from Faculty of IT, <a href="https://uom.lk/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">University of Moratuwa</a>. 
                   </p>
                </div>
@@ -210,10 +206,10 @@ const About = () => {
                    </div>
                  </div>
                <div className="bg-white/50 rounded-lg p-6 h-72 flex flex-col justify-center">
-                <h4 className="text-base sm:text-lg md:text-xl font-semibold text-gray-900 mb-2">
+                <h4 className="text-xl  font-semibold text-gray-900 mb-2">
                     SIBA Campus (2019 - 2020)
                 </h4>
-                  <p className="text-gray-600 text-base sm:text-lg md:text-xl">
+                  <p className="text-gray-600 text-xl">
                    Completed Diploma in IT and Diploma in English at <a href="https://siba.edu.lk/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">SIBA Campus, Kandy</a>. 
                    </p>
                  </div>
@@ -222,8 +218,8 @@ const About = () => {
              {/* Row 3: 50% - 50% */}
              <div className="grid grid-cols-2 gap-6">
                <div className="bg-white/50 rounded-lg p-6 h-72 flex flex-col justify-center">
-               <h4 className="text-base sm:text-lg md:text-xl font-semibold text-gray-900 mb-2">Kingswood College, Kandy (2004 - 2017)</h4>
-                  <p className="text-gray-600 text-base sm:text-lg md:text-xl">
+               <h4 className="text-xl font-semibold text-gray-900 mb-2">Kingswood College, Kandy (2004 - 2017)</h4>
+                  <p className="text-gray-600 text-xl">
                   studied primary and secondary studies at <a href="https://kingswood.lk/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">Kingswood College, Kandy</a>. I did my A/Ls in the Biology stream and I was able to secure 2As and B passes.
                    </p>
                  </div>
@@ -246,19 +242,19 @@ const About = () => {
 
            {/* My Favorites Section */}
            <div className="space-y-8">
-             <h3 className="text-lg sm:text-xl md:text-2xl font-regular text-black mb-4 md:mb-8">My Favorites</h3>
+             <h3 className="text-2xl font-regular text-black mb-8">My Favorites</h3>
              
-             <div className="space-y-4 md:space-y-6">
+             <div className="space-y-6">
                {/* Rugby and Cricket */}
                <div className="bg-white/50 rounded-lg p-10">
-                 <h4 className="text-base sm:text-lg md:text-xl font-semibold text-gray-900 mb-4 flex items-center">
+                 <h4 className="text-xl font-semibold text-gray-900 mb-4 flex items-center">
                    Rugby & Cricket
                  </h4>
                  
-                 <div className="flex flex-col md:grid md:grid-cols-2 gap-6 mt-6">
-                   {/* Image Carousel - Above text on mobile, left on desktop */}
-                   <div className="flex items-center justify-center order-1 md:order-1">
-                     <div className="w-full h-80 md:h-96 rounded-lg overflow-hidden relative">
+                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mt-6">
+                   {/* Left Column - Image Carousel */}
+                   <div className="flex items-center justify-center order-2 md:order-1">
+                     <div className="w-full h-64 xs:h-72 sm:h-80 md:h-96 rounded-lg overflow-hidden relative">
                        <AnimatePresence mode="wait">
                          <motion.div
                            key={currentImageIndex}
@@ -293,9 +289,9 @@ const About = () => {
                      </div>
                    </div>
                    
-                   {/* Paragraph - Below image on mobile, right on desktop */}
-                   <div className="flex items-center order-2 md:order-2">
-                     <p className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed text-justify">
+                   {/* Right Column - Paragraph */}
+                   <div className="flex items-center order-1 md:order-2">
+                     <p className="text-gray-600 text-base sm:text-lg leading-relaxed text-justify">
                        I am a big fan of <span className="font-semibold">Kandy Sports Club</span> and <span className="font-semibold">Springboks</span> rugby teams. I also have a deep love for  
                         <span className="font-semibold"> Sri Lankan cricket</span> and follow the national team passionately. These sports have been an integral 
                        part of my life, teaching me valuable lessons about teamwork, discipline, and national pride. 
@@ -307,20 +303,20 @@ const About = () => {
                          
                {/* Music */}
                <div className="bg-white/50 rounded-lg p-10">
-                 <h4 className="text-base sm:text-lg md:text-xl font-semibold text-gray-900 mb-6">
+                 <h4 className="text-xl font-semibold text-gray-900 mb-6">
                    Music
                  </h4>
                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                    {/* Left Column - Text Content */}
                    <div className="flex items-center justify-center">
                      <div className="space-y-4">
-                       <p className="text-gray-600 leading-relaxed text-sm sm:text-base md:text-lg text-justify">
+                       <p className="text-gray-600 leading-relaxed text-lg text-justify">
                          I have a deep passion for Sri Lankan Classical Music, particularly the enchanting <span className="font-semibold">Nadhagama</span> vibe that captures the soul of our cultural heritage. The melodic rhythms and traditional instruments create a unique musical experience that I find truly captivating.
                        </p>
-                       <p className="text-gray-600 leading-relaxed text-sm sm:text-base md:text-lg text-justify">
+                       <p className="text-gray-600 leading-relaxed text-lg text-justify">
                          Among my favorite artists, <span className="font-semibold">Dhanith Sri</span> and <span className="font-semibold">Suni Edirisinghe</span> stand out for their exceptional vocal talent and ability to blend traditional elements with contemporary sounds. Their music resonates with me on both emotional and cultural levels.
                        </p>
-                       <p className="text-gray-600 leading-relaxed text-sm sm:text-base md:text-lg text-justify">
+                       <p className="text-gray-600 leading-relaxed text-lg text-justify">
                          I also enjoy exploring modern genres, especially EDM artists like <span className="font-semibold">Chainsmokers</span> and <span className="font-semibold">Coldplay</span>, who bring innovative electronic sounds and powerful lyrics. This diverse musical taste allows me to appreciate both the rich traditions of Sri Lankan music and the dynamic energy of contemporary global sounds.
                        </p>
                      </div>
@@ -328,18 +324,18 @@ const About = () => {
                    
                    {/* Right Column - Complex Photo Grid */}
                    <div className="flex items-center justify-center">
-                     <div className="w-full h-[420px] lg:h-[480px] xl:h-[520px] 2xl:h-[560px] overflow-hidden">
+                     <div className="w-full h-[400px] overflow-hidden">
                        <div className="grid grid-cols-3 gap-2 h-full">
                          {/* First Column - 60% and 40% split */}
                          <div className="flex flex-col gap-2 h-full">
-                           <div className="rounded-lg overflow-hidden flex-[3] min-h-0">
+                           <div className="rounded-lg overflow-hidden h-[240px]">
                              <Image
                                src={music5Image}
                                alt="Music 1"
                                className="w-full h-full object-cover"
                              />
                            </div>
-                           <div className="rounded-lg overflow-hidden flex-[2] min-h-0">
+                           <div className="rounded-lg overflow-hidden h-[160px]">
                              <Image
                                src={music3Image}
                                alt="Music 2"
@@ -350,14 +346,14 @@ const About = () => {
                          
                          {/* Second Column */}
                          <div className="flex flex-col gap-2 h-full">
-                           <div className="rounded-lg overflow-hidden flex-1 min-h-0">
+                           <div className="rounded-lg overflow-hidden flex-1">
                              <Image
                                src={music4Image}
                                alt="Music 3"
                                className="w-full h-full object-cover"
                              />
                            </div>
-                           <div className="rounded-lg overflow-hidden flex-1 min-h-0">
+                           <div className="rounded-lg overflow-hidden flex-1">
                              <Image
                                src={music1Image}
                                alt="Music 4"
@@ -368,14 +364,14 @@ const About = () => {
                          
                          {/* Third Column - 30% and 70% split */}
                          <div className="flex flex-col gap-2 h-full">
-                           <div className="rounded-lg overflow-hidden flex-[1] min-h-0">
+                           <div className="rounded-lg overflow-hidden h-[120px]">
                              <Image
                                src={music2Image}
                                alt="Music 5"
                                className="w-full h-full object-cover"
                              />
                            </div>
-                           <div className="rounded-lg overflow-hidden flex-[3] min-h-0">
+                           <div className="rounded-lg overflow-hidden h-[280px]">
                              <Image
                                src={music6Image}
                                alt="Music 6"
@@ -394,7 +390,7 @@ const About = () => {
                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                    {/* Books Column */}
                    <div className="flex flex-col">
-                     <h4 className="text-base sm:text-lg md:text-xl font-semibold text-gray-900 mb-4">
+                     <h4 className="text-xl font-semibold text-gray-900 mb-4">
                        Books
                      </h4>
                      
@@ -411,7 +407,7 @@ const About = () => {
                      
                      {/* Text Row */}
                      <div>
-                       <p className="text-gray-600 mb-4 text-sm sm:text-base md:text-lg text-justify">
+                       <p className="text-gray-600 mb-4 text-justify">
                          I love reading Sinhala novels most of the time, especially works by <span className="font-semibold">Martin Wickramasinghe</span>. His literary works have deeply influenced my understanding of Sri Lankan culture and society. I also enjoy reading biographies of successful entrepreneurs and tech leaders, as they provide valuable insights into their journey, challenges, and the mindset required to achieve greatness. These books help me understand different perspectives on leadership, innovation, and personal growth.
                        </p>
                        
@@ -420,7 +416,7 @@ const About = () => {
                    
                    {/* Movies Column */}
                    <div className="flex flex-col">
-                     <h4 className="text-base sm:text-lg md:text-xl font-semibold text-gray-900 mb-4">
+                     <h4 className="text-xl font-semibold text-gray-900 mb-4">
                        Movies & TV Series
                      </h4>
                      
@@ -446,7 +442,7 @@ const About = () => {
                      
                      {/* Text Row */}
                      <div>
-                       <p className="text-gray-600 mb-4 text-sm sm:text-base md:text-lg text-justify">
+                       <p className="text-gray-600 mb-4 text-justify">
                          I enjoy watching adventure, thriller, and horror movies and series. My favorite TV series 
                          is <span className="font-semibold">The Day of the Jackal</span>, and I&apos;m a big fan of 
                          <span className="font-semibold">The Lord of the Rings</span> movies. These genres keep 
@@ -463,19 +459,19 @@ const About = () => {
 
                {/* Hobbies */}
                <div className="bg-white/50 rounded-lg p-10">
-                 <h4 className="text-base sm:text-lg md:text-xl font-semibold text-gray-900 mb-6 flex items-center">
+                 <h4 className="text-xl font-semibold text-gray-900 mb-6 flex items-center">
                    Hobbies
                  </h4>
                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                    <div className="flex items-center justify-center">
-                     <p className="text-gray-600 leading-relaxed text-sm sm:text-base md:text-lg text-justify text-center">
+                     <p className="text-gray-600 leading-relaxed text-justify text-center">
                        In my free time, I like to go hiking and traveling to explore new places and experience different cultures around the world. There&apos;s something incredibly fulfilling about discovering hidden trails, meeting new people, and immersing myself in diverse traditions and cuisines. I also thoroughly enjoy playing cricket or rugby as these sports not only keep me physically active but also help me stay connected with friends and build lasting relationships through teamwork and camaraderie. Whether it&apos;s trekking through scenic mountain trails, discovering new destinations with rich histories, or playing competitive sports with teammates, these activities bring perfect balance, excitement, and personal growth to my life while creating unforgettable memories and stories to share.
                      </p>
                    </div>
                    <div className="grid grid-cols-2 gap-4">
                      <div className="relative h-48 rounded-2xl overflow-hidden">
                        <Image
-                         src={hobby1Image}
+                         src={sports1Image}
                          alt="Hiking adventure"
                          fill
                          className="object-cover"
@@ -483,7 +479,7 @@ const About = () => {
                      </div>
                      <div className="relative h-48 rounded-2xl overflow-hidden">
                        <Image
-                         src={hobby3Image}
+                         src={sports2Image}
                          alt="Traveling"
                          fill
                          className="object-cover"
@@ -491,7 +487,7 @@ const About = () => {
                      </div>
                      <div className="relative h-48 rounded-2xl overflow-hidden">
                        <Image
-                         src={hobby4Image}
+                         src={sports3Image}
                          alt="Cricket match"
                          fill
                          className="object-cover"
@@ -499,7 +495,7 @@ const About = () => {
                      </div>
                      <div className="relative h-48 rounded-2xl overflow-hidden">
                        <Image
-                         src={hobby2Image}
+                         src={sports4Image}
                          alt="Rugby game"
                          fill
                          className="object-cover"
