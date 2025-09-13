@@ -171,67 +171,63 @@ const About = () => {
            <div className="space-y-6">
              <h3 className="text-2xl font-regular text-black mb-6">Education</h3>
              
-             {/* Row 1: 50% - 50% */}
-             <div className="grid grid-cols-2 gap-6">
-               <div className="bg-white/50 rounded-lg h-72 flex flex-col justify-center">
-                 <h4 className="text-xl  font-semibold text-gray-900 mb-2">University of Moratuwa (2021 - 2025)</h4>
-                 <p className="text-gray-600 text-xl mb-2">
+             {/* Row 1: Image first on mobile, text second */}
+             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+               <div className="bg-white/50 rounded-lg h-80 md:h-96 flex items-center justify-center p-2 order-1 md:order-2">
+                 <div className="w-full h-full rounded-lg overflow-hidden">
+                   <Image
+                     src={universityImage}
+                     alt="University of Moratuwa"
+                     className="w-full h-full object-cover"
+                   />
+                 </div>
+               </div>
+               <div className="bg-white/50 rounded-lg h-auto md:h-72 flex flex-col justify-center p-4 md:p-6 order-2 md:order-1">
+                 <h4 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2">University of Moratuwa (2021 - 2025)</h4>
+                 <p className="text-gray-600 text-base sm:text-lg md:text-xl">
                   Pursued Bachelor of Science (Hons) in Information Technology & Management from Faculty of IT, <a href="https://uom.lk/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">University of Moratuwa</a>. 
                   </p>
                </div>
-                <div className="bg-white/50 rounded-lg h-80 flex items-center justify-center p-2">
-                   <div className="w-3/4 h-full bg-gradient-to-br from-blue-500 to-purple-500 rounded-lg flex items-center justify-center">
-                    <div className="text-center text-white">
-                    <Image
-                      src={universityImage}
-                      alt="School Certificate"
-                      className="w-full h-full object-cover rounded-lg"
-                    />
-                    </div>
-                  </div>
-                </div>
              </div>
 
-             {/* Row 2: 50% - 50% */}
-             <div className="grid grid-cols-2 gap-10 mt-10">
-             <div className="bg-white/50 rounded-lg h-80 flex items-center justify-center p-2">
-                    <div className="w-3/4 h-full bg-gradient-to-br from-blue-500 to-purple-500 rounded-lg flex items-center justify-center">
-                     <div className="text-center text-white">
-                     <Image
-                      src={schoolImage}
-                      alt="School Certificate"
-                      className="w-full h-full object-cover rounded-lg"
-                    />
-                     </div>
-                   </div>
+             {/* Row 2: Image first on mobile, text second */}
+             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mt-6 md:mt-10">
+               <div className="bg-white/50 rounded-lg h-80 md:h-96 flex items-center justify-center p-2 order-1 md:order-1">
+                 <div className="w-full h-full rounded-lg overflow-hidden">
+                   <Image
+                     src={schoolImage}
+                     alt="SIBA Campus"
+                     className="w-full h-full object-cover"
+                   />
                  </div>
-               <div className="bg-white/50 rounded-lg p-6 h-72 flex flex-col justify-center">
-                <h4 className="text-xl  font-semibold text-gray-900 mb-2">
-                    SIBA Campus (2019 - 2020)
-                </h4>
-                  <p className="text-gray-600 text-xl">
-                   Completed Diploma in IT and Diploma in English at <a href="https://siba.edu.lk/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">SIBA Campus, Kandy</a>. 
-                   </p>
-                 </div>
+               </div>
+               <div className="bg-white/50 rounded-lg h-auto md:h-72 flex flex-col justify-center p-4 md:p-6 order-2 md:order-2">
+                 <h4 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2">
+                     SIBA Campus (2019 - 2020)
+                 </h4>
+                 <p className="text-gray-600 text-base sm:text-lg md:text-xl">
+                  Completed Diploma in IT and Diploma in English at <a href="https://siba.edu.lk/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">SIBA Campus, Kandy</a>. 
+                  </p>
+               </div>
              </div>
 
-             {/* Row 3: 50% - 50% */}
-             <div className="grid grid-cols-2 gap-6">
-               <div className="bg-white/50 rounded-lg p-6 h-72 flex flex-col justify-center">
-               <h4 className="text-xl font-semibold text-gray-900 mb-2">Kingswood College, Kandy (2004 - 2017)</h4>
-                  <p className="text-gray-600 text-xl">
+             {/* Row 3: Image first on mobile, text second */}
+             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mt-6">
+               <div className="bg-white/50 rounded-lg h-80 md:h-96 flex items-center justify-center p-2 order-1 md:order-2">
+                 <div className="w-full h-full rounded-lg overflow-hidden">
+                   <Image
+                     src={schoolImage}
+                     alt="Kingswood College"
+                     className="w-full h-full object-cover"
+                   />
+                 </div>
+               </div>
+               <div className="bg-white/50 rounded-lg h-auto md:h-72 flex flex-col justify-center p-4 md:p-6 order-2 md:order-1">
+                 <h4 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2">Kingswood College, Kandy (2004 - 2017)</h4>
+                 <p className="text-gray-600 text-base sm:text-lg md:text-xl">
                   studied primary and secondary studies at <a href="https://kingswood.lk/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">Kingswood College, Kandy</a>. I did my A/Ls in the Biology stream and I was able to secure 2As and B passes.
-                   </p>
-                 </div>
-                 <div className="bg-white/50 rounded-lg h-80 flex items-center justify-center p-2">
-                   <div className="w-3/4 h-full rounded-lg overflow-hidden">
-                    <Image
-                      src={schoolImage}
-                      alt="School Certificate"
-                      className="w-full h-full object-cover rounded-lg"
-                    />
-                  </div>
-                </div>
+                  </p>
+               </div>
              </div>
            </div>
 
