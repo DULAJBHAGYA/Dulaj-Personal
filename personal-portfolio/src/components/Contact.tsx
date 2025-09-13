@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 import { EnvelopeIcon, PhoneIcon, MapPinIcon, PaperAirplaneIcon } from '@heroicons/react/24/outline';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -13,6 +14,7 @@ const Contact = () => {
     message: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
   const contactRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -43,22 +45,47 @@ const Contact = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setSubmitStatus('idle');
     
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 2000));
-    
-    // Reset form
-    setFormData({
-      firtsname: '',
-      lastname: '',
-      email: '',
-      subject: '',
-      message: ''
-    });
-    setIsSubmitting(false);
-    
-    // Show success message (you can implement a toast notification here)
-    alert('Message sent successfully!');
+    try {
+      // EmailJS credentials
+      const serviceId = 'service_fb1fvl1';
+      const templateId = 'template_e75ttcp';
+      const publicKey = 'cNpwItKK8du-F8jos';
+      
+      // Initialize EmailJS
+      emailjs.init(publicKey);
+      
+      // Prepare template parameters
+      const templateParams = {
+        from_name: `${formData.firtsname} ${formData.lastname}`,
+        from_email: formData.email,
+        subject: formData.subject,
+        message: formData.message,
+        to_name: 'Dulaj Upananda',
+        to_email: 'dulajupananda@gmail.com' // Add recipient email
+      };
+      
+      // Send email
+      await emailjs.send(serviceId, templateId, templateParams);
+      
+      // Reset form
+      setFormData({
+        firtsname: '',
+        lastname: '',
+        email: '',
+        subject: '',
+        message: ''
+      });
+      
+      setSubmitStatus('success');
+      
+    } catch (error) {
+      console.error('Error sending email:', error);
+      setSubmitStatus('error');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const contactInfo = [
@@ -229,6 +256,19 @@ const Contact = () => {
                   </>
                 )}
               </button>
+              
+              {/* Status Messages */}
+              {submitStatus === 'success' && (
+                <div className="p-4 bg-green-100 border border-green-400 text-green-700 rounded-lg text-sm sm:text-base md:text-lg">
+                  ✅ Message sent successfully! I'll get back to you soon.
+                </div>
+              )}
+              
+              {submitStatus === 'error' && (
+                <div className="p-4 bg-red-100 border border-red-400 text-red-700 rounded-lg text-sm sm:text-base md:text-lg">
+                  ❌ Failed to send message. Please try again or contact me directly.
+                </div>
+              )}
             </form>
           </div>
         </div>
