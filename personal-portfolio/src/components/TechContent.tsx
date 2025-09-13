@@ -35,7 +35,7 @@ export default function TechContent() {
   }, []);
 
   return (
-    <section id="tech" ref={techRef} className="pt-36 pb-20">
+    <section id="tech" ref={techRef} className="pt-16 pb-20">
        <div className="max-w-7xl mx-auto">
          <div className="text-left mb-10">
            <p className="text-gray-700 text-sm sm:text-base md:text-lg lg:text-xl max-w-7xl text-justify text-left mb-6">
@@ -48,7 +48,7 @@ export default function TechContent() {
          </div>
 
          {/* Two Column Layout */}
-         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-2">
+         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-12 mb-2">
            {/* Left Column - Programming Languages */}
            <div className="mb-2">
              <h2 className="text-base sm:text-lg md:text-xl font-regular text-black text-left mb-2">Programming Languages</h2>
