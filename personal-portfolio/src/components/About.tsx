@@ -81,20 +81,16 @@ const About = () => {
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
             }`}
           >
-             <div className="grid grid-cols-12 gap-6 h-[500px]">
+             <div className="grid grid-cols-12 gap-2 xs:gap-3 sm:gap-4 md:gap-5 lg:gap-6 h-[300px] xs:h-[350px] sm:h-[400px] md:h-[450px] lg:h-[500px] xl:h-[550px] 2xl:h-[600px]">
               {/* First Column: 80% Image, 20% Blank */}
               <div className="col-span-3 flex flex-col h-full">
                 {/* 80% Image */}
-                <div className="h-[60%] bg-white rounded-3xl overflow-hidden">
-                  <div className="w-full h-full bg-gradient-to-br from-purple-400 to-pink-400 flex items-center justify-center">
-                    <div className="text-center text-white">
-                    <Image
-                      src={about2Image}
-                      alt="About 2"
-                      className="w-full h-full object-cover rounded-lg"
-                    />
-                    </div>
-                  </div>
+                <div className="h-[60%] rounded-xl xs:rounded-2xl sm:rounded-3xl overflow-hidden">
+                  <Image
+                    src={about2Image}
+                    alt="About 2"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 {/* 20% Blank Space */}
                 <div className="h-[40%]"></div>
@@ -105,25 +101,21 @@ const About = () => {
                  {/* 60% Name */}
                  <div className="h-[30%] flex items-center justify-start">
                    <div className="text-left">
-                     <h1 className="text-4xl sm:text-5xl md:text-6xl font-semibold text-gray-900 leading-tight">
+                     <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-gray-900 leading-tight">
                        Dulaj
                      </h1>
-                     <h2 className="text-4xl sm:text-5xl md:text-6xl font-regular text-gray-900 leading-tight">
+                     <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-regular text-gray-900 leading-tight">
                        Upananda
                      </h2>
                    </div>
                  </div>
                 {/* 20% Image */}
-                <div className="h-[50%] bg-gradient-to-br from-blue-500 to-cyan-500 rounded-3xl overflow-hidden">
-                  <div className="w-full h-full bg-gradient-to-br from-blue-400 to-cyan-400 flex items-center justify-center">
-                    <div className="text-center text-white">
-                    <Image
-                      src={about1Image}
-                      alt="About 1"
-                      className="w-full h-full object-cover rounded-lg"
-                    />
-                    </div>
-                  </div>
+                <div className="h-[50%] rounded-xl xs:rounded-2xl sm:rounded-3xl overflow-hidden">
+                  <Image
+                    src={about1Image}
+                    alt="About 1"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 {/* 20% Blank Space */}
                 <div className="h-[10%]"></div>
@@ -134,16 +126,12 @@ const About = () => {
                 {/* 40% Blank Space */}
                 <div className="h-[40%]"></div>
                 {/* 60% Image */}
-                <div className="h-[60%] bg-gradient-to-br from-emerald-500 to-teal-500 rounded-3xl overflow-hidden">
-                  <div className="w-full h-full bg-gradient-to-br from-emerald-400 to-teal-400 flex items-center justify-center">
-                    <div className="text-center text-white">
-                    <Image
-                      src={about4Image}
-                      alt="About 4"
-                      className="w-full h-full object-cover rounded-lg"
-                    />
-                    </div>
-                  </div>
+                <div className="h-[60%] rounded-xl xs:rounded-2xl sm:rounded-3xl overflow-hidden">
+                  <Image
+                    src={about4Image}
+                    alt="About 4"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
             </div>
@@ -263,10 +251,10 @@ const About = () => {
                    Rugby & Cricket
                  </h4>
                  
-                 <div className="grid grid-cols-2 gap-6 mt-6">
+                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mt-6">
                    {/* Left Column - Image Carousel */}
-                   <div className="flex items-center justify-center">
-                     <div className="w-full h-96 rounded-lg overflow-hidden relative">
+                   <div className="flex items-center justify-center order-2 md:order-1">
+                     <div className="w-full h-64 xs:h-72 sm:h-80 md:h-96 rounded-lg overflow-hidden relative">
                        <AnimatePresence mode="wait">
                          <motion.div
                            key={currentImageIndex}
@@ -302,8 +290,8 @@ const About = () => {
                    </div>
                    
                    {/* Right Column - Paragraph */}
-                   <div className="flex items-center">
-                     <p className="text-gray-600 text-lg leading-relaxed text-justify">
+                   <div className="flex items-center order-1 md:order-2">
+                     <p className="text-gray-600 text-base sm:text-lg leading-relaxed text-justify">
                        I am a big fan of <span className="font-semibold">Kandy Sports Club</span> and <span className="font-semibold">Springboks</span> rugby teams. I also have a deep love for  
                         <span className="font-semibold"> Sri Lankan cricket</span> and follow the national team passionately. These sports have been an integral 
                        part of my life, teaching me valuable lessons about teamwork, discipline, and national pride. 

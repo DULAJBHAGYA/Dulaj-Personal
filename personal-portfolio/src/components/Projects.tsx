@@ -419,10 +419,10 @@ const Projects = () => {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl sm:text-4xl font-semibold text-gray-900 mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-900 mb-6">
             My Projects
           </h2>
-          <p className="text-black text-xl sm:text-2xl max-w-2xl leading-relaxed">
+          <p className="text-black text-base sm:text-lg md:text-xl lg:text-2xl max-w-2xl leading-relaxed">
             Here are some of my recent projects that showcase my skills and passion for development
           </p>
         </motion.div>
@@ -503,13 +503,7 @@ const Projects = () => {
                     >
                       {/* Project Image/Visual */}
                       <div className={`w-full h-80 rounded-2xl mb-6 flex items-center justify-center relative overflow-hidden`}>
-                        {currentProject.image && typeof currentProject.image === 'string' && currentProject.image.startsWith('/') ? (
-                          <img 
-                            src={currentProject.image} 
-                            alt={currentProject.title}
-                            className="w-full h-full object-cover rounded-2xl"
-                          />
-                        ) : currentProject.image ? (
+                        {currentProject.image && currentProject.image !== '/api/placeholder/600/400' ? (
                           <img 
                             src={typeof currentProject.image === 'string' ? currentProject.image : currentProject.image.src} 
                             alt={currentProject.title}
@@ -529,10 +523,10 @@ const Projects = () => {
                       
                             {/* Project Header */}
                             <div className="mb-2">
-                              <div className="text-xl font-semibold text-gray-500">
+                              <div className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold text-gray-500">
                                 {currentProject.category}
                               </div>
-                              <h3 className="text-2xl font-regular text-gray-900 group-hover:text-purple-600 transition-colors duration-300">
+                              <h3 className="text-lg sm:text-xl md:text-2xl font-regular text-gray-900 group-hover:text-purple-600 transition-colors duration-300">
                                 {currentProject.title}
                               </h3>
                             </div>
@@ -540,7 +534,7 @@ const Projects = () => {
                             {/* Project Content */}
                             <div className="space-y-4">
                               {/* Description */}
-                              <p className="text-gray-600 leading-relaxed text-xl">
+                              <p className="text-gray-600 leading-relaxed text-sm sm:text-base md:text-lg lg:text-xl">
                                 {currentProject.description}
                               </p>
                         
@@ -592,13 +586,7 @@ const Projects = () => {
                       >
                         {/* Project Image/Visual */}
                         <div className={`w-full h-80 rounded-2xl mb-6 flex items-center justify-center relative overflow-hidden`}>
-                          {nextProject.image && typeof nextProject.image === 'string' && nextProject.image.startsWith('/') ? (
-                            <img 
-                              src={nextProject.image} 
-                              alt={nextProject.title}
-                              className="w-full h-full object-cover rounded-2xl"
-                            />
-                          ) : nextProject.image ? (
+                          {nextProject.image && nextProject.image !== '/api/placeholder/600/400' ? (
                             <img 
                               src={typeof nextProject.image === 'string' ? nextProject.image : nextProject.image.src} 
                               alt={nextProject.title}
@@ -618,10 +606,10 @@ const Projects = () => {
                         
                               {/* Project Header */}
                               <div className="mb-2">
-                                <div className="text-xl font-semibold text-gray-500">
+                                <div className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold text-gray-500">
                                   {nextProject.category}
                                 </div>
-                                <h3 className="text-2xl font-regular text-gray-900 group-hover:text-purple-600 transition-colors duration-300">
+                                <h3 className="text-lg sm:text-xl md:text-2xl font-regular text-gray-900 group-hover:text-purple-600 transition-colors duration-300">
                                   {nextProject.title}
                                 </h3>
                               </div>
@@ -629,7 +617,7 @@ const Projects = () => {
                               {/* Project Content */}
                               <div className="space-y-4">
                                 {/* Description */}
-                                <p className="text-gray-600 leading-relaxed text-xl">
+                                <p className="text-gray-600 leading-relaxed text-sm sm:text-base md:text-lg lg:text-xl">
                                   {nextProject.description}
                                 </p>
                           
