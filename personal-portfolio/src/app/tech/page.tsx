@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 export default function TechPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50">
+    <div className="min-h-screen bg-white">
       <Navbar />
       <main className="pt-20 px-6 sm:px-4 md:px-4">
         <TechContent />

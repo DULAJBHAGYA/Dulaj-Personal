@@ -512,7 +512,7 @@ const Projects = () => {
                         ) : (
                           <div className={`w-full h-full bg-gradient-to-br ${currentProject.gradient} rounded-2xl flex items-center justify-center relative`}>
                             <div className="text-5xl font-bold text-white/90">
-                              {currentProject.title.charAt(0)}
+                              {currentProject.title.charAt(0).toUpperCase()}
                             </div>
                             {/* Decorative elements */}
                             <div className="absolute top-4 right-4 w-20 h-20 bg-white/20 rounded-full blur-2xl"></div>
@@ -595,7 +595,7 @@ const Projects = () => {
                           ) : (
                             <div className={`w-full h-full bg-gradient-to-br ${nextProject.gradient} rounded-2xl flex items-center justify-center relative`}>
                               <div className="text-5xl font-bold text-white/90">
-                                {nextProject.title.charAt(0)}
+                                {nextProject.title.charAt(0).toUpperCase()}
                               </div>
                               {/* Decorative elements */}
                               <div className="absolute top-4 right-4 w-20 h-20 bg-white/20 rounded-full blur-2xl"></div>
