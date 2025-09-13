@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import { EnvelopeIcon, PhoneIcon, MapPinIcon, PaperAirplaneIcon } from '@heroicons/react/24/outline';
+import { EnvelopeIcon, PhoneIcon, MapPinIcon } from '@heroicons/react/24/outline';
 import emailjs from '@emailjs/browser';
 
 const Contact = () => {
@@ -260,7 +260,7 @@ const Contact = () => {
               {/* Status Messages */}
               {submitStatus === 'success' && (
                 <div className="p-4 bg-green-100 border border-green-400 text-green-700 rounded-lg text-sm sm:text-base md:text-lg">
-                  ✅ Message sent successfully! I'll get back to you soon.
+                  ✅ Message sent successfully! I&apos;ll get back to you soon.
                 </div>
               )}
               
