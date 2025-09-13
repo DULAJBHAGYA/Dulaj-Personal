@@ -503,13 +503,7 @@ const Projects = () => {
                     >
                       {/* Project Image/Visual */}
                       <div className={`w-full h-80 rounded-2xl mb-6 flex items-center justify-center relative overflow-hidden`}>
-                        {currentProject.image && typeof currentProject.image === 'string' && currentProject.image.startsWith('/') ? (
-                          <img 
-                            src={currentProject.image} 
-                            alt={currentProject.title}
-                            className="w-full h-full object-cover rounded-2xl"
-                          />
-                        ) : currentProject.image ? (
+                        {currentProject.image && currentProject.image !== '/api/placeholder/600/400' ? (
                           <img 
                             src={typeof currentProject.image === 'string' ? currentProject.image : currentProject.image.src} 
                             alt={currentProject.title}
@@ -518,7 +512,7 @@ const Projects = () => {
                         ) : (
                           <div className={`w-full h-full bg-gradient-to-br ${currentProject.gradient} rounded-2xl flex items-center justify-center relative`}>
                             <div className="text-5xl font-bold text-white/90">
-                              {currentProject.title.charAt(0)}
+                              {currentProject.title.charAt(0).toUpperCase()}
                             </div>
                             {/* Decorative elements */}
                             <div className="absolute top-4 right-4 w-20 h-20 bg-white/20 rounded-full blur-2xl"></div>
@@ -592,13 +586,7 @@ const Projects = () => {
                       >
                         {/* Project Image/Visual */}
                         <div className={`w-full h-80 rounded-2xl mb-6 flex items-center justify-center relative overflow-hidden`}>
-                          {nextProject.image && typeof nextProject.image === 'string' && nextProject.image.startsWith('/') ? (
-                            <img 
-                              src={nextProject.image} 
-                              alt={nextProject.title}
-                              className="w-full h-full object-cover rounded-2xl"
-                            />
-                          ) : nextProject.image ? (
+                          {nextProject.image && nextProject.image !== '/api/placeholder/600/400' ? (
                             <img 
                               src={typeof nextProject.image === 'string' ? nextProject.image : nextProject.image.src} 
                               alt={nextProject.title}
@@ -607,7 +595,7 @@ const Projects = () => {
                           ) : (
                             <div className={`w-full h-full bg-gradient-to-br ${nextProject.gradient} rounded-2xl flex items-center justify-center relative`}>
                               <div className="text-5xl font-bold text-white/90">
-                                {nextProject.title.charAt(0)}
+                                {nextProject.title.charAt(0).toUpperCase()}
                               </div>
                               {/* Decorative elements */}
                               <div className="absolute top-4 right-4 w-20 h-20 bg-white/20 rounded-full blur-2xl"></div>
