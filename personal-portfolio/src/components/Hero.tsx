@@ -76,7 +76,7 @@ const Hero = () => {
               </h2>
               
               <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-black leading-relaxed mb-4">
-                IT Undergraduate from{' '}
+                IT graduate from{' '}
                 <a 
                   href="https://uom.lk" 
                   target="_blank" 
