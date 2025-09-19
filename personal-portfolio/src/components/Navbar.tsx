@@ -2,11 +2,13 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { XMarkIcon } from '@heroicons/react/24/outline';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -94,15 +96,24 @@ const Navbar = () => {
           <div className="hidden tablet:flex items-center space-x-8">
             {/* Navigation Items */}
             <div className="flex items-center space-x-6">
-              {navItems.map((item) => (
-                <Link
-                  key={item.name}
-                  href={item.href}
-                  className="px-4 py-2 rounded-full text-sm sm:text-base md:text-lg font-medium transition-all duration-200 text-gray-700 hover:text-gray-900"
-                >
-                  {item.name}
-                </Link>
-              ))}
+              {navItems.map((item) => {
+                // More robust active state detection
+                const isActive = pathname === item.href || 
+                                (item.href !== '/' && pathname.startsWith(item.href)) ||
+                                (item.href === '/' && pathname === '/');
+                
+                return (
+                  <Link
+                    key={item.name}
+                    href={item.href}
+                    className={`px-4 py-2 rounded-full text-sm sm:text-base md:text-lg font-medium transition-all duration-200 ${
+                      isActive ? 'text-[#7697A0]' : 'text-gray-700 hover:text-gray-900'
+                    }`}
+                  >
+                    {item.name}
+                  </Link>
+                );
+              })}
             </div>
 
             {/* Separator */}
@@ -149,16 +160,24 @@ const Navbar = () => {
       {isOpen && (
         <div className="tablet:hidden mt-4 mx-4">
           <div className="px-4 pt-4 pb-4 space-y-2 bg-white/95 backdrop-blur-md rounded-2xl shadow-lg border border-gray-200/50">
-            {navItems.map((item) => (
-              <Link
-                key={item.name}
-                href={item.href}
-                className="block px-4 py-3 rounded-xl text-sm sm:text-base md:text-lg font-medium transition-colors duration-200 text-gray-700 hover:text-gray-900 hover:bg-gray-50"
-                onClick={() => setIsOpen(false)}
-              >
-                {item.name}
-              </Link>
-            ))}
+            {navItems.map((item) => {
+              // More robust active state detection
+              const isActive = pathname === item.href || 
+                              (item.href !== '/' && pathname.startsWith(item.href)) ||
+                              (item.href === '/' && pathname === '/');
+              return (
+                <Link
+                  key={item.name}
+                  href={item.href}
+                  className={`block px-4 py-3 rounded-xl text-sm sm:text-base md:text-lg font-medium transition-colors duration-200 hover:bg-gray-50 ${
+                    isActive ? 'text-[#7697A0]' : 'text-gray-700 hover:text-gray-900'
+                  }`}
+                  onClick={() => setIsOpen(false)}
+                >
+                  {item.name}
+                </Link>
+              );
+            })}
             
             {/* Mobile Social Icons */}
             <div className="flex items-center justify-center space-x-8 pt-4 border-t border-gray-200/50">

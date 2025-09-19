@@ -139,7 +139,7 @@ const Contact = () => {
                   style={{ transitionDelay: `${index * 200}ms` }}
                 >
                   <div className="p-3 bg-gray-200 rounded-lg transition-colors duration-300">
-                    <info.icon className="w-8 h-8 text-purple-600" />
+                    <info.icon className="w-8 h-8 text-[#4A707A]" />
                   </div>
                   <div>
                     <h4 className="text-gray-900 text-base sm:text-lg md:text-xl font-semibold">{info.title}</h4>
@@ -170,7 +170,7 @@ const Contact = () => {
                     value={formData.firtsname}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-3 border text-sm sm:text-base md:text-lg lg:text-xl border-gray-200 rounded-lg text-gray-900 placeholder-gray-300 focus:border-purple-500 focus:ring-1 focus:ring-purple-500 focus:outline-none transition-colors duration-300"
+                    className="w-full px-4 py-3 border text-sm sm:text-base md:text-lg lg:text-xl border-gray-200 rounded-lg text-gray-900 placeholder-gray-300 focus:border-gray-500 focus:ring-1 focus:ring-gray-500 focus:outline-none transition-colors duration-300"
                     placeholder="Your First Name"
                   />
                 </div>
@@ -185,7 +185,7 @@ const Contact = () => {
                     value={formData.lastname}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-200 text-sm sm:text-base md:text-lg lg:text-xl rounded-lg text-gray-900 placeholder-gray-300 focus:border-purple-500 focus:ring-1 focus:ring-purple-500 focus:outline-none transition-colors duration-300"
+                    className="w-full px-4 py-3 border border-gray-200 text-sm sm:text-base md:text-lg lg:text-xl rounded-lg text-gray-900 placeholder-gray-300 focus:border-gray-500 focus:ring-1 focus:ring-gray-500 focus:outline-none transition-colors duration-300"
                     placeholder="Your Last Name"
                   />
                 </div>
@@ -202,7 +202,7 @@ const Contact = () => {
                   value={formData.email}
                   onChange={handleInputChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-200 text-sm sm:text-base md:text-lg lg:text-xl rounded-lg text-gray-900 placeholder-gray-300 focus:border-purple-500 focus:ring-1 focus:ring-purple-500 focus:outline-none transition-colors duration-300"
+                  className="w-full px-4 py-3 border border-gray-200 text-sm sm:text-base md:text-lg lg:text-xl rounded-lg text-gray-900 placeholder-gray-300 focus:border-gray-500 focus:ring-1 focus:ring-gray-500 focus:outline-none transition-colors duration-300"
                   placeholder="Your Email"
                 />
               </div>
@@ -218,7 +218,7 @@ const Contact = () => {
                   value={formData.subject}
                   onChange={handleInputChange}
                   required
-                  className="w-full px-4 py-3  border border-gray-200 text-sm sm:text-base md:text-lg lg:text-xl rounded-lg text-gray-900 placeholder-gray-300 focus:border-purple-500 focus:ring-1 focus:ring-purple-500 focus:outline-none transition-colors duration-300"
+                  className="w-full px-4 py-3  border border-gray-200 text-sm sm:text-base md:text-lg lg:text-xl rounded-lg text-gray-900 placeholder-gray-300 focus:border-gray-500 focus:ring-1 focus:ring-gray-500 focus:outline-none transition-colors duration-300"
                   placeholder="What's this about?"
                 />
               </div>
@@ -234,7 +234,7 @@ const Contact = () => {
                   onChange={handleInputChange}
                   required
                   rows={6}
-                  className="w-full px-4 py-3 border border-gray-200 text-sm sm:text-base md:text-lg lg:text-xl rounded-lg text-gray-900 placeholder-gray-300 focus:border-purple-500 focus:ring-1 focus:ring-purple-500 focus:outline-none transition-colors duration-300 resize-none"
+                  className="w-full px-4 py-3 border border-gray-200 text-sm sm:text-base md:text-lg lg:text-xl rounded-lg text-gray-900 placeholder-gray-300 focus:border-gray-500 focus:ring-1 focus:ring-gray-500 focus:outline-none transition-colors duration-300 resize-none"
                   placeholder="Tell me about your project or just say hello!"
                 />
               </div>
@@ -242,8 +242,8 @@ const Contact = () => {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 disabled:from-gray-500 disabled:to-gray-600 text-sm sm:text-base md:text-lg lg:text-xl text-gray-900 font-regular py-3 px-6 rounded-lg transition-all duration-300 
-                transform hover:scale-105 hover:shadow-lg hover:shadow-purple-500/25 disabled:transform-none disabled:shadow-none flex items-center justify-center gap-2"
+                className="w-full bg-[#7697A0] hover:from-purple-600 hover:to-pink-600 disabled:from-gray-500 disabled:to-gray-600 text-sm sm:text-base md:text-lg lg:text-xl text-white font-regular py-3 px-6 rounded-lg transition-all duration-300 
+                transform hover:scale-105 hover:shadow-lg hover:shadow-[#7697A0]/25 disabled:transform-none disabled:shadow-none flex items-center justify-center gap-2"
               >
                 {isSubmitting ? (
                   <>

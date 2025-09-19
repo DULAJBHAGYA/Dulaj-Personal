@@ -3,6 +3,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 import ExpenseTrackerImg from '@/assets/images/ExpenseTracker.png';
 import EventManagementImg from '@/assets/images/EventMng.png';
+import MultiDimensionalCoursePerformanceAnalyticsImg from '@/assets/images/EduAnalytics.png';
+import PortfolioImg from '@/assets/images/Portfolio.png';
 
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -197,7 +199,7 @@ const Projects = () => {
       liveUrl: 'https://github.com',
       githubUrl: 'https://github.com',
       gradient: 'from-emerald-400 to-teal-600',
-      bgGradient: 'from-emerald-50 to-teal-50',
+      bgGradient: 'from-gray-50 to-gray-100',
       icon: '🔍',
       size: 'wide' // Horizontal spanning card
     },
@@ -205,12 +207,12 @@ const Projects = () => {
       category: 'Frontend Development',
       title: 'This Website',
       description: 'A modern, responsive portfolio website built with Next.js, Tailwind CSS, and Framer Motion for smooth animations.',
-      image: '/api/placeholder/600/400',
+      image: PortfolioImg,
       technologies: ['Next.js', 'Tailwind CSS', 'Framer Motion'],
       liveUrl: 'https://github.com',
       githubUrl: 'https://github.com',
       gradient: 'from-emerald-400 to-teal-600',
-      bgGradient: 'from-emerald-50 to-teal-50',
+      bgGradient: 'from-gray-50 to-gray-100',
       icon: '💻',
       size: 'medium' // Regular card
     },
@@ -223,20 +225,32 @@ const Projects = () => {
       liveUrl: 'https://github.com',
       githubUrl: 'https://github.com',
       gradient: 'from-emerald-400 to-teal-600',
-      bgGradient: 'from-emerald-50 to-teal-50',
+      bgGradient: 'from-gray-50 to-gray-100',
       icon: '✍️',
       size: 'small' // Small card
+    },{
+      category: 'Client Project',
+      title: 'Multi-Dimensional Course Performance Analytics',
+      description: 'A comprehensive analytics dashboard for tracking course performance across multiple dimensions including students, instructors, courses, and campuses.',
+      image: MultiDimensionalCoursePerformanceAnalyticsImg,
+      technologies: ['React', 'Tailwind CSS',, 'Python', 'FastAPI', 'Hugging Face'],
+      liveUrl: 'https://github.com',
+      githubUrl: 'https://github.com',
+      gradient: 'from-emerald-400 to-teal-600',
+      bgGradient: 'from-gray-50 to-gray-100',
+      icon: '⚡',
+      size: 'large' // 2-column card
     },
     {
       category: 'Blockchain Project',
       title: 'Tea Supply Chain',
-      description: 'hybrid solution for managing supply chain workflows across all users, enabling greater transparency, security, and efficiency in the tea trade.',
+      description: 'Hybrid solution for managing supply chain workflows across all users, enabling greater transparency, security, and efficiency in the tea trade.',
       image: '/api/placeholder/600/400',
       technologies: ['Next.js', 'Tailwind CSS',, 'Node.js', 'Docker', 'Redis'],
       liveUrl: 'https://github.com',
       githubUrl: 'https://github.com',
       gradient: 'from-emerald-400 to-teal-600',
-      bgGradient: 'from-emerald-50 to-teal-50',
+      bgGradient: 'from-gray-50 to-gray-100',
       icon: '⚡',
       size: 'large' // 2-column card
     },
@@ -249,7 +263,7 @@ const Projects = () => {
       liveUrl: 'https://github.com',
       githubUrl: 'https://github.com',
       gradient: 'from-emerald-400 to-teal-600',
-      bgGradient: 'from-emerald-50 to-teal-50',
+      bgGradient: 'from-gray-50 to-gray-100',
       icon: '🛒',
       size: 'medium' // Regular card
     },
@@ -262,7 +276,7 @@ const Projects = () => {
       liveUrl: 'https://github.com',
       githubUrl: 'https://github.com',
       gradient: 'from-emerald-400 to-teal-600',
-      bgGradient: 'from-emerald-50 to-teal-50',
+      bgGradient: 'from-gray-50 to-gray-100',
       icon: '🛒',
       size: 'medium' // Regular card
     },
@@ -275,7 +289,7 @@ const Projects = () => {
       liveUrl: 'https://github.com',
       githubUrl: 'https://github.com',
       gradient: 'from-emerald-400 to-teal-600',
-      bgGradient: 'from-emerald-50 to-teal-50',
+      bgGradient: 'from-gray-50 to-gray-100',
       icon: '🌤️',
       size: 'small' // Small card
     },
@@ -288,7 +302,7 @@ const Projects = () => {
       liveUrl: 'https://github.com',
       githubUrl: 'https://github.com',
       gradient: 'from-emerald-400 to-teal-600',
-      bgGradient: 'from-emerald-50 to-teal-50',
+      bgGradient: 'from-gray-50 to-gray-100',
       icon: '🤖',
       size: 'wide' // Horizontal spanning card
     },
@@ -301,7 +315,7 @@ const Projects = () => {
       liveUrl: 'https://github.com',
       githubUrl: 'https://github.com',
       gradient: 'from-emerald-400 to-teal-600',
-      bgGradient: 'from-emerald-50 to-teal-50',
+      bgGradient: 'from-gray-50 to-gray-100',
       icon: '📈',
       size: 'medium' // Regular card
     },
@@ -314,7 +328,7 @@ const Projects = () => {
       liveUrl: 'https://github.com',
       githubUrl: 'https://github.com',
       gradient: 'from-emerald-400 to-teal-600',
-      bgGradient: 'from-emerald-50 to-teal-50',
+      bgGradient: 'from-gray-50 to-gray-100',
       icon: '🎨',
       size: 'small' // Small card
     },
@@ -327,7 +341,7 @@ const Projects = () => {
       liveUrl: 'https://github.com',
       githubUrl: 'https://github.com',
       gradient: 'from-emerald-400 to-teal-600',
-      bgGradient: 'from-emerald-50 to-teal-50',
+      bgGradient: 'from-gray-50 to-gray-100',
       icon: '🚀',
       size: 'large' // 2-column card
     },
@@ -340,7 +354,7 @@ const Projects = () => {
       liveUrl: 'https://github.com',
       githubUrl: 'https://github.com',
       gradient: 'from-emerald-400 to-teal-600',
-      bgGradient: 'from-emerald-50 to-teal-50',
+      bgGradient: 'from-gray-50 to-gray-100',
       icon: '🚀',
       size: 'large' // 2-column card
     }
@@ -526,7 +540,7 @@ const Projects = () => {
                               <div className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold text-gray-500">
                                 {currentProject.category}
                               </div>
-                              <h3 className="text-lg sm:text-xl md:text-2xl font-regular text-gray-900 group-hover:text-purple-600 transition-colors duration-300">
+                              <h3 className="text-lg sm:text-xl md:text-2xl font-regular text-gray-900 group-hover:text-[#7697A0] transition-colors duration-300">
                                 {currentProject.title}
                               </h3>
                             </div>
@@ -609,7 +623,7 @@ const Projects = () => {
                                 <div className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold text-gray-500">
                                   {nextProject.category}
                                 </div>
-                                <h3 className="text-lg sm:text-xl md:text-2xl font-regular text-gray-900 group-hover:text-purple-600 transition-colors duration-300">
+                                <h3 className="text-lg sm:text-xl md:text-2xl font-regular text-gray-900 group-hover:text-[#7697A0] transition-colors duration-300">
                                   {nextProject.title}
                                 </h3>
                               </div>
