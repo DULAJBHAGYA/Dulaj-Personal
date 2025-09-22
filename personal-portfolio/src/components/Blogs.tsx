@@ -8,6 +8,7 @@ import blogMongoImage from '@/assets/images/blog-mongodb.png';
 import blogNodeImage from '@/assets/images/blog-NodeCRUD.png';
 import blogAIImage from '@/assets/images/blog-AI.jpg';
 import blogWFHImage from '@/assets/images/blog-WFH.jpg';
+import blogDockerKubernetesImage from '@/assets/images/blog-DockerVSKuber.png';
 
 const Blogs = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -31,6 +32,18 @@ const Blogs = () => {
   }, []);
 
   const blogs = [
+    {
+      title: 'Kubernetes vs Docker Swarm for Full-Stack Apps — Practical Differences',
+      excerpt: 'When building full-stack applications today, containerization has become an industry standard. It’s no longer optional...',
+      content: 'When building full-stack applications today, containerization has become an industry standard. It’s no longer optional...',
+      author: 'Dulaj Upananda',
+      date: '2025-09-22',
+      readTime: '5 min read',
+      category: 'DevOps',
+      image: blogDockerKubernetesImage,
+      slug: 'kubernetes-vs-docker-swarm-for-full-stack-apps-practical-differences',
+      link: 'https://medium.com/@dulajupananda/kubernetes-vs-docker-swarm-for-full-stack-apps-practical-differences-178dc0abd3db'
+    },
     {
       title: 'Making HTTP Requests in Flutter: Using the Dio Package',
       excerpt: 'In modern app development, interacting with APIs is a crucial task. Flutter, with its rich ecosystem, provides several ways to...',
