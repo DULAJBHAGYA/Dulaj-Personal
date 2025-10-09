@@ -1,9 +1,8 @@
 'use client';
 
-import { useState, useEffect, useRef } from 'react';
-import { motion } from 'framer-motion';
+import { useEffect, useRef } from 'react';
 import { FaReact, FaNodeJs, FaJava, FaHtml5, FaJenkins, FaFigma, FaCss3, FaPython, FaApple, FaDocker, FaAws, FaAngular, FaWindows, FaLinux, FaGitAlt, FaGithub, FaJira } from 'react-icons/fa';
-import { SiNextdotjs, SiFlutter, SiTypescript, SiGnubash, SiGooglecloud, SiOracle, SiJavascript, SiPostgresql, SiMongodb, SiMysql, SiDotnet, SiTailwindcss, SiKubernetes, SiClion, SiSpringboot, SiIntellijidea, SiApachenetbeanside, SiEclipseide, SiBlender, SiFigma, SiJira } from 'react-icons/si';
+import { SiNextdotjs, SiFlutter, SiTypescript, SiGnubash, SiGooglecloud, SiOracle, SiJavascript, SiPostgresql, SiMongodb, SiMysql, SiDotnet, SiTailwindcss, SiKubernetes, SiClion, SiSpringboot, SiIntellijidea, SiApachenetbeanside, SiEclipseide, SiBlender } from 'react-icons/si';
 import { TbBrandReactNative, TbBrandVisualStudio } from "react-icons/tb";
 import { FaDartLang, FaGolang } from "react-icons/fa6";
 import { DiMsqlServer } from "react-icons/di";
@@ -14,14 +13,13 @@ import { VscVscode } from "react-icons/vsc";
 
 
 export default function TechContent() {
-  const [isVisible, setIsVisible] = useState(false);
   const techRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setIsVisible(true);
+          // Handle intersection
         }
       },
       { threshold: 0.1 }
@@ -448,7 +446,7 @@ export default function TechContent() {
              </a>
 
              {/* Google Cloud - Generative AI */}
-             <a href="https://www.cloudskillsboost.google/public_profiles/your-profile-id" target="_blank" rel="noopener noreferrer" className="bg-white/50 rounded-3xl p-6 flex flex-col items-center text-center hover:bg-white/70 transition-colors duration-200">
+             <a href="https://www.cloudskillsboost.google/public_profiles/159d40af-d22c-456c-b57c-39c13b8e2409/badges/18157138" target="_blank" rel="noopener noreferrer" className="bg-white/50 rounded-3xl p-6 flex flex-col items-center text-center hover:bg-white/70 transition-colors duration-200">
                <div className="w-16 h-16 mb-4 flex items-center justify-center">
                  <SiGooglecloud className="text-4xl text-blue-500" />
                </div>
@@ -458,7 +456,7 @@ export default function TechContent() {
              </a>
 
              {/* Google Cloud - Large Language Models */}
-             <a href="https://www.cloudskillsboost.google/public_profiles/your-profile-id" target="_blank" rel="noopener noreferrer" className="bg-white/50 rounded-3xl p-6 flex flex-col items-center text-center hover:bg-white/70 transition-colors duration-200">
+             <a href="https://www.cloudskillsboost.google/public_profiles/159d40af-d22c-456c-b57c-39c13b8e2409/badges/18159020" target="_blank" rel="noopener noreferrer" className="bg-white/50 rounded-3xl p-6 flex flex-col items-center text-center hover:bg-white/70 transition-colors duration-200">
                <div className="w-16 h-16 mb-4 flex items-center justify-center">
                  <SiGooglecloud className="text-4xl text-blue-500" />
                </div>
