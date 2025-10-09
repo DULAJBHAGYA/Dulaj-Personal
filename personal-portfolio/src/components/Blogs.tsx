@@ -1,7 +1,8 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import { CalendarIcon, ClockIcon, ArrowRightIcon } from '@heroicons/react/24/outline';
+import Image from 'next/image';
+import { ClockIcon, ArrowRightIcon } from '@heroicons/react/24/outline';
 import blogDioImage from '@/assets/images/blog-dio.png';
 import blogBlocImage from '@/assets/images/blog-bloc.png';
 import blogMongoImage from '@/assets/images/blog-mongodb.png';
@@ -144,10 +145,11 @@ const Blogs = () => {
               <div className="flex flex-col md:flex-row">
                 {/* Blog Image */}
                 <div className="relative h-72 md:h-96 md:w-[42rem] overflow-hidden flex-shrink-0 rounded-3xl">
-                  <img 
+                  <Image 
                     src={blog.image.src} 
                     alt={blog.title}
-                    className="w-full h-full object-cover"
+                    className="object-cover"
+                    fill
                   />
                 </div>
 
