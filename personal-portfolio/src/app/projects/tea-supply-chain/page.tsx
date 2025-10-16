@@ -173,7 +173,7 @@ export default function TeaSupplyChain() {
                     View Live Project
                   </button> */}
                   <button 
-                    className="bg-white border-2 border-[#7697A0] hover:bg-gray-50 text-[#7697A0] font-semibold py-3 px-6 rounded-2xl transition-all duration-300 transform hover:scale-105 flex items-center"
+                    className="bg-white border-2 border-[#7697A0] hover:bg-gray-50 text-[#7697A0] font-regular py-3 px-6 rounded-2xl transition-all duration-300 transform hover:scale-105 flex items-center"
                     onClick={() => window.open('https://github.com/DULAJBHAGYA/LeafLink', '_blank')}
                   >
                     <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
