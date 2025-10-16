@@ -1,6 +1,7 @@
 'use client';
 
-import React, { useEffect } from 'react';
+import React from 'react';
+import Head from 'next/head';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import Navbar from '@/components/Navbar';
@@ -8,15 +9,14 @@ import Footer from '@/components/Footer';
 import { IoIosArrowForward } from "react-icons/io";
 
 export default function SalonSpaBooking() {
-  // Set title when component mounts
-  useEffect(() => {
-    if (typeof document !== 'undefined') {
-      document.title = 'Salon and Spa Appointment Booking App | Dulaj Personal';
-    }
-  }, []);
+  const pageTitle = 'Salon and Spa Appointment Booking App | Dulaj Personal';
 
   return (
     <main className="min-h-screen bg-white">
+      <Head>
+        <title>{pageTitle}</title>
+        <meta name="description" content="A beautiful weather app with location-based forecasts and interactive maps." />
+      </Head>
       <Navbar />
       
       <section className="py-20 pt-32">

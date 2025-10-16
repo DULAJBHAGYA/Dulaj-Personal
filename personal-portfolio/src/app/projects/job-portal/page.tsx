@@ -1,6 +1,7 @@
 'use client';
 
-import React, { useEffect } from 'react';
+import React from 'react';
+import Head from 'next/head';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import Navbar from '@/components/Navbar';
@@ -8,15 +9,14 @@ import Footer from '@/components/Footer';
 import { IoIosArrowForward } from "react-icons/io";
 
 export default function JobPortal() {
-  // Set title when component mounts
-  useEffect(() => {
-    if (typeof document !== 'undefined') {
-      document.title = 'Job Portal | Dulaj Personal';
-    }
-  }, []);
+  const pageTitle = 'Job Portal | Dulaj Personal';
 
   return (
     <main className="min-h-screen bg-white">
+      <Head>
+        <title>{pageTitle}</title>
+        <meta name="description" content="Automated deployment pipeline with Docker, Kubernetes, and monitoring." />
+      </Head>
       <Navbar />
       
       <section className="py-20 pt-32">
