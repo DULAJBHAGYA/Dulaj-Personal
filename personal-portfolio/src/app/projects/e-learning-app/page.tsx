@@ -1,6 +1,7 @@
 'use client';
 
-import React, { useEffect } from 'react';
+import React from 'react';
+import Head from 'next/head';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import Navbar from '@/components/Navbar';
@@ -8,15 +9,14 @@ import Footer from '@/components/Footer';
 import { IoIosArrowForward } from "react-icons/io";
 
 export default function ELearningApp() {
-  // Set title when component mounts
-  useEffect(() => {
-    if (typeof document !== 'undefined') {
-      document.title = 'E-Learning Application | Dulaj Personal';
-    }
-  }, []);
+  const pageTitle = 'E-Learning Application | Dulaj Personal';
 
   return (
     <main className="min-h-screen bg-white">
+      <Head>
+        <title>{pageTitle}</title>
+        <meta name="description" content="An intelligent chatbot powered by OpenAI GPT for automated customer support." />
+      </Head>
       <Navbar />
       
       <section className="py-20 pt-32">

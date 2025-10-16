@@ -1,6 +1,7 @@
 'use client';
 
-import React, { useEffect } from 'react';
+import React from 'react';
+import Head from 'next/head';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import Navbar from '@/components/Navbar';
@@ -8,15 +9,14 @@ import Footer from '@/components/Footer';
 import { IoIosArrowForward } from "react-icons/io";
 
 export default function PersonalPortfolio() {
-  // Set title when component mounts
-  useEffect(() => {
-    if (typeof document !== 'undefined') {
-      document.title = 'Personal Portfolio | Dulaj Personal';
-    }
-  }, []);
+  const pageTitle = 'Personal Portfolio | Dulaj Personal';
 
   return (
     <main className="min-h-screen bg-white">
+      <Head>
+        <title>{pageTitle}</title>
+        <meta name="description" content="A modern, responsive portfolio website built with Next.js, Tailwind CSS, and Framer Motion for smooth animations." />
+      </Head>
       <Navbar />
       
       <section className="py-20 pt-32">
@@ -40,7 +40,7 @@ export default function PersonalPortfolio() {
               <div className="bg-white rounded-3xl p-8">
                 <div className="mb-6">
                   <span className="text-lg font-semibold text-gray-500">Frontend Development</span>
-                  <h1 className="text-3xl font-bold text-gray-900 mt-2">Peronal Portfolio</h1>
+                  <h1 className="text-3xl font-bold text-gray-900 mt-2">Personal Portfolio</h1>
                 </div>
                 
                 <p className="text-gray-600 text-lg leading-relaxed mb-8">
