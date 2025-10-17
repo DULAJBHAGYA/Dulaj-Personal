@@ -27,6 +27,7 @@ import hobbies1Image from '@/assets/images/hobby1.jpg';
 import hobbies2Image from '@/assets/images/hobby2.png';
 import hobbies3Image from '@/assets/images/hobby3.jpg';
 import hobbies4Image from '@/assets/images/hobby4.jpg';
+import sibaImage from '@/assets/images/sibaImg.jpg'
 
 
 
@@ -199,7 +200,7 @@ const About = () => {
                <div className="bg-white/50 rounded-lg h-80 md:h-96 flex items-center justify-center p-2 order-1 md:order-1">
                  <div className="w-full h-full rounded-lg overflow-hidden">
                    <Image
-                     src={schoolImage}
+                     src={sibaImage}
                      alt="SIBA Campus"
                      className="w-full h-full object-cover"
                    />
