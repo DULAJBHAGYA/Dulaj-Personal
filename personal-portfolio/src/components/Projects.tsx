@@ -6,6 +6,7 @@ import ExpenseTrackerImg from '@/assets/images/ExpenseTracker.png';
 import EventManagementImg from '@/assets/images/EventMng.png';
 import MultiDimensionalCoursePerformanceAnalyticsImg from '@/assets/images/EduAnalytics.png';
 import PortfolioImg from '@/assets/images/Portfolio.png';
+import ItPathFinderImg from '@/assets/images/ItPathFinderImg.png';
 
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -184,7 +185,7 @@ const Projects = () => {
       category: 'Final Year Project',
       title: 'ATS Compatible Resume Generator',
       description: 'A comprehensive AI-powered CV generation and optimization system that creates ATS-friendly resumes using advanced language models and modern web technologies.',
-      image: '/api/placeholder/600/400',
+      image: ItPathFinderImg,
       technologies: [ 'Next.js', 'Tailwind CSS', 'Python', 'FastAPI','Hugging Face', 'Jupyter'],
       liveUrl: 'https://github.com',
       githubUrl: 'https://github.com',
