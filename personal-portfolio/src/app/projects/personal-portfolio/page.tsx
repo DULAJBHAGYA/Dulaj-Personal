@@ -46,7 +46,8 @@ export default function PersonalPortfolio() {
                 <p className="text-gray-600 text-lg leading-relaxed mb-8">
                   A modern, responsive portfolio website built with Next.js, Tailwind CSS, and Framer Motion for smooth animations. This project demonstrates my skills in frontend development, UI/UX design, and modern web technologies.
                 </p>
-                
+
+               
                 <div className="space-y-6">
                   <div className="mb-6">
                     <h3 className="text-xl font-semibold text-gray-900 mb-3">Project Overview</h3>

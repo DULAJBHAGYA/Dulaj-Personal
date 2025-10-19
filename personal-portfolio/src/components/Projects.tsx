@@ -7,6 +7,7 @@ import EventManagementImg from '@/assets/images/EventMng.png';
 import MultiDimensionalCoursePerformanceAnalyticsImg from '@/assets/images/EduAnalytics.png';
 import PortfolioImg from '@/assets/images/Portfolio.png';
 import ItPathFinderImg from '@/assets/images/ItPathFinderImg.png';
+import ETLPipeImg from '@/assets/images/ETLPipe.png'
 
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -69,7 +70,9 @@ import {
   SiDart,
   SiGoland,
   SiNextdotjs,
-  SiExpress
+  SiExpress,
+  SiSqlite,
+  SiFlask
 } from "react-icons/si";
 import { BiLogoTypescript } from "react-icons/bi";
 import { DiMsqlServer, DiPostgresql,DiRedis } from "react-icons/di";
@@ -170,7 +173,9 @@ const Projects = () => {
       'Jupyter': SiJupyter,
       'SQL Server': DiMsqlServer,
       'Framer Motion': TbBrandFramerMotion,
-      'React Native': TbBrandReactNative
+      'React Native': TbBrandReactNative,
+      'SQLite': SiSqlite,
+      'Flask': SiFlask
     };
 
     return {
@@ -193,8 +198,7 @@ const Projects = () => {
       bgGradient: 'from-gray-50 to-gray-100',
       icon: '🔍',
       size: 'wide' // Horizontal spanning card
-    },
-    {
+    },{
       id: 'personal-portfolio',
       category: 'Frontend Development',
       title: 'This Website',
@@ -208,6 +212,21 @@ const Projects = () => {
       icon: '💻',
       size: 'medium' // Regular card
     },
+    {
+      id: 'weather-dashboard-etl',
+      category: 'Data Engineering',
+      title: 'Weather Dashboard ETL Pipeline',
+      description: 'A comprehensive weather data collection and visualization system that automatically fetches real-time weather information from the OpenWeatherMap API, processes and stores it in a local SQLite database, and displays it through a responsive web dashboard.',
+      image: ETLPipeImg,
+      technologies: ['React', 'Tailwind CSS', 'Python', 'Flask', 'SQLite', 'Docker'],
+      liveUrl: 'https://github.com',
+      githubUrl: 'https://github.com',
+      gradient: 'from-blue-400 to-indigo-600',
+      bgGradient: 'from-gray-50 to-gray-100',
+      icon: '🌦️',
+      size: 'medium' // Regular card
+    },
+    
     {
       id: 'event-management',
       category: 'Commercial Project',
