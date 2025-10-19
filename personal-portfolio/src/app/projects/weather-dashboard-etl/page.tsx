@@ -242,6 +242,16 @@ export default function WeatherDashboardETLPipeline() {
                 </div>
                 
                 <div className="flex flex-wrap gap-4 mt-8">
+                   <button 
+                    className="bg-white border-2 border-[#7697A0] hover:bg-gray-50 text-[#7697A0] font-regular py-3 px-6 rounded-2xl transition-all duration-300 transform hover:scale-105 flex items-center"
+                    onClick={() => window.open('https://tropicast.netlify.app/', '_blank')}
+                  >
+                    <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                    Live App
+                  </button>
+
                   <button 
                     className="bg-white border-2 border-[#7697A0] hover:bg-gray-50 text-[#7697A0] font-regular py-3 px-6 rounded-2xl transition-all duration-300 transform hover:scale-105 flex items-center"
                     onClick={() => window.open('https://github.com/DULAJBHAGYA/Weather-ETL-Pipeline', '_blank')}
