@@ -10,6 +10,7 @@ import blogNodeImage from '@/assets/images/blog-NodeCRUD.png';
 import blogAIImage from '@/assets/images/blog-AI.jpg';
 import blogWFHImage from '@/assets/images/blog-WFH.jpg';
 import blogDockerKubernetesImage from '@/assets/images/blog-DockerVSKuber.png';
+import blogETLImage from '@/assets/images/blog-ETL.png';
 
 const Blogs = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -33,6 +34,18 @@ const Blogs = () => {
   }, []);
 
   const blogs = [
+    {
+      title: 'Building a Robust Data Pipeline in Python: From APIs to Dashboard',
+      excerpt: 'In today’s data-driven world, the ability to collect, process, and visualize information in real time is invaluable...',
+      content: 'In today’s data-driven world, the ability to collect, process, and visualize information in real time is invaluable. In this blog post, we will explore how to build a robust data pipeline using Python, integrating data from various APIs and presenting it on an interactive dashboard...',
+      author: 'Dulaj Upananda',
+      date: '2025-10-21',
+      readTime: '3 min read',
+      category: 'Data Engineering',
+      image: blogETLImage,
+      slug: 'building-robust-data-pipeline-python-apis-dashboard',
+      link: 'https://medium.com/@dulajupananda/building-a-robust-data-pipeline-in-python-from-apis-to-dashboard-6e28dd277441'
+    },
     {
       title: 'Kubernetes vs Docker Swarm for Full-Stack Apps — Practical Differences',
       excerpt: 'When building full-stack applications today, containerization has become an industry standard. It’s no longer optional...',
