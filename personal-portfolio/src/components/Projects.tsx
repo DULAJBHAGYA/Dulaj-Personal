@@ -8,6 +8,7 @@ import MultiDimensionalCoursePerformanceAnalyticsImg from '@/assets/images/EduAn
 import PortfolioImg from '@/assets/images/Portfolio.png';
 import ItPathFinderImg from '@/assets/images/ItPathFinderImg.png';
 import ETLPipeImg from '@/assets/images/ETLPipe.png'
+import LeaflinkImg from '@/assets/images/Leaflink.png';
 
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -260,7 +261,7 @@ const Projects = () => {
       category: 'Blockchain Project',
       title: 'Tea Supply Chain',
       description: 'Hybrid solution for managing supply chain workflows across all users, enabling greater transparency, security, and efficiency in the tea trade.',
-      image: '/api/placeholder/600/400',
+      image: LeaflinkImg,
       technologies: ['Next.js', 'Tailwind CSS',, 'Node.js', 'Docker', 'Redis'],
       liveUrl: 'https://github.com',
       githubUrl: 'https://github.com',
