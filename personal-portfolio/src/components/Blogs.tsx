@@ -157,7 +157,7 @@ const Blogs = () => {
             >
               <div className="flex flex-col md:flex-row">
                 {/* Blog Image */}
-                <div className="relative h-72 md:h-96 md:w-[42rem] overflow-hidden flex-shrink-0 rounded-3xl">
+                <div className="relative h-64 md:h-96 md:w-[42rem] overflow-hidden flex-shrink-0 rounded-3xl">
                   <Image 
                     src={blog.image.src} 
                     alt={blog.title}

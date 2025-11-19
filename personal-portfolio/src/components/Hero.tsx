@@ -88,14 +88,14 @@ const Hero = () => {
               </p>
               
               <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-black leading-relaxed mb-4">
-                Former Software Engineer Intern at{' '}
+                Software Engineer at{' '}
                 <a 
-                  href="https://futurecx.com" 
+                  href="https://masgraslaw.ca/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-blue-600 hover:text-blue-800 font-semibold transition-colors duration-200"
                 >
-                  Future CX
+                  Masgras Professional Corporation
                 </a>
               </p>
               
