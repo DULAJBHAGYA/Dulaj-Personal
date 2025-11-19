@@ -21,8 +21,9 @@ import music4Image from '@/assets/images/music4.jpg';
 import music5Image from '@/assets/images/music5.jpg';
 import music6Image from '@/assets/images/music6.jpg';
 import books2Image from '@/assets/images/books2.jpg';
-import movie1Image from '@/assets/images/movie.jpg';
-import tvseries1Image from '@/assets/images/tvseries.jpg';
+import music7Image from '@/assets/images/music7.png';
+import movie1Image from '@/assets/images/movie.webp';
+import tvseries1Image from '@/assets/images/tvseries.webp';
 import hobbies1Image from '@/assets/images/hobby1.jpg';
 import hobbies2Image from '@/assets/images/hobby2.png';
 import hobbies3Image from '@/assets/images/hobby3.jpg';
@@ -168,6 +169,11 @@ const About = () => {
                 <p className="text-gray-600 text-base sm:text-lg md:text-xl mb-2">
                   Completed 6 months internship in <a href="https://futurecx.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 ">Future CX</a> as Software Engineer in the mobile development team.
                   You can find more about my internship project at <a href="#projects" className="text-blue-600 hover:text-blue-800 ">Projects</a> in the Projects section
+                </p>
+
+                <h4 className="text-xl  font-semibold text-gray-900 mb-2 mt-8">Software Engineer (2025 Nov - Present)</h4>
+                <p className="text-gray-600 text-base sm:text-lg md:text-xl mb-2">
+                  Working as a Full Stack Software Engineer at <a href="https://masgraslaw.ca/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 ">Masgras Professional Corporation (Canada)</a>.
                 </p>
                
              </div>
@@ -325,18 +331,18 @@ const About = () => {
                    
                    {/* Right Column - Complex Photo Grid */}
                    <div className="flex items-center justify-center">
-                     <div className="w-full h-[400px] overflow-hidden">
-                       <div className="grid grid-cols-3 gap-2 h-full">
+                     <div className="w-full">
+                       <div className="grid grid-cols-3 gap-2">
                          {/* First Column - 60% and 40% split */}
-                         <div className="flex flex-col gap-2 h-full">
-                           <div className="rounded-lg overflow-hidden h-[240px]">
+                         <div className="flex flex-col gap-2">
+                           <div className="rounded-lg overflow-hidden">
                              <Image
                                src={music5Image}
                                alt="Music 1"
                                className="w-full h-full object-cover"
                              />
                            </div>
-                           <div className="rounded-lg overflow-hidden h-[160px]">
+                           <div className="rounded-lg overflow-hidden ">
                              <Image
                                src={music3Image}
                                alt="Music 2"
@@ -346,15 +352,15 @@ const About = () => {
                          </div>
                          
                          {/* Second Column */}
-                         <div className="flex flex-col gap-2 h-full">
-                           <div className="rounded-lg overflow-hidden flex-1">
+                         <div className="flex flex-col gap-2">
+                           <div className="rounded-lg overflow-hidden aspect-square">
                              <Image
                                src={music4Image}
                                alt="Music 3"
                                className="w-full h-full object-cover"
                              />
                            </div>
-                           <div className="rounded-lg overflow-hidden flex-1">
+                           <div className="rounded-lg overflow-hidden ">
                              <Image
                                src={music1Image}
                                alt="Music 4"
@@ -364,18 +370,25 @@ const About = () => {
                          </div>
                          
                          {/* Third Column - 30% and 70% split */}
-                         <div className="flex flex-col gap-2 h-full">
-                           <div className="rounded-lg overflow-hidden h-[120px]">
+                         <div className="flex flex-col gap-2">
+                           <div className="rounded-lg overflow-hidden">
                              <Image
                                src={music2Image}
                                alt="Music 5"
                                className="w-full h-full object-cover"
                              />
                            </div>
-                           <div className="rounded-lg overflow-hidden h-[280px]">
+                           <div className="rounded-lg overflow-hidden aspect-[3/4]">
                              <Image
                                src={music6Image}
                                alt="Music 6"
+                               className="w-full h-full object-cover"
+                             />
+                           </div>
+                           <div className="rounded-lg overflow-hidden aspect-square">
+                             <Image
+                               src={music7Image}
+                               alt="Music 7"
                                className="w-full h-full object-cover"
                              />
                            </div>
