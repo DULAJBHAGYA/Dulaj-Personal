@@ -171,7 +171,7 @@ const About = () => {
                   You can find more about my internship project at <a href="#projects" className="text-blue-600 hover:text-blue-800 ">Projects</a> in the Projects section
                 </p>
 
-                <h4 className="text-xl  font-semibold text-gray-900 mb-2 mt-8">Software Engineer (2025 Nov - Present)</h4>
+                <h4 className="text-xl  font-semibold text-gray-900 mb-2 mt-8">Software Engineer (2025 Sep - Present)</h4>
                 <p className="text-gray-600 text-base sm:text-lg md:text-xl mb-2">
                   Working as a Full Stack Software Engineer at <a href="https://masgraslaw.ca/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 ">Masgras Professional Corporation (Canada)</a>.
                 </p>
