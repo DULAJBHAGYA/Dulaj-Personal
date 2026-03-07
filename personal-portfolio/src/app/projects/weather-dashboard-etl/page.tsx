@@ -40,11 +40,11 @@ export default function WeatherDashboardETLPipeline() {
               {/* Project Content */}
               <div className="bg-white rounded-3xl p-8">
                 <div className="mb-6">
-                  <span className="text-lg font-semibold text-gray-500">Data Engineering Project</span>
-                  <h1 className="text-3xl font-bold text-gray-900 mt-2">Weather Dashboard ETL Pipeline</h1>
+                  <span className="text-base font-semibold text-gray-500">Data Engineering Project</span>
+                  <h1 className="text-2xl font-bold text-gray-900 mt-2">Weather Dashboard ETL Pipeline</h1>
                 </div>
                 
-                <p className="text-gray-600 text-lg text-justify leading-relaxed mb-8">
+                <p className="text-gray-600 text-base text-justify leading-relaxed mb-8">
                   A comprehensive weather data collection and visualization system that automatically fetches real-time weather information from the OpenWeatherMap API, processes and stores it in a local SQLite database, and displays it through a responsive web dashboard.
                 </p>
                 
@@ -60,16 +60,16 @@ export default function WeatherDashboardETLPipeline() {
                 
                 <div className="space-y-6">
                   <div className="mb-6">
-                    <h3 className="text-xl font-semibold text-gray-900 mb-3">Project Overview</h3>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-3">Project Overview</h3>
                     <p className="text-gray-600 text-justify leading-relaxed">
                       The Weather ETL Pipeline is a comprehensive weather data collection and visualization system that automatically fetches real-time weather information from the OpenWeatherMap API, processes and stores it in a local SQLite database, and displays it through a responsive web dashboard. This system provides a complete solution for monitoring weather conditions in real-time with minimal setup and maintenance requirements.
                     </p>
                   </div>
                   
                   <div className="mb-6">
-                    <h3 className="text-xl font-semibold text-gray-900 mb-3">Core Components</h3>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-3">Core Components</h3>
                     
-                    <h4 className="text-lg font-medium text-gray-800 mt-4 mb-2">1. Data Pipeline (Backend)</h4>
+                    <h4 className="text-base font-medium text-gray-800 mt-4 mb-2">1. Data Pipeline (Backend)</h4>
                     <ul className="space-y-2">
                       <li className="flex items-start">
                         <span className="text-blue-500 mr-2 mt-1">•</span>
@@ -93,7 +93,7 @@ export default function WeatherDashboardETLPipeline() {
                       </li>
                     </ul>
                     
-                    <h4 className="text-lg font-medium text-gray-800 mt-4 mb-2">2. Dashboard (Frontend)</h4>
+                    <h4 className="text-base font-medium text-gray-800 mt-4 mb-2">2. Dashboard (Frontend)</h4>
                     <ul className="space-y-2">
                       <li className="flex items-start">
                         <span className="text-blue-500 mr-2 mt-1">•</span>
@@ -107,7 +107,7 @@ export default function WeatherDashboardETLPipeline() {
                   </div>
                   
                   <div className="mb-6">
-                    <h3 className="text-xl font-semibold text-gray-900 mb-3">How It Works</h3>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-3">How It Works</h3>
                     <ol className="space-y-2 list-decimal list-inside">
                       <li className="text-gray-600"><strong>Data Collection:</strong> The pipeline fetches current weather data for configured locations (Kandy, Colombo, Anuradhapura in Sri Lanka) from OpenWeatherMap API every 5 minutes</li>
                       <li className="text-gray-600"><strong>Data Processing:</strong> Raw API responses are transformed into structured data with proper validation</li>
@@ -118,7 +118,7 @@ export default function WeatherDashboardETLPipeline() {
                   </div>
                   
                   <div className="mb-6">
-                    <h3 className="text-xl font-semibold text-gray-900 mb-3">Key Features</h3>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-3">Key Features</h3>
                     <ul className="space-y-2">
                       <li className="flex items-start">
                         <span className="text-blue-500 mr-2 mt-1">•</span>
@@ -148,7 +148,7 @@ export default function WeatherDashboardETLPipeline() {
                   </div>
                   
                   <div className="mb-6">
-                    <h3 className="text-xl font-semibold text-gray-900 mb-3">Technology Stack</h3>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-3">Technology Stack</h3>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div>
                         <h4 className="font-medium text-gray-900 mb-2">Backend</h4>
@@ -209,7 +209,7 @@ export default function WeatherDashboardETLPipeline() {
                   </div>
                   
                   <div className="mb-6">
-                    <h3 className="text-xl font-semibold text-gray-900 mb-3">Getting Started</h3>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-3">Getting Started</h3>
                     <ol className="space-y-2 list-decimal list-inside">
                       <li className="text-gray-600">Configure your OpenWeatherMap API key in the environment file</li>
                       <li className="text-gray-600">Run the pipeline with <code className="bg-gray-100 px-1 rounded">python -m src.main schedule</code> to start continuous data collection</li>
@@ -219,7 +219,7 @@ export default function WeatherDashboardETLPipeline() {
                   </div>
                   
                   <div className="mb-6">
-                    <h3 className="text-xl font-semibold text-gray-900 mb-3">Project Impact</h3>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-3">Project Impact</h3>
                     <ul className="space-y-2">
                       <li className="flex items-start">
                         <span className="text-blue-500 mr-2 mt-1">•</span>

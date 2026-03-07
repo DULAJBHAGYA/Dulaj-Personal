@@ -123,7 +123,7 @@ const Contact = () => {
           >
              <div className="text-left mb-8">
           
-          <p className="text-black text-base sm:text-lg md:text-xl lg:text-2xl max-w-2xl">
+          <p className="text-black text-sm sm:text-base md:text-lg lg:text-xl max-w-2xl">
             Let&apos;s discuss your next project or just say hello!
           </p>
         </div>
@@ -142,8 +142,8 @@ const Contact = () => {
                     <info.icon className="w-8 h-8 text-[#4A707A]" />
                   </div>
                   <div>
-                    <h4 className="text-gray-900 text-base sm:text-lg md:text-xl font-semibold">{info.title}</h4>
-                    <p className="text-gray-600 text-sm sm:text-base md:text-lg lg:text-xl">{info.value}</p>
+                    <h4 className="text-gray-900 text-sm sm:text-base md:text-lg font-semibold">{info.title}</h4>
+                    <p className="text-gray-600 text-xs sm:text-sm md:text-base lg:text-lg">{info.value}</p>
                   </div>
                 </a>
               ))}
@@ -160,7 +160,7 @@ const Contact = () => {
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="firtsname" className="block text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 mb-2">
+                  <label htmlFor="firtsname" className="block text-xs sm:text-sm md:text-base lg:text-lg text-gray-600 mb-2">
                     First Name
                   </label>
                   <input
@@ -170,12 +170,12 @@ const Contact = () => {
                     value={formData.firtsname}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-3 border text-sm sm:text-base md:text-lg lg:text-xl border-gray-200 rounded-lg text-gray-900 placeholder-gray-300 focus:border-gray-500 focus:ring-1 focus:ring-gray-500 focus:outline-none transition-colors duration-300"
+                    className="w-full px-4 py-3 border text-xs sm:text-sm md:text-base lg:text-lg border-gray-200 rounded-lg text-gray-900 placeholder-gray-300 focus:border-gray-500 focus:ring-1 focus:ring-gray-500 focus:outline-none transition-colors duration-300"
                     placeholder="Your First Name"
                   />
                 </div>
                 <div>
-                  <label htmlFor="lastname" className="block text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 mb-2">
+                  <label htmlFor="lastname" className="block text-xs sm:text-sm md:text-base lg:text-lg text-gray-600 mb-2">
                     Last Name
                   </label>
                   <input
@@ -185,14 +185,14 @@ const Contact = () => {
                     value={formData.lastname}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-200 text-sm sm:text-base md:text-lg lg:text-xl rounded-lg text-gray-900 placeholder-gray-300 focus:border-gray-500 focus:ring-1 focus:ring-gray-500 focus:outline-none transition-colors duration-300"
+                    className="w-full px-4 py-3 border border-gray-200 text-xs sm:text-sm md:text-base lg:text-lg rounded-lg text-gray-900 placeholder-gray-300 focus:border-gray-500 focus:ring-1 focus:ring-gray-500 focus:outline-none transition-colors duration-300"
                     placeholder="Your Last Name"
                   />
                 </div>
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 mb-2">
+                <label htmlFor="email" className="block text-xs sm:text-sm md:text-base lg:text-lg text-gray-600 mb-2">
                   Email
                 </label>
                 <input
@@ -202,13 +202,13 @@ const Contact = () => {
                   value={formData.email}
                   onChange={handleInputChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-200 text-sm sm:text-base md:text-lg lg:text-xl rounded-lg text-gray-900 placeholder-gray-300 focus:border-gray-500 focus:ring-1 focus:ring-gray-500 focus:outline-none transition-colors duration-300"
+                  className="w-full px-4 py-3 border border-gray-200 text-xs sm:text-sm md:text-base lg:text-lg rounded-lg text-gray-900 placeholder-gray-300 focus:border-gray-500 focus:ring-1 focus:ring-gray-500 focus:outline-none transition-colors duration-300"
                   placeholder="Your Email"
                 />
               </div>
               
               <div>
-                <label htmlFor="subject" className="block text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 mb-2">
+                <label htmlFor="subject" className="block text-xs sm:text-sm md:text-base lg:text-lg text-gray-600 mb-2">
                   Subject
                 </label>
                 <input
@@ -218,13 +218,13 @@ const Contact = () => {
                   value={formData.subject}
                   onChange={handleInputChange}
                   required
-                  className="w-full px-4 py-3  border border-gray-200 text-sm sm:text-base md:text-lg lg:text-xl rounded-lg text-gray-900 placeholder-gray-300 focus:border-gray-500 focus:ring-1 focus:ring-gray-500 focus:outline-none transition-colors duration-300"
+                  className="w-full px-4 py-3  border border-gray-200 text-xs sm:text-sm md:text-base lg:text-lg rounded-lg text-gray-900 placeholder-gray-300 focus:border-gray-500 focus:ring-1 focus:ring-gray-500 focus:outline-none transition-colors duration-300"
                   placeholder="What's this about?"
                 />
               </div>
               
               <div>
-                <label htmlFor="message" className="block text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 mb-2">
+                <label htmlFor="message" className="block text-xs sm:text-sm md:text-base lg:text-lg text-gray-600 mb-2">
                   Message
                 </label>
                 <textarea
@@ -234,7 +234,7 @@ const Contact = () => {
                   onChange={handleInputChange}
                   required
                   rows={6}
-                  className="w-full px-4 py-3 border border-gray-200 text-sm sm:text-base md:text-lg lg:text-xl rounded-lg text-gray-900 placeholder-gray-300 focus:border-gray-500 focus:ring-1 focus:ring-gray-500 focus:outline-none transition-colors duration-300 resize-none"
+                  className="w-full px-4 py-3 border border-gray-200 text-xs sm:text-sm md:text-base lg:text-lg rounded-lg text-gray-900 placeholder-gray-300 focus:border-gray-500 focus:ring-1 focus:ring-gray-500 focus:outline-none transition-colors duration-300 resize-none"
                   placeholder="Tell me about your project or just say hello!"
                 />
               </div>
@@ -242,7 +242,7 @@ const Contact = () => {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-[#7697A0] hover:from-purple-600 hover:to-pink-600 disabled:from-gray-500 disabled:to-gray-600 text-sm sm:text-base md:text-lg lg:text-xl text-white font-regular py-3 px-6 rounded-lg transition-all duration-300 
+                className="w-full bg-[#7697A0] hover:from-purple-600 hover:to-pink-600 disabled:from-gray-500 disabled:to-gray-600 text-xs sm:text-sm md:text-base lg:text-lg text-white font-regular py-3 px-6 rounded-lg transition-all duration-300 
                 transform hover:scale-105 hover:shadow-lg hover:shadow-[#7697A0]/25 disabled:transform-none disabled:shadow-none flex items-center justify-center gap-2"
               >
                 {isSubmitting ? (
@@ -259,13 +259,13 @@ const Contact = () => {
               
               {/* Status Messages */}
               {submitStatus === 'success' && (
-                <div className="p-4 bg-green-100 border border-green-400 text-green-700 rounded-lg text-sm sm:text-base md:text-lg">
+                <div className="p-4 bg-green-100 border border-green-400 text-green-700 rounded-lg text-xs sm:text-sm md:text-base">
                   ✅ Message sent successfully! I&apos;ll get back to you soon.
                 </div>
               )}
               
               {submitStatus === 'error' && (
-                <div className="p-4 bg-red-100 border border-red-400 text-red-700 rounded-lg text-sm sm:text-base md:text-lg">
+                <div className="p-4 bg-red-100 border border-red-400 text-red-700 rounded-lg text-xs sm:text-sm md:text-base">
                   ❌ Failed to send message. Please try again or contact me directly.
                 </div>
               )}

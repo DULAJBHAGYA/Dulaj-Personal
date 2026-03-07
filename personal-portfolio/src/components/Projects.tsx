@@ -9,6 +9,8 @@ import PortfolioImg from '@/assets/images/Portfolio.png';
 import ItPathFinderImg from '@/assets/images/ItPathFinderImg.png';
 import ETLPipeImg from '@/assets/images/ETLPipe.png'
 import LeaflinkImg from '@/assets/images/Leaflink.png';
+import AyanaWebImg from '@/assets/images/AyanaWeb.png';
+import HotelPosImg from '@/assets/images/HotelPos.png';
 
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -214,6 +216,34 @@ const Projects = () => {
       size: 'medium' // Regular card
     },
     {
+      id: 'ayana-resort-official-website',
+      category: 'Client Project',
+      title: 'Ayana Resort Official Website',
+      description: 'A visually stunning and user-friendly website for Ayana Resort, showcasing its luxurious amenities and services to attract potential guests.',
+      image: AyanaWebImg,
+      technologies: ['Next.js', 'Tailwind CSS', 'Framer Motion'],
+      liveUrl: 'https://github.com',
+      githubUrl: 'https://github.com',
+      gradient: 'from-emerald-400 to-teal-600',
+      bgGradient: 'from-gray-50 to-gray-100',
+      icon: '🚌',
+      size: 'medium' // Regular card
+    },
+    {
+      id: 'ayana-resort-pos-system',
+      category: 'Commercial Project',
+      title: 'Ayana Resort POS System',
+      description: 'A modern point-of-sale system for Ayana Resort, streamlining operations and enhancing customer experience.',
+      image: HotelPosImg,
+      technologies: ['React', 'Tailwind CSS', 'Node.js', 'MySQL'],
+      liveUrl: 'https://github.com',
+      githubUrl: 'https://github.com',
+      gradient: 'from-emerald-400 to-teal-600',
+      bgGradient: 'from-gray-50 to-gray-100',
+      icon: '🌤️',
+      size: 'small' // Small card
+    },
+    {
       id: 'weather-dashboard-etl',
       category: 'Data Engineering',
       title: 'Weather Dashboard ETL Pipeline',
@@ -415,10 +445,10 @@ const Projects = () => {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-900 mb-6">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-gray-900 mb-6">
             My Projects
           </h2>
-          <p className="text-black text-base sm:text-lg md:text-xl lg:text-2xl max-w-2xl leading-relaxed">
+          <p className="text-black text-sm sm:text-base md:text-lg lg:text-xl max-w-2xl leading-relaxed">
             Here are some of my recent projects that showcase my skills and passion for development
           </p>
         </motion.div>
@@ -454,7 +484,7 @@ const Projects = () => {
                       />
                     ) : (
                       <div className={`w-full h-full bg-gradient-to-br ${project.gradient} rounded-2xl flex items-center justify-center relative`}>
-                        <div className="text-5xl font-bold text-white/90">
+                        <div className="text-4xl font-bold text-white/90">
                           {project.title.charAt(0).toUpperCase()}
                         </div>
                         {/* Decorative elements */}
@@ -466,10 +496,10 @@ const Projects = () => {
                   
                   {/* Project Header */}
                   <div className="mb-2">
-                    <div className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold text-gray-500">
+                    <div className="text-xs sm:text-sm md:text-base lg:text-lg font-semibold text-gray-500">
                       {project.category}
                     </div>
-                    <h3 className="text-lg sm:text-xl md:text-2xl font-regular text-gray-900 group-hover:text-[#7697A0] transition-colors duration-300">
+                    <h3 className="text-base sm:text-lg md:text-xl font-regular text-gray-900 group-hover:text-[#7697A0] transition-colors duration-300">
                       {project.title}
                     </h3>
                   </div>
@@ -477,7 +507,7 @@ const Projects = () => {
                   {/* Project Content */}
                   <div className="space-y-4">
                     {/* Description */}
-                    <p className="text-gray-600 leading-relaxed text-sm sm:text-base md:text-lg lg:text-xl">
+                    <p className="text-gray-600 leading-relaxed text-xs sm:text-sm md:text-base lg:text-lg">
                       {project.description}
                     </p>
               

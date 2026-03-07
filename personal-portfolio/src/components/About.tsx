@@ -107,10 +107,10 @@ const About = () => {
                  {/* 60% Name */}
                  <div className="h-[30%] flex items-center justify-start">
                    <div className="text-left">
-                     <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-gray-900 leading-tight">
+                     <h1 className="text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 leading-tight">
                        Dulaj
                      </h1>
-                     <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-regular text-gray-900 leading-tight">
+                     <h2 className="text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-regular text-gray-900 leading-tight">
                        Upananda
                      </h2>
                    </div>
@@ -149,11 +149,11 @@ const About = () => {
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
             }`}
           >
-            <h3 className="text-2xl font-regular text-black mb-6">
+            <h3 className="text-xl font-regular text-black mb-6">
               About Me
             </h3>
             
-            <p className="text-gray-600 text-base sm:text-lg md:text-xl mb-6 leading-relaxed">
+            <p className="text-gray-600 text-sm sm:text-base md:text-lg mb-6 leading-relaxed">
               I&apos;m a fresh graduate from UOM with a passion for 
               Full Stack development and DevOps. I love building scalable applications and 
               implementing efficient deployment pipelines that enhance both development 
@@ -162,17 +162,17 @@ const About = () => {
           </div>
 
            <div className="space-y-6">
-             <h3 className="text-2xl font-regular text-black mb-6">Experience</h3>
+             <h3 className="text-xl font-regular text-black mb-6">Experience</h3>
              
              <div className="bg-white/50 rounded-lg">
-               <h4 className="text-xl  font-semibold text-gray-900 mb-2">Software Engineer Intern (2024 Feb - 2024 Aug)</h4>
-                <p className="text-gray-600 text-base sm:text-lg md:text-xl mb-2">
+               <h4 className="text-lg  font-semibold text-gray-900 mb-2">Software Engineer Intern (2024 Feb - 2024 Aug)</h4>
+                <p className="text-gray-600 text-sm sm:text-base md:text-lg mb-2">
                   Completed 6 months internship in <a href="https://futurecx.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 ">Future CX</a> as Software Engineer in the mobile development team.
                   You can find more about my internship project at <a href="#projects" className="text-blue-600 hover:text-blue-800 ">Projects</a> in the Projects section
                 </p>
 
-                <h4 className="text-xl  font-semibold text-gray-900 mb-2 mt-8">Software Engineer (2025 Sep - Present)</h4>
-                <p className="text-gray-600 text-base sm:text-lg md:text-xl mb-2">
+                <h4 className="text-lg  font-semibold text-gray-900 mb-2 mt-8">Software Engineer (2025 Sep - Present)</h4>
+                <p className="text-gray-600 text-sm sm:text-base md:text-lg mb-2">
                   Working as a Full Stack Software Engineer at <a href="https://masgraslaw.ca/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 ">Masgras Professional Corporation (Canada)</a>.
                 </p>
                
@@ -180,7 +180,7 @@ const About = () => {
            </div>
 
            <div className="space-y-6">
-             <h3 className="text-2xl font-regular text-black mb-6">Education</h3>
+             <h3 className="text-xl font-regular text-black mb-6">Education</h3>
              
              {/* Row 1: Image first on mobile, text second */}
              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
@@ -194,8 +194,8 @@ const About = () => {
                  </div>
                </div>
                <div className="bg-white/50 rounded-lg h-auto md:h-72 flex flex-col justify-center p-4 md:p-6 order-2 md:order-1">
-                 <h4 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2">University of Moratuwa (2021 - 2025)</h4>
-                 <p className="text-gray-600 text-base sm:text-lg md:text-xl">
+                 <h4 className="text-base sm:text-lg font-semibold text-gray-900 mb-2">University of Moratuwa (2021 - 2025)</h4>
+                 <p className="text-gray-600 text-sm sm:text-base md:text-lg">
                   Pursued Bachelor of Science (Hons) in Information Technology & Management from Faculty of IT, <a href="https://uom.lk/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">University of Moratuwa</a>. 
                   </p>
                </div>
@@ -213,10 +213,10 @@ const About = () => {
                  </div>
                </div>
                <div className="bg-white/50 rounded-lg h-auto md:h-72 flex flex-col justify-center p-4 md:p-6 order-2 md:order-2">
-                 <h4 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2">
+                 <h4 className="text-base sm:text-lg font-semibold text-gray-900 mb-2">
                      SIBA Campus (2019 - 2020)
                  </h4>
-                 <p className="text-gray-600 text-base sm:text-lg md:text-xl">
+                 <p className="text-gray-600 text-sm sm:text-base md:text-lg">
                   Completed Diploma in IT and Diploma in English at <a href="https://siba.edu.lk/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">SIBA Campus, Kandy</a>. 
                   </p>
                </div>
@@ -234,8 +234,8 @@ const About = () => {
                  </div>
                </div>
                <div className="bg-white/50 rounded-lg h-auto md:h-72 flex flex-col justify-center p-4 md:p-6 order-2 md:order-1">
-                 <h4 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2">Kingswood College, Kandy (2004 - 2017)</h4>
-                 <p className="text-gray-600 text-base sm:text-lg md:text-xl">
+                 <h4 className="text-base sm:text-lg font-semibold text-gray-900 mb-2">Kingswood College, Kandy (2004 - 2017)</h4>
+                 <p className="text-gray-600 text-sm sm:text-base md:text-lg">
                   studied primary and secondary studies at <a href="https://kingswood.lk/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">Kingswood College, Kandy</a>. I did my A/Ls in the Biology stream and I was able to secure 2As and B passes.
                   </p>
                </div>
@@ -249,12 +249,12 @@ const About = () => {
 
            {/* My Favorites Section */}
            <div className="space-y-8">
-             <h3 className="text-2xl font-regular text-black mb-8">My Favorites</h3>
+             <h3 className="text-xl font-regular text-black mb-8">My Favorites</h3>
              
              <div className="space-y-6">
                {/* Rugby and Cricket */}
                <div className="bg-white/50 rounded-lg p-10">
-                 <h4 className="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+                 <h4 className="text-lg font-semibold text-gray-900 mb-4 flex items-center">
                    Rugby & Cricket
                  </h4>
                  
@@ -298,7 +298,7 @@ const About = () => {
                    
                    {/* Right Column - Paragraph */}
                    <div className="flex items-center order-1 md:order-2">
-                     <p className="text-gray-600 text-base sm:text-lg leading-relaxed text-justify">
+                     <p className="text-gray-600 text-sm sm:text-base leading-relaxed text-justify">
                        I am a big fan of <span className="font-semibold">Kandy Sports Club</span> and <span className="font-semibold">Springboks</span> rugby teams. I also have a deep love for  
                         <span className="font-semibold"> Sri Lankan cricket</span> and follow the national team passionately. These sports have been an integral 
                        part of my life, teaching me valuable lessons about teamwork, discipline, and national pride. 
@@ -310,20 +310,20 @@ const About = () => {
                          
                {/* Music */}
                <div className="bg-white/50 rounded-lg p-10">
-                 <h4 className="text-xl font-semibold text-gray-900 mb-6">
+                 <h4 className="text-lg font-semibold text-gray-900 mb-6">
                    Music
                  </h4>
                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                    {/* Left Column - Text Content */}
                    <div className="flex items-center justify-center">
                      <div className="space-y-4">
-                       <p className="text-gray-600 leading-relaxed text-base sm:text-lg md:text-xl text-justify">
+                       <p className="text-gray-600 leading-relaxed text-sm sm:text-base md:text-lg text-justify">
                          I have a deep passion for Sri Lankan Classical Music, particularly the enchanting <span className="font-semibold">Nadhagama</span> vibe that captures the soul of our cultural heritage. The melodic rhythms and traditional instruments create a unique musical experience that I find truly captivating.
                        </p>
-                       <p className="text-gray-600 leading-relaxed text-base sm:text-lg md:text-xl text-justify">
+                       <p className="text-gray-600 leading-relaxed text-sm sm:text-base md:text-lg text-justify">
                          Among my favorite artists, <span className="font-semibold">Dhanith Sri</span> and <span className="font-semibold">Suni Edirisinghe</span> stand out for their exceptional vocal talent and ability to blend traditional elements with contemporary sounds. Their music resonates with me on both emotional and cultural levels.
                        </p>
-                       <p className="text-gray-600 leading-relaxed text-base sm:text-lg md:text-xl text-justify">
+                       <p className="text-gray-600 leading-relaxed text-sm sm:text-base md:text-lg text-justify">
                          I also enjoy exploring modern genres, especially EDM artists like <span className="font-semibold">Chainsmokers</span> and <span className="font-semibold">Coldplay</span>, who bring innovative electronic sounds and powerful lyrics. This diverse musical taste allows me to appreciate both the rich traditions of Sri Lankan music and the dynamic energy of contemporary global sounds.
                        </p>
                      </div>
@@ -404,7 +404,7 @@ const About = () => {
                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                    {/* Books Column */}
                    <div className="flex flex-col">
-                     <h4 className="text-xl font-semibold text-gray-900 mb-4">
+                     <h4 className="text-lg font-semibold text-gray-900 mb-4">
                        Books
                      </h4>
                      
@@ -430,7 +430,7 @@ const About = () => {
                    
                    {/* Movies Column */}
                    <div className="flex flex-col">
-                     <h4 className="text-xl font-semibold text-gray-900 mb-4">
+                     <h4 className="text-lg font-semibold text-gray-900 mb-4">
                        Movies & TV Series
                      </h4>
                      
@@ -473,7 +473,7 @@ const About = () => {
 
                {/* Hobbies */}
                <div className="bg-white/50 rounded-lg p-10">
-                 <h4 className="text-xl font-semibold text-gray-900 mb-6 flex items-center">
+                 <h4 className="text-lg font-semibold text-gray-900 mb-6 flex items-center">
                    Hobbies
                  </h4>
                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

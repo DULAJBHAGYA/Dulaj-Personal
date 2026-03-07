@@ -39,11 +39,11 @@ export default function CoursePerformanceAnalytics() {
               {/* Project Content */}
               <div className="bg-white rounded-3xl p-8">
                 <div className="mb-6">
-                  <span className="text-lg font-semibold text-gray-500">Client Project</span>
-                  <h1 className="text-3xl font-bold text-gray-900 mt-2">Multi-Dimensional Course Performance Analytics Dashboard</h1>
+                  <span className="text-base font-semibold text-gray-500">Client Project</span>
+                  <h1 className="text-2xl font-bold text-gray-900 mt-2">Multi-Dimensional Course Performance Analytics Dashboard</h1>
                 </div>
                 
-                <p className="text-gray-600 text-lg text-justify leading-relaxed mb-8">
+                <p className="text-gray-600 text-base text-justify leading-relaxed mb-8">
                   A comprehensive analytics dashboard for educational institutions that provides multi-dimensional insights into course performance, predictive analytics, and data visualization. The system supports different user roles Admin, Department Head, Instructor with role-specific dashboards and analytics.
                 </p>
                 
@@ -61,14 +61,14 @@ export default function CoursePerformanceAnalytics() {
                 
                 <div className="space-y-6">
                   <div className="mb-6">
-                    <h3 className="text-xl font-semibold text-gray-900 mb-3">Project Overview</h3>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-3">Project Overview</h3>
                     <p className="text-gray-600 text-justify leading-relaxed">
                       This comprehensive analytics dashboard for educational institutions provides multi-dimensional insights into course performance, predictive analytics, and data visualization. The system supports different user roles (Admin, Department Head, Instructor) with role-specific dashboards and analytics, enabling enhanced decision-making for administrators, data-driven instructional improvements, and early intervention opportunities for at-risk students.
                     </p>
                   </div>
                   
                   <div className="mb-6">
-                    <h3 className="text-xl font-semibold text-gray-900 mb-3">Key Features</h3>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-3">Key Features</h3>
                     <ul className="space-y-2">
                       <li className="flex items-start">
                         <span className="text-blue-500 mr-2 mt-1">•</span>
@@ -90,7 +90,7 @@ export default function CoursePerformanceAnalytics() {
                   </div>
                   
                   <div className="mb-6">
-                    <h3 className="text-xl font-semibold text-gray-900 mb-3">AI Usage in the Project</h3>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-3">AI Usage in the Project</h3>
                     <ul className="space-y-2">
                       <li className="flex items-start">
                         <span className="text-blue-500 mr-2 mt-1">•</span>
@@ -108,7 +108,7 @@ export default function CoursePerformanceAnalytics() {
                   </div>
                   
                   <div className="mb-6">
-                    <h3 className="text-xl font-semibold text-gray-900 mb-3">System Architecture</h3>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-3">System Architecture</h3>
                     <ul className="space-y-2">
                       <li className="flex items-start">
                         <span className="text-blue-500 mr-2 mt-1">•</span>
@@ -126,7 +126,7 @@ export default function CoursePerformanceAnalytics() {
                   </div>
                   
                   <div className="mb-6">
-                    <h3 className="text-xl font-semibold text-gray-900 mb-3">Technical Challenges & Solutions</h3>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-3">Technical Challenges & Solutions</h3>
                     <ul className="space-y-2">
                       <li className="flex items-start">
                         <span className="text-blue-500 mr-2 mt-1">•</span>
@@ -148,7 +148,7 @@ export default function CoursePerformanceAnalytics() {
                   </div>
                   
                   <div className="mb-6">
-                    <h3 className="text-xl font-semibold text-gray-900 mb-3">Project Impact</h3>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-3">Project Impact</h3>
                     <ul className="space-y-2">
                       <li className="flex items-start">
                         <span className="text-blue-500 mr-2 mt-1">•</span>
@@ -162,7 +162,7 @@ export default function CoursePerformanceAnalytics() {
                   </div>
                   
                   <div className="mb-6">
-                    <h3 className="text-xl font-semibold text-gray-900 mb-3">Development Process</h3>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-3">Development Process</h3>
                     <ul className="space-y-2">
                       <li className="flex items-start">
                         <span className="text-blue-500 mr-2 mt-1">•</span>
@@ -180,7 +180,7 @@ export default function CoursePerformanceAnalytics() {
                   </div>
                   
                   <div className="mb-6">
-                    <h3 className="text-xl font-semibold text-gray-900 mb-3">Unique Aspects</h3>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-3">Unique Aspects</h3>
                     <ul className="space-y-2">
                       <li className="flex items-start">
                         <span className="text-blue-500 mr-2 mt-1">•</span>
@@ -198,7 +198,7 @@ export default function CoursePerformanceAnalytics() {
                   </div>
                   
                   <div className="mt-8">
-                    <h3 className="text-xl font-semibold text-gray-900 mb-4">Technologies Used</h3>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-4">Technologies Used</h3>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div>
                         <h4 className="font-medium text-gray-900 mb-2">Frontend</h4>
@@ -275,7 +275,7 @@ export default function CoursePerformanceAnalytics() {
                   </div>
                   
                   <div className="mb-6">
-                    <h3 className="text-xl font-semibold text-gray-900 mb-3">Repository Structure</h3>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-3">Repository Structure</h3>
                     <pre className="bg-gray-100 p-4 rounded-lg overflow-x-auto text-sm">
 {`├── client/                 # React frontend application
 │   ├── src/
