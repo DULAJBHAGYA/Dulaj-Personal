@@ -3,6 +3,7 @@
 import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -49,11 +50,13 @@ export default function WeatherDashboardETLPipeline() {
                 </p>
                 
                 <div className="mb-8">
-                  <div className="relative pb-[56.25%] h-0 rounded-xl overflow-hidden shadow-lg">
-                    <img
-                      src={ETLPipe.src}
+                  <div className="relative w-full h-96 rounded-xl overflow-hidden shadow-lg">
+                    <Image
+                      src={ETLPipe}
                       alt="Weather Dashboard ETL Pipeline"
-                      className="absolute inset-0 w-full h-full object-cover"
+                      fill
+                      style={{objectFit: 'cover'}}
+                      priority
                     />
                   </div>
                 </div>
