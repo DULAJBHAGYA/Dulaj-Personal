@@ -10,7 +10,7 @@ import ItPathFinderImg from '@/assets/images/ItPathFinderImg.png';
 import ETLPipeImg from '@/assets/images/ETLPipe.png'
 import LeaflinkImg from '@/assets/images/Leaflink.png';
 import AyanaWebImg from '@/assets/images/AyanaWeb.png';
-import HotelPosImg from '@/assets/images/HotelPos.png';
+import HotelPosImg from '@/assets/images/HotelPOS.png';
 
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

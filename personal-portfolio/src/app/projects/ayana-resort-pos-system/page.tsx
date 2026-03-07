@@ -8,7 +8,7 @@ import { motion } from 'framer-motion';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { IoIosArrowForward } from "react-icons/io";
-import HotelPosImg from '@/assets/images/HotelPos.png';
+import HotelPosImg from '@/assets/images/HotelPOS.png';
 
 export default function AyanaResortPOS() {
   const pageTitle = 'Ayana Resort POS System | Dulaj Personal';
