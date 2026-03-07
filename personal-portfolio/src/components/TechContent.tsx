@@ -1,10 +1,10 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
-import { FaReact, FaNodeJs, FaJava, FaHtml5, FaJenkins, FaFigma, FaCss3, FaPython, FaApple, FaDocker, FaAws, FaAngular, FaWindows, FaLinux, FaGitAlt, FaGithub, FaJira } from 'react-icons/fa';
-import { SiNextdotjs, SiFlutter, SiTypescript, SiGnubash, SiGooglecloud, SiOracle, SiJavascript, SiPostgresql, SiMongodb, SiMysql, SiDotnet, SiTailwindcss, SiKubernetes, SiClion, SiSpringboot, SiIntellijidea, SiApachenetbeanside, SiEclipseide, SiBlender } from 'react-icons/si';
+import { FaReact, FaNodeJs, FaJava, FaHtml5, FaJenkins, FaFigma, FaCss3, FaPython, FaApple, FaDocker, FaAws, FaWindows, FaLinux, FaGitAlt, FaGithub, FaJira } from 'react-icons/fa';
+import { SiNextdotjs, SiFlutter, SiTypescript, SiGnubash, SiGooglecloud, SiOracle, SiJavascript, SiPostgresql, SiMongodb, SiMysql, SiTailwindcss, SiKubernetes, SiClion, SiSpringboot, SiIntellijidea, SiApachenetbeanside, SiEclipseide, SiBlender } from 'react-icons/si';
 import { TbBrandReactNative, TbBrandVisualStudio } from "react-icons/tb";
-import { FaDartLang, FaGolang } from "react-icons/fa6";
+import { FaDartLang } from "react-icons/fa6";
 import { DiMsqlServer } from "react-icons/di";
 import { VscVscode } from "react-icons/vsc";
 
