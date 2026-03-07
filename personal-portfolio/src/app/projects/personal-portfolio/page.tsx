@@ -39,39 +39,39 @@ export default function PersonalPortfolio() {
               {/* Project Content */}
               <div className="bg-white rounded-3xl p-8">
                 <div className="mb-6">
-                  <span className="text-lg font-semibold text-gray-500">Frontend Development</span>
-                  <h1 className="text-3xl font-bold text-gray-900 mt-2">Personal Portfolio</h1>
+                  <span className="text-base font-semibold text-gray-500">Frontend Development</span>
+                  <h1 className="text-2xl font-bold text-gray-900 mt-2">Personal Portfolio</h1>
                 </div>
                 
-                <p className="text-gray-600 text-lg leading-relaxed mb-8">
+                <p className="text-gray-600 text-base leading-relaxed mb-8">
                   A modern, responsive portfolio website built with Next.js, Tailwind CSS, and Framer Motion for smooth animations. This project demonstrates my skills in frontend development, UI/UX design, and modern web technologies.
                 </p>
 
                
                 <div className="space-y-6">
                   <div className="mb-6">
-                    <h3 className="text-xl font-semibold text-gray-900 mb-3">Project Overview</h3>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-3">Project Overview</h3>
                     <p className="text-gray-600 leading-relaxed">
                       This portfolio website serves as both a personal showcase and a demonstration of my frontend development capabilities. Built with cutting-edge technologies, it provides an engaging user experience while highlighting my projects, skills, and experiences. The site is designed to be fully responsive, ensuring an optimal viewing experience across all devices from mobile phones to desktop computers.
                     </p>
                   </div>
                   
                   <div className="mb-6">
-                    <h3 className="text-xl font-semibold text-gray-900 mb-3">Architecture and Structure</h3>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-3">Architecture and Structure</h3>
                     <p className="text-gray-600 leading-relaxed">
                       The portfolio follows a component-based architecture using Next.js App Router, which allows for efficient code splitting and improved performance. The site is organized into several key sections including a hero section, about page, skills showcase, projects gallery, blog section, and contact form. Each section is built as reusable components that can be easily maintained and extended. The routing system leverages Next.js file-based routing for clean URLs and optimal SEO.
                     </p>
                   </div>
                   
                   <div className="mb-6">
-                    <h3 className="text-xl font-semibold text-gray-900 mb-3">Design and User Experience</h3>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-3">Design and User Experience</h3>
                     <p className="text-gray-600 leading-relaxed">
                       The design philosophy centers on clean aesthetics, intuitive navigation, and smooth interactions. Tailwind CSS is used extensively for styling, providing a consistent design system while maintaining flexibility. Framer Motion powers the animation system, creating smooth transitions between pages and interactive elements that enhance user engagement without compromising performance. The color scheme is carefully chosen to be visually appealing while maintaining accessibility standards.
                     </p>
                   </div>
                   
                   <div className="mb-6">
-                    <h3 className="text-xl font-semibold text-gray-900 mb-3">Key Features</h3>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-3">Key Features</h3>
                     <p className="text-gray-600 leading-relaxed mb-3">
                       The portfolio includes several advanced features that demonstrate modern web development practices:
                     </p>
@@ -112,7 +112,7 @@ export default function PersonalPortfolio() {
                   </div>
                   
                   <div className="mb-6">
-                    <h3 className="text-xl font-semibold text-gray-900 mb-3">Technical Implementation</h3>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-3">Technical Implementation</h3>
                     <p className="text-gray-600 leading-relaxed mb-3">
                       The technical implementation showcases several modern development practices:
                     </p>
@@ -145,21 +145,21 @@ export default function PersonalPortfolio() {
                   </div>
                   
                   <div className="mb-6">
-                    <h3 className="text-xl font-semibold text-gray-900 mb-3">Performance Optimizations</h3>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-3">Performance Optimizations</h3>
                     <p className="text-gray-600 leading-relaxed">
                       Performance was a key consideration throughout development. The site implements automatic code splitting through Next.js, image optimization with Next/Image component, and efficient bundle management. Animations are optimized to maintain 60fps, and the site achieves high scores on performance metrics including Core Web Vitals. Lazy loading is implemented for non-critical resources, and the build process includes minification and compression.
                     </p>
                   </div>
                   
                   <div className="mb-6">
-                    <h3 className="text-xl font-semibold text-gray-900 mb-3">Development Process</h3>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-3">Development Process</h3>
                     <p className="text-gray-600 leading-relaxed">
                       The development process followed an iterative approach, beginning with wireframing and design mockups before moving to implementation. Component-driven development was used to build reusable UI elements, and a mobile-first responsive design approach ensured consistent experience across devices. Git was used for version control with a feature branch workflow, and the project includes comprehensive documentation for future maintenance.
                     </p>
                   </div>
                   
                   <div className="mt-8">
-                    <h3 className="text-xl font-semibold text-gray-900 mb-4">Technologies Used</h3>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-4">Technologies Used</h3>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div>
                         <h4 className="font-medium text-gray-900 mb-2">Core Technologies</h4>

@@ -39,11 +39,11 @@ export default function ExpenseTracker() {
               {/* Project Content */}
               <div className="bg-white rounded-3xl p-8">
                 <div className="mb-6">
-                  <span className="text-lg font-semibold text-gray-500">Personal Project</span>
-                  <h1 className="text-3xl font-bold text-gray-900 mt-2">Expense Tracker</h1>
+                  <span className="text-base font-semibold text-gray-500">Personal Project</span>
+                  <h1 className="text-2xl font-bold text-gray-900 mt-2">Expense Tracker</h1>
                 </div>
                 
-                <p className="text-gray-600 text-lg leading-relaxed mb-8">
+                <p className="text-gray-600 text-base leading-relaxed mb-8">
                   Modern, responsive expense tracking application with dark mode, customizable dashboard widgets, real-time updates, and mobile-optimized design.
                 </p>
                 
@@ -53,7 +53,7 @@ export default function ExpenseTracker() {
                   </p>
                   
                   <div className="mb-6">
-                    <h3 className="text-xl font-semibold text-gray-900 mb-3">Key Features</h3>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-3">Key Features</h3>
                     <ul className="space-y-2">
                       <li className="flex items-start">
                         <span className="text-blue-500 mr-2 mt-1">•</span>
@@ -83,7 +83,7 @@ export default function ExpenseTracker() {
                   </div>
                   
                   <div className="mt-8">
-                    <h3 className="text-xl font-semibold text-gray-900 mb-4">Technologies Used</h3>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-4">Technologies Used</h3>
                     <div className="flex flex-wrap gap-3">
                       <div className="text-gray-600 flex items-center justify-center bg-white p-3 rounded-lg" title="Next.js">
                         <div className="w-8 h-8 bg-gray-200 rounded-full"></div>

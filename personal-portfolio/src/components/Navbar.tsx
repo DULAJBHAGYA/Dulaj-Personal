@@ -87,7 +87,7 @@ const Navbar = () => {
         >
           {/* Logo */}
           <div className="flex-shrink-0">
-            <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-700 font-blanka">
+            <h1 className="text-base sm:text-lg md:text-xl font-bold text-gray-700 font-blanka">
               D U L A J
             </h1>
           </div>
@@ -106,7 +106,7 @@ const Navbar = () => {
                   <Link
                     key={item.name}
                     href={item.href}
-                    className={`px-4 py-2 rounded-full text-sm sm:text-base md:text-lg font-medium transition-all duration-200 ${
+                    className={`px-4 py-2 rounded-full text-xs sm:text-sm md:text-base font-medium transition-all duration-200 ${
                       isActive ? 'text-[#7697A0]' : 'text-gray-700 hover:text-gray-900'
                     }`}
                   >
@@ -169,7 +169,7 @@ const Navbar = () => {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className={`block px-4 py-3 rounded-xl text-sm sm:text-base md:text-lg font-medium transition-colors duration-200 hover:bg-gray-50 ${
+                  className={`block px-4 py-3 rounded-xl text-xs sm:text-sm md:text-base font-medium transition-colors duration-200 hover:bg-gray-50 ${
                     isActive ? 'text-[#7697A0]' : 'text-gray-700 hover:text-gray-900'
                   }`}
                   onClick={() => setIsOpen(false)}

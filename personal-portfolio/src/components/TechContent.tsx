@@ -36,125 +36,115 @@ export default function TechContent() {
     <section id="tech" ref={techRef} className="pt-16 pb-20">
        <div className="max-w-7xl mx-auto">
          <div className="text-left mb-10">
-           <p className="text-gray-700 text-sm sm:text-base md:text-lg lg:text-xl max-w-7xl text-justify text-left mb-6">
+           <p className="text-gray-700 text-xs sm:text-sm md:text-base lg:text-lg max-w-7xl text-justify text-left mb-6">
              As a DevOps and Full-Stack developer, I specialize in creating end-to-end solutions that bridge 
              development and operations. I am passionate about the MERN stack, 
-             .NET ecosystem, Java development, Next.js for modern web applications, and Flutter for cross-platform mobile development.
+             Spring Boot, Next.js for modern web applications, and Flutter for cross-platform mobile development.
            </p> 
            
-           <h3 className="text-lg sm:text-xl md:text-2xl font-regular mb-8 text-black text-left">Technologies</h3>
+           <h3 className="text-base sm:text-lg md:text-xl font-regular mb-8 text-black text-left">Technologies</h3>
          </div>
 
          {/* Two Column Layout */}
          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-12 mb-2">
            {/* Left Column - Programming Languages */}
            <div className="mb-2">
-             <h2 className="text-base sm:text-lg md:text-xl font-regular text-black text-left mb-2">Programming Languages</h2>
+             <h2 className="text-sm sm:text-base md:text-lg font-regular text-black text-left mb-2">Programming Languages</h2>
              <div className="grid grid-cols-8 gap-4">
                {/* Java */}
-               <div className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4">
+               <div title="Java" className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer hover:bg-white/70 transition-colors">
                  <div className="w-12 h-12 flex items-center justify-center">
                    <FaJava className="text-3xl text-gray-600" />
                  </div>
                </div>
 
                {/* Javascript */}
-               <div className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4">
+               <div title="JavaScript" className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer hover:bg-white/70 transition-colors">
                  <div className="w-12 h-12 flex items-center justify-center">
                    <SiJavascript className="text-3xl text-gray-600" />
                  </div>
                </div>
 
                {/* Typescript */}
-               <div className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4">
+               <div title="TypeScript" className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer hover:bg-white/70 transition-colors">
                  <div className="w-12 h-12 flex items-center justify-center">
                    <SiTypescript className="text-3xl text-gray-600" />
                  </div>
                </div>
 
                {/* Dart */}
-               <div className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4">
+               <div title="Dart" className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer hover:bg-white/70 transition-colors">
                  <div className="w-12 h-12 flex items-center justify-center">
                    <FaDartLang className="text-3xl text-gray-600" />
                  </div>
                </div>
 
                {/* HTML5 */}
-               <div className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4">
+               <div title="HTML5" className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer hover:bg-white/70 transition-colors">
                  <div className="w-12 h-12 flex items-center justify-center">
                    <FaHtml5 className="text-3xl text-gray-600" />
                  </div>
                </div>
 
                {/* Css3 */}
-               <div className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4">
+               <div title="CSS3" className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer hover:bg-white/70 transition-colors">
                  <div className="w-12 h-12 flex items-center justify-center">
                    <FaCss3 className="text-3xl text-gray-600" />
                  </div>
                </div> 
 
                {/* Python */} 
-               <div className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4">
+               <div title="Python" className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer hover:bg-white/70 transition-colors">
                  <div className="w-12 h-12 flex items-center justify-center">
                    <FaPython className="text-3xl text-gray-600" />
                  </div>
                </div>
 
-               {/* Golang */}
-               <div className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4">
-                 <div className="w-12 h-12 flex items-center justify-center">
-                   <FaGolang className="text-3xl text-gray-600" />
-                 </div>
-               </div>
+               
                
              </div>
            </div>
 
            {/* Right Column - Frontend Technologies */}
            <div className="mb-2">
-             <h2 className="text-base sm:text-lg md:text-xl font-regular text-black text-left mb-2">Frontend Technologies</h2>
+             <h2 className="text-sm sm:text-base md:text-lg font-regular text-black text-left mb-2">Frontend Technologies</h2>
              <div className="grid grid-cols-8 gap-4">
                {/* React */}
-               <div className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4">
+               <div title="React" className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer hover:bg-white/70 transition-colors">
                  <div className="w-12 h-12 flex items-center justify-center">
                    <FaReact className="text-3xl text-gray-600" />
                  </div>
                </div>
 
                {/* Next.js */}
-               <div className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4">
+               <div title="Next.js" className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer hover:bg-white/70 transition-colors">
                  <div className="w-12 h-12 flex items-center justify-center">
                    <SiNextdotjs className="text-3xl text-gray-600" />
                  </div>
                </div>
 
                {/* React Native */}
-               <div className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4">
+               <div title="React Native" className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer hover:bg-white/70 transition-colors">
                  <div className="w-12 h-12 flex items-center justify-center">
                    <TbBrandReactNative className="text-3xl text-gray-600" />
                  </div>
                </div>
 
                {/* Flutter */}
-               <div className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4">
+               <div title="Flutter" className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer hover:bg-white/70 transition-colors">
                  <div className="w-12 h-12 flex items-center justify-center">
                    <SiFlutter className="text-3xl text-gray-600" />
                  </div>
                </div>
 
                {/* Tailwind CSS */}
-               <div className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4">
+               <div title="Tailwind CSS" className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer hover:bg-white/70 transition-colors">
                  <div className="w-12 h-12 flex items-center justify-center">
                    <SiTailwindcss className="text-3xl text-gray-600" />
                  </div>
                </div>
 
-               {/* Angular */}
-               <div className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4">
-                 <div className="w-12 h-12 flex items-center justify-center">
-                   <FaAngular className="text-3xl text-gray-600" />
-                 </div>
-               </div>  
+               
              </div>
            </div>
          </div>
@@ -163,24 +153,19 @@ export default function TechContent() {
          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-2">
            {/* Left Column - Backend Technologies */}
            <div className="mb-2">
-             <h2 className="text-base sm:text-lg md:text-xl font-regular text-black text-left mb-2">Backend Technologies</h2>
+             <h2 className="text-sm sm:text-base md:text-lg font-regular text-black text-left mb-2">Backend Technologies</h2>
              <div className="grid grid-cols-8 gap-4">
                {/* Node.js */}
-               <div className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4">
+               <div title="Node.js" className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer hover:bg-white/70 transition-colors">
                  <div className="w-12 h-12 flex items-center justify-center">
                    <FaNodeJs className="text-3xl text-gray-600" />
                  </div>
                </div>
 
-               {/* .NET */}
-               <div className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4">
-                 <div className="w-12 h-12 flex items-center justify-center">
-                   <SiDotnet className="text-3xl text-gray-600" />
-                 </div>
-               </div>
+              
 
                {/* Spring Boot */}
-               <div className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4">
+               <div title="Spring Boot" className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer hover:bg-white/70 transition-colors">
                  <div className="w-12 h-12 flex items-center justify-center">
                    <SiSpringboot className="text-3xl text-gray-600" />
                  </div>
@@ -192,31 +177,31 @@ export default function TechContent() {
 
            {/* Right Column - Databases & DevOps */}
            <div className="mb-2">
-             <h2 className="text-base sm:text-lg md:text-xl font-regular text-black text-left mb-2">Databases</h2>
+             <h2 className="text-sm sm:text-base md:text-lg font-regular text-black text-left mb-2">Databases</h2>
              <div className="grid grid-cols-8 gap-4">
                {/* MongoDB */}
-               <div className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4">
+               <div title="MongoDB" className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer hover:bg-white/70 transition-colors">
                  <div className="w-12 h-12 flex items-center justify-center">
                    <SiMongodb className="text-3xl text-gray-600" />
                  </div>
                </div>
 
                {/* Postgresql */}
-               <div className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4">
+               <div title="PostgreSQL" className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer hover:bg-white/70 transition-colors">
                  <div className="w-12 h-12 flex items-center justify-center">
                    <SiPostgresql className="text-3xl text-gray-600" />
                  </div>
                </div>
 
                {/* MSSQL */}
-               <div className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4">
+               <div title="Microsoft SQL Server" className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer hover:bg-white/70 transition-colors">
                  <div className="w-12 h-12 flex items-center justify-center">
                    <DiMsqlServer className="text-3xl text-gray-600" />
                  </div>
                </div>
 
                {/* MySQL */}
-               <div className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4">
+               <div title="MySQL" className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer hover:bg-white/70 transition-colors">
                  <div className="w-12 h-12 flex items-center justify-center">
                    <SiMysql className="text-3xl text-gray-600" />
                  </div>
@@ -231,38 +216,38 @@ export default function TechContent() {
          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-2">
            {/* Left Column - DevOps Tools */}
            <div className="mb-2">
-             <h2 className="text-base sm:text-lg md:text-xl font-regular text-black text-left mb-2">DevOps Tools</h2>
+             <h2 className="text-sm sm:text-base md:text-lg font-regular text-black text-left mb-2">DevOps Tools</h2>
              <div className="grid grid-cols-8 gap-4">
                {/* Git */}
-               <div className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4">
+               <div title="Git" className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer hover:bg-white/70 transition-colors">
                  <div className="w-12 h-12 flex items-center justify-center">
                    <FaGitAlt className="text-3xl text-gray-600" />
                  </div>
                </div>
 
                {/* GitHub */}
-               <div className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4">
+               <div title="GitHub" className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer hover:bg-white/70 transition-colors">
                  <div className="w-12 h-12 flex items-center justify-center">
                    <FaGithub className="text-3xl text-gray-600" />
                  </div>
                </div>
 
                {/* Docker */}
-               <div className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4">
+               <div title="Docker" className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer hover:bg-white/70 transition-colors">
                  <div className="w-12 h-12 flex items-center justify-center">
                    <FaDocker className="text-3xl text-gray-600" />
                  </div>
                </div>
 
                {/* Kubernetes */}
-               <div className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4">
+               <div title="Kubernetes" className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer hover:bg-white/70 transition-colors">
                  <div className="w-12 h-12 flex items-center justify-center">
                    <SiKubernetes className="text-3xl text-gray-600" />
                  </div>
                </div>
 
                {/* AWS */}
-               <div className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4">
+               <div title="Amazon Web Services" className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer hover:bg-white/70 transition-colors">
                  <div className="w-12 h-12 flex items-center justify-center">
                    <FaAws className="text-3xl text-gray-600" />
                  </div>
@@ -272,45 +257,45 @@ export default function TechContent() {
 
            {/* Right Column - IDEs & Editors */}
            <div className="mb-2">
-             <h2 className="text-base sm:text-lg md:text-xl font-regular text-black text-left mb-2">IDEs & Editors</h2>
+             <h2 className="text-sm sm:text-base md:text-lg font-regular text-black text-left mb-2">IDEs & Editors</h2>
              <div className="grid grid-cols-8 gap-4">
                {/* Visual Studio */}
-               <div className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4">
+               <div title="VS Code" className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer hover:bg-white/70 transition-colors">
                  <div className="w-12 h-12 flex items-center justify-center">
                    <VscVscode className="text-3xl text-gray-600" />
                  </div>
                </div>
 
                {/* Visual Studio Code */}
-               <div className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4">
+               <div title="Visual Studio" className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer hover:bg-white/70 transition-colors">
                  <div className="w-12 h-12 flex items-center justify-center">
                    <TbBrandVisualStudio className="text-3xl text-gray-600" />
                  </div>
                </div>
 
                {/* CLion */}
-               <div className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4">
+               <div title="CLion" className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer hover:bg-white/70 transition-colors">
                  <div className="w-12 h-12 flex items-center justify-center">
                    <SiClion className="text-3xl text-gray-600" />
                  </div>
                </div>
 
                {/* IntelliJ IDEA */}
-               <div className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4">
+               <div title="IntelliJ IDEA" className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer hover:bg-white/70 transition-colors">
                  <div className="w-12 h-12 flex items-center justify-center">
                    <SiIntellijidea className="text-3xl text-gray-600" />
                  </div>
                </div>
 
                {/* NetBeans */}
-               <div className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4">
+               <div title="NetBeans" className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer hover:bg-white/70 transition-colors">
                  <div className="w-12 h-12 flex items-center justify-center">
                    <SiApachenetbeanside className="text-3xl text-gray-600" />
                  </div>
                </div>
 
                {/* Eclipse */}
-               <div className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4">
+               <div title="Eclipse" className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer hover:bg-white/70 transition-colors">
                  <div className="w-12 h-12 flex items-center justify-center">
                    <SiEclipseide className="text-3xl text-gray-600" />
                  </div>
@@ -323,24 +308,24 @@ export default function TechContent() {
 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-2">
            {/* Left Column - DevOps Tools */}
            <div className="mb-2">
-             <h2 className="text-base sm:text-lg md:text-xl font-regular text-black text-left mb-2">Other Tools</h2>
+             <h2 className="text-sm sm:text-base md:text-lg font-regular text-black text-left mb-2">Other Tools</h2>
              <div className="grid grid-cols-8 gap-4">
                {/* Git */}
-               <div className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4">
+               <div title="Figma" className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer hover:bg-white/70 transition-colors">
                  <div className="w-12 h-12 flex items-center justify-center">
                    <FaFigma className="text-3xl text-gray-600" />
                  </div>
                </div>
 
                {/* GitHub */}
-               <div className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4">
+               <div title="Blender" className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer hover:bg-white/70 transition-colors">
                  <div className="w-12 h-12 flex items-center justify-center">
                    <SiBlender className="text-3xl text-gray-600" />
                  </div>
                </div>
 
                {/* Docker */}
-               <div className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4">
+               <div title="Jira" className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer hover:bg-white/70 transition-colors">
                  <div className="w-12 h-12 flex items-center justify-center">
                    <FaJira className="text-3xl text-gray-600" />
                  </div>
@@ -353,24 +338,24 @@ export default function TechContent() {
 
            {/* Right Column - IDEs & Editors */}
            <div className="mb-2">
-             <h2 className="text-base sm:text-lg md:text-xl font-regular text-black text-left mb-2">Operating Systems</h2>
+             <h2 className="text-sm sm:text-base md:text-lg font-regular text-black text-left mb-2">Operating Systems</h2>
              <div className="grid grid-cols-8 gap-4">
                {/* Visual Studio */}
-               <div className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4">
+               <div title="Windows" className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer hover:bg-white/70 transition-colors">
                  <div className="w-12 h-12 flex items-center justify-center">
                    <FaWindows className="text-3xl text-gray-600" />
                  </div>
                </div>
 
                {/* Visual Studio Code */}
-               <div className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4">
+               <div title="Linux" className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer hover:bg-white/70 transition-colors">
                  <div className="w-12 h-12 flex items-center justify-center">
                    <FaLinux className="text-3xl text-gray-600" />
                  </div>
                </div>
 
                {/* CLion */}
-               <div className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4">
+               <div title="macOS" className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer hover:bg-white/70 transition-colors">
                  <div className="w-12 h-12 flex items-center justify-center">
                    <FaApple className="text-3xl text-gray-600" />
                  </div>
