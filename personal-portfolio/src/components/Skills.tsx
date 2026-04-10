@@ -63,11 +63,11 @@ const Skills = () => {
     <section id="skills" ref={skillsRef} className="py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-            My <span className="text-purple-600">Skills</span>
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-gray-100 mb-4">
+            My <span className="text-purple-600 dark:text-purple-400">Skills</span>
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-purple-500 to-pink-500 mx-auto rounded-full mb-4"></div>
-          <p className="text-gray-600 text-lg sm:text-xl max-w-2xl mx-auto">
+          <p className="text-gray-600 dark:text-gray-300 text-lg sm:text-xl max-w-2xl mx-auto">
             Here are the technologies and tools I work with to bring ideas to life
           </p>
         </div>
@@ -76,12 +76,12 @@ const Skills = () => {
           {skillCategories.map((category, categoryIndex) => (
             <div
               key={category.title}
-              className={`bg-slate-800/50 p-8 rounded-xl backdrop-blur-sm border border-slate-700/50 transition-all duration-1000 ${
+              className={`bg-white/50 dark:bg-slate-800/50 p-8 rounded-xl backdrop-blur-sm border border-gray-200 dark:border-slate-700/50 transition-all duration-1000 ${
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
               }`}
               style={{ transitionDelay: `${categoryIndex * 200}ms` }}
             >
-              <h3 className="text-xl font-bold text-gray-900 mb-6 text-center">
+              <h3 className="text-xl font-bold text-gray-900 dark:text-gray-100 mb-6 text-center">
                 {category.title}
               </h3>
               
@@ -89,10 +89,10 @@ const Skills = () => {
                 {category.skills.map((skill, skillIndex) => (
                   <div key={skill.name} className="group">
                     <div className="flex justify-between items-center mb-2">
-                      <span className="text-gray-600 font-medium">{skill.name}</span>
-                      <span className="text-purple-600 font-semibold">{skill.level}%</span>
+                      <span className="text-gray-600 dark:text-gray-300 font-medium">{skill.name}</span>
+                      <span className="text-purple-600 dark:text-purple-400 font-semibold">{skill.level}%</span>
                     </div>
-                    <div className="w-full bg-slate-700 rounded-full h-2 overflow-hidden">
+                    <div className="w-full bg-gray-300 dark:bg-slate-700 rounded-full h-2 overflow-hidden">
                       <div
                         className={`h-full bg-gradient-to-r ${skill.color} rounded-full transition-all duration-1000 ease-out group-hover:shadow-lg group-hover:shadow-purple-500/25`}
                         style={{
@@ -114,7 +114,7 @@ const Skills = () => {
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
           }`}
         >
-          <h3 className="text-xl font-bold text-gray-900 mb-8">Additional Skills</h3>
+          <h3 className="text-xl font-bold text-gray-900 dark:text-gray-100 mb-8">Additional Skills</h3>
           <div className="flex flex-wrap justify-center gap-4">
             {[
               'UI/UX Design', 'Responsive Design', 'Agile Methodologies', 
@@ -123,7 +123,7 @@ const Skills = () => {
             ].map((skill, index) => (
               <span
                 key={skill}
-                className="bg-gradient-to-r from-purple-500/20 to-pink-500/20 border border-purple-500/30 text-purple-300 px-4 py-2 rounded-full text-xs font-medium hover:from-purple-500/30 hover:to-pink-500/30 transition-all duration-300 cursor-default"
+                className="bg-gradient-to-r from-purple-500/20 to-pink-500/20 border border-purple-500/30 text-purple-600 dark:text-purple-300 px-4 py-2 rounded-full text-xs font-medium hover:from-purple-500/30 hover:to-pink-500/30 transition-all duration-300 cursor-default"
                 style={{
                   animationDelay: `${index * 100}ms`
                 }}

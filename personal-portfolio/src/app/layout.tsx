@@ -1,12 +1,19 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Poppins, Figtree } from "next/font/google";
 import localFont from "next/font/local";
+import { ThemeProvider } from "@/components/ThemeProvider";
 import "./globals.css";
 
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700", "800", "900"],
   variable: "--font-poppins",
+});
+
+const figtree = Figtree({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700", "800", "900"],
+  variable: "--font-figtree",
 });
 
 const blanka = localFont({
@@ -50,12 +57,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en" className="scroll-smooth" suppressHydrationWarning>
       <body
-        className={`${poppins.variable} ${blanka.variable} font-sans antialiased`}
+        className={`${poppins.variable} ${figtree.variable} ${blanka.variable} font-sans antialiased`}
         suppressHydrationWarning={true}
       >
-        {children}
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem={false}
+          disableTransitionOnChange={false}
+        >
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

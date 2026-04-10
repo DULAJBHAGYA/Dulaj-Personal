@@ -14,7 +14,7 @@ export default function WeatherDashboardETLPipeline() {
   const pageTitle = 'Weather Dashboard ETL Pipeline | Dulaj Personal';
 
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-white dark:bg-gray-950">
       <Head>
         <title>{pageTitle}</title>
         <meta name="description" content="A comprehensive weather data collection and visualization system that automatically fetches real-time weather information from the OpenWeatherMap API, processes and stores it in a local SQLite database, and displays it through a responsive web dashboard." />
@@ -31,7 +31,7 @@ export default function WeatherDashboardETLPipeline() {
           >
             <Link 
               href="/#projects" 
-              className="inline-flex items-center text-blue-600 hover:text-blue-800 transition-colors duration-200 mb-6 mt-4"
+              className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors duration-200 mb-6 mt-4"
             >
               <IoIosArrowForward className="transform rotate-180 mr-2" />
               Back to Projects
@@ -39,13 +39,13 @@ export default function WeatherDashboardETLPipeline() {
             
             <div className="flex flex-col gap-8">
               {/* Project Content */}
-              <div className="bg-white rounded-3xl p-8">
+              <div className="bg-white dark:bg-gray-900 rounded-3xl p-8">
                 <div className="mb-6">
-                  <span className="text-base font-semibold text-gray-500">Data Engineering Project</span>
-                  <h1 className="text-2xl font-bold text-gray-900 mt-2">Weather Dashboard ETL Pipeline</h1>
+                  <span className="text-base font-semibold text-gray-500 dark:text-gray-400">Data Engineering Project</span>
+                  <h1 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mt-2">Weather Dashboard ETL Pipeline</h1>
                 </div>
                 
-                <p className="text-gray-600 text-base text-justify leading-relaxed mb-8">
+                <p className="text-gray-600 dark:text-gray-300 text-base text-justify leading-relaxed mb-8">
                   A comprehensive weather data collection and visualization system that automatically fetches real-time weather information from the OpenWeatherMap API, processes and stores it in a local SQLite database, and displays it through a responsive web dashboard.
                 </p>
                 

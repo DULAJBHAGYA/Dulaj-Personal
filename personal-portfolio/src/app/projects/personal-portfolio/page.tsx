@@ -12,7 +12,7 @@ export default function PersonalPortfolio() {
   const pageTitle = 'Personal Portfolio | Dulaj Personal';
 
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-white dark:bg-gray-950">
       <Head>
         <title>{pageTitle}</title>
         <meta name="description" content="A modern, responsive portfolio website built with Next.js, Tailwind CSS, and Framer Motion for smooth animations." />
@@ -29,7 +29,7 @@ export default function PersonalPortfolio() {
           >
             <Link 
               href="/#projects" 
-              className="inline-flex items-center text-blue-600 hover:text-blue-800 transition-colors duration-200 mb-6 mt-4"
+              className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors duration-200 mb-6 mt-4"
             >
               <IoIosArrowForward className="transform rotate-180 mr-2" />
               Back to Projects
@@ -37,13 +37,13 @@ export default function PersonalPortfolio() {
             
             <div className="flex flex-col gap-8">
               {/* Project Content */}
-              <div className="bg-white rounded-3xl p-8">
+              <div className="bg-white dark:bg-gray-900 rounded-3xl p-8">
                 <div className="mb-6">
-                  <span className="text-base font-semibold text-gray-500">Frontend Development</span>
-                  <h1 className="text-2xl font-bold text-gray-900 mt-2">Personal Portfolio</h1>
+                  <span className="text-base font-semibold text-gray-500 dark:text-gray-400">Frontend Development</span>
+                  <h1 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mt-2">Personal Portfolio</h1>
                 </div>
                 
-                <p className="text-gray-600 text-base leading-relaxed mb-8">
+                <p className="text-gray-600 dark:text-gray-300 text-base leading-relaxed mb-8">
                   A modern, responsive portfolio website built with Next.js, Tailwind CSS, and Framer Motion for smooth animations. This project demonstrates my skills in frontend development, UI/UX design, and modern web technologies.
                 </p>
 

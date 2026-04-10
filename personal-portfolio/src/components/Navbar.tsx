@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { XMarkIcon } from '@heroicons/react/24/outline';
+import { ThemeToggle } from './ThemeToggle';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,6 +26,7 @@ const Navbar = () => {
     { name: 'About', href: '/about', isButton: false },
     { name: 'Tech', href: '/tech', isButton: false },
     { name: 'Blogs', href: '/blogs', isButton: false },
+    { name: 'Gallery', href: '/gallery', isButton: false },
     { name: 'Contact', href: '/contact', isButton: false },
   ];
 
@@ -37,7 +39,7 @@ const Navbar = () => {
   ];
 
   const getIcon = (iconName: string) => {
-    const iconClass = "w-6 h-6 text-gray-700 hover:text-gray-900 transition-colors duration-200";
+    const iconClass = "w-5 h-5 text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors duration-200";
     
     switch (iconName) {
       case 'linkedin':
@@ -76,18 +78,18 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-4 left-0 right-0 z-50 p-4">
-      <div className="max-w-7xl mx-auto">
+    <nav className="fixed top-2 left-0 right-0 z-50 p-4">
+      <div className="max-w-5xl mx-auto">
         <div
-          className={`flex items-center justify-between h-20 px-6 rounded-3xl transition-all duration-300 ${
+          className={`flex items-center justify-between h-16 px-6 rounded-2xl transition-all duration-300 ${
             scrolled
-              ? 'bg-white/95 backdrop-blur-md shadow-lg border border-gray-200/50'
-              : 'bg-white/80 backdrop-blur-sm shadow-md border border-gray-100/50'
+              ? 'bg-white/95 dark:bg-gray-900/95 backdrop-blur-md shadow-lg border border-gray-200/50 dark:border-gray-500/50'
+              : 'bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm shadow-md border border-gray-100/50 dark:border-gray-500/50'
           }`}
         >
           {/* Logo */}
           <div className="flex-shrink-0">
-            <h1 className="text-base sm:text-lg md:text-xl font-bold text-gray-700 font-blanka">
+            <h1 className="text-sm sm:text-lg md:text-lg font-bold text-gray-700 dark:text-gray-200 font-blanka">
               D U L A J
             </h1>
           </div>
@@ -106,8 +108,8 @@ const Navbar = () => {
                   <Link
                     key={item.name}
                     href={item.href}
-                    className={`px-4 py-2 rounded-full text-xs sm:text-sm md:text-base font-medium transition-all duration-200 ${
-                      isActive ? 'text-[#7697A0]' : 'text-gray-700 hover:text-gray-900'
+                    className={`px-2 py-2 rounded-full text-xs sm:text-xs md:text-sm font-medium transition-all duration-200 ${
+                      isActive ? 'text-[#4ECDC4]' : 'text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100'
                     }`}
                   >
                     {item.name}
@@ -117,10 +119,10 @@ const Navbar = () => {
             </div>
 
             {/* Separator */}
-            <div className="h-6 w-px bg-black"></div>
+            <div className="h-6 w-px bg-black dark:bg-gray-600"></div>
 
             {/* Social Icons */}
-            <div className="flex items-center space-x-8">
+            <div className="flex items-center space-x-4">
               {socialLinks.map((social) => (
                 <a
                   key={social.name}
@@ -133,14 +135,18 @@ const Navbar = () => {
                   {getIcon(social.icon)}
                 </a>
               ))}
+              
+              {/* Theme Toggle */}
+              <ThemeToggle />
             </div>
           </div>
 
-          {/* Mobile menu button */}
-          <div className="tablet:hidden">
+          {/* Mobile Menu Button */}
+          <div className="tablet:hidden flex items-center space-x-3">
+            <ThemeToggle />
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-700 hover:text-gray-900 focus:outline-none focus:text-gray-900"
+              className="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 focus:outline-none"
             >
               {isOpen ? (
                 <XMarkIcon className="h-6 w-6" />
@@ -156,10 +162,10 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Navigation */}
+      {/* Mobile Menu */}
       {isOpen && (
-        <div className="tablet:hidden mt-4 mx-4">
-          <div className="px-4 pt-4 pb-4 space-y-2 bg-white/95 backdrop-blur-md rounded-2xl shadow-lg border border-gray-200/50">
+        <div className="tablet:hidden mt-2">
+          <div className="mx-4 p-4 bg-white/95 dark:bg-gray-900/95 backdrop-blur-md rounded-2xl shadow-lg border border-gray-200/50 dark:border-gray-700/50">
             {navItems.map((item) => {
               // More robust active state detection
               const isActive = pathname === item.href || 
@@ -169,8 +175,8 @@ const Navbar = () => {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className={`block px-4 py-3 rounded-xl text-xs sm:text-sm md:text-base font-medium transition-colors duration-200 hover:bg-gray-50 ${
-                    isActive ? 'text-[#7697A0]' : 'text-gray-700 hover:text-gray-900'
+                  className={`block px-4 py-3 rounded-xl text-xs sm:text-sm md:text-base font-medium transition-colors duration-200 hover:bg-gray-50 dark:hover:bg-gray-800 ${
+                    isActive ? 'text-[#4ECDC4]' : 'text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100'
                   }`}
                   onClick={() => setIsOpen(false)}
                 >
@@ -180,7 +186,7 @@ const Navbar = () => {
             })}
             
             {/* Mobile Social Icons */}
-            <div className="flex items-center justify-center space-x-8 pt-4 border-t border-gray-200/50">
+            <div className="flex items-center justify-center space-x-8 pt-4 border-t border-gray-200/50 dark:border-gray-700/50">
               {socialLinks.map((social) => (
                 <a
                   key={social.name}

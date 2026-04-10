@@ -28,6 +28,10 @@ body {
   background: #1e293b;
 }
 
+.dark ::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+
 ::-webkit-scrollbar-thumb {
   background: linear-gradient(to bottom, #8b5cf6, #ec4899);
   border-radius: 4px;

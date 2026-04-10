@@ -136,17 +136,17 @@ const Blogs = () => {
 
   return (
     <section id="blogs" ref={blogsRef} className="pt-36 pb-20">
-      <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
+      <div className="max-w-6xl mx-auto px-6 sm:px-6 lg:px-8">
         <div className="text-left mb-10">
         
-          <p className="text-black text-sm sm:text-base md:text-lg lg:text-xl max-w-2xl">
+          <p className="text-black dark:text-white text-xs sm:text-sm md:text-md lg:text-base">
             Thoughts, tutorials, and insights about Full-Stack Development , DevOps, AI, and Technologies
           </p>
         </div>
 
 
         {/* Blog List */}
-        <div className="space-y-8">
+        <div className="space-y-8 max-w-5xl mx-auto">
           {blogs.map((blog, index) => (
             <article
               key={blog.slug}
@@ -157,7 +157,7 @@ const Blogs = () => {
             >
               <div className="flex flex-col md:flex-row">
                 {/* Blog Image */}
-                <div className="relative h-64 md:h-96 md:w-[42rem] overflow-hidden flex-shrink-0 rounded-3xl">
+                <div className="relative h-36 md:h-72 md:w-[30rem] overflow-hidden flex-shrink-0 rounded-3xl">
                   <Image 
                     src={blog.image.src} 
                     alt={blog.title}
@@ -168,35 +168,38 @@ const Blogs = () => {
 
                 {/* Blog Content */}
                 <div className="p-10 flex-1">
-                <h3 className="text-sm sm:text-base md:text-lg font-semibold text-black mb-4 line-clamp-2">
+                <h3 className="text-xs sm:text-sm md:text-md lg:text-lg font-semibold text-black dark:text-white mb-4 line-clamp-2">
                   {blog.title}
                 </h3>
                 
-                <p className="text-gray-600 mb-4 text-xs sm:text-xs md:text-sm lg:text-base line-clamp-3">
+                <p className="text-gray-600 dark:text-gray-300 mb-4 text-xs sm:text-sm md:text-md lg:text-md line-clamp-3">
                   {blog.excerpt}
                 </p>
 
                 {/* Blog Meta */}
-                <div className="flex items-center justify-between text-xs text-gray-500 mb-4">
+                <div className="flex items-center justify-between text-xs text-gray-500 dark:text-gray-400 mb-4">
                   
-                    <div className="flex text-xs sm:text-xs md:text-sm lg:text-base items-center gap-1">
-                      <ClockIcon className="w-6 h-6" />
+                    <div className="flex text-xs sm:text-sm md:text-md lg:text-md items-center gap-1">
+                      <ClockIcon className="w-4 h-4" />
                       <span>{blog.readTime}</span>
                     </div>
                 </div>
 
                 {/* Author and Read More */}
-                <div className="flex items-center text-xs sm:text-xs md:text-sm lg:text-base justify-between">
+                <div className="flex items-center text-xs sm:text-xs md:text-sm lg:text-sm font-semibold justify-between">
                   
                   
                   <a 
                     href={blog.link} 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium transition-colors duration-200"
+                    className="flex items-center gap-2 text-[#556270] dark:text-[#4ECDC4] hover:text-[#556270] dark:hover:text-[#4ECDC4] transition-colors duration-200"
                   >
+                    <div className="flex items-center p-2 rounded-2xl text-sm border-2 border-[#556270] dark:border-[#4ECDC4] gap-2">
                     Read More
-                    <ArrowRightIcon className="w-4 h-4" />
+                    <ArrowRightIcon className="w-4 h-4 stroke-[2.5]" />
+                                        </div>
+
                   </a>
                 </div>
               </div>

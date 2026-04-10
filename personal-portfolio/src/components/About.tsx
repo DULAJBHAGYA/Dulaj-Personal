@@ -77,7 +77,7 @@ const About = () => {
 
   return (
     <section id="about" ref={aboutRef} className="pt-36 pb-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
        
 
         <div className="space-y-16">
@@ -91,11 +91,11 @@ const About = () => {
               {/* First Column: 80% Image, 20% Blank */}
               <div className="col-span-3 flex flex-col h-full">
                 {/* 80% Image */}
-                <div className="h-[60%] rounded-xl xs:rounded-2xl sm:rounded-3xl overflow-hidden">
+                <div className="h-[60%] rounded-2xl overflow-hidden">
                   <Image
                     src={about2Image}
                     alt="About 2"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full rounded-2xl object-cover"
                   />
                 </div>
                 {/* 20% Blank Space */}
@@ -107,20 +107,20 @@ const About = () => {
                  {/* 60% Name */}
                  <div className="h-[30%] flex items-center justify-start">
                    <div className="text-left">
-                     <h1 className="text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 leading-tight">
+                     <h1 className="text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-gray-100 leading-tight">
                        Dulaj
                      </h1>
-                     <h2 className="text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-regular text-gray-900 leading-tight">
+                     <h2 className="text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-regular text-gray-900 dark:text-gray-100 leading-tight">
                        Upananda
                      </h2>
                    </div>
                  </div>
                 {/* 20% Image */}
-                <div className="h-[50%] rounded-xl xs:rounded-2xl sm:rounded-3xl overflow-hidden">
+                <div className="h-[50%] rounded-2xl overflow-hidden">
                   <Image
                     src={about1Image}
                     alt="About 1"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full rounded-2xl object-cover"
                   />
                 </div>
                 {/* 20% Blank Space */}
@@ -132,11 +132,11 @@ const About = () => {
                 {/* 40% Blank Space */}
                 <div className="h-[40%]"></div>
                 {/* 60% Image */}
-                <div className="h-[60%] rounded-xl xs:rounded-2xl sm:rounded-3xl overflow-hidden">
+                <div className="h-[60%] rounded-2xl overflow-hidden">
                   <Image
                     src={about4Image}
                     alt="About 4"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full rounded-2xl object-cover"
                   />
                 </div>
               </div>
@@ -149,11 +149,8 @@ const About = () => {
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
             }`}
           >
-            <h3 className="text-xl font-regular text-black mb-6">
-              About Me
-            </h3>
             
-            <p className="text-gray-600 text-sm sm:text-base md:text-lg mb-6 leading-relaxed">
+            <p className="text-gray-600 dark:text-gray-300 text-sm sm:text-base md:text-md lg:text-base mb-6 max-w-6xl text-justify">
               I&apos;m a fresh graduate from UOM with a passion for 
               Full Stack development and DevOps. I love building scalable applications and 
               implementing efficient deployment pipelines that enhance both development 
@@ -162,80 +159,82 @@ const About = () => {
           </div>
 
            <div className="space-y-6">
-             <h3 className="text-xl font-regular text-black mb-6">Experience</h3>
+             <h3 className="text-xs sm:text-sm md:text-md lg:text-lg font-semibold text-black dark:text-white mb-6">Experience</h3>
              
-             <div className="bg-white/50 rounded-lg">
-               <h4 className="text-lg  font-semibold text-gray-900 mb-2">Software Engineer Intern (2024 Feb - 2024 Aug)</h4>
-                <p className="text-gray-600 text-sm sm:text-base md:text-lg mb-2">
+             <div className="bg-white/50 dark:bg-black rounded-lg">
+              <h4 className="text-xs sm:text-sm md:text-md lg:text-lg font-regular text-gray-900 dark:text-gray-100 mb-2 ">Software Engineer (2025 Sep - Present)</h4>
+                <p className="text-gray-500 dark:text-gray-400 text-sm sm:text-sm md:text-md lg:text-base mb-2 max-w-6xl mx-auto font-thin">
+                  Working as a Full Stack Software Engineer at <a href="https://masgraslaw.ca/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 ">Masgras Professional Corporation (Canada)</a>.
+                </p>
+                
+               <h4 className="text-xs sm:text-sm md:text-md lg:text-lg font-regular text-gray-900 dark:text-gray-100 mb-2 mt-8">Software Engineer Intern (2024 Feb - 2024 Aug)</h4>
+                <p className="text-gray-600 dark:text-gray-300 text-sm sm:text-sm md:text-md lg:text-base mb-2 max-w-6xl mx-auto font-thin">
                   Completed 6 months internship in <a href="https://futurecx.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 ">Future CX</a> as Software Engineer in the mobile development team.
                   You can find more about my internship project at <a href="#projects" className="text-blue-600 hover:text-blue-800 ">Projects</a> in the Projects section
                 </p>
 
-                <h4 className="text-lg  font-semibold text-gray-900 mb-2 mt-8">Software Engineer (2025 Sep - Present)</h4>
-                <p className="text-gray-600 text-sm sm:text-base md:text-lg mb-2">
-                  Working as a Full Stack Software Engineer at <a href="https://masgraslaw.ca/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 ">Masgras Professional Corporation (Canada)</a>.
-                </p>
+               
                
              </div>
            </div>
 
            <div className="space-y-6">
-             <h3 className="text-xl font-regular text-black mb-6">Education</h3>
+             <h3 className="text-lg font-semibold text-black dark:text-white mb-6">Education</h3>
              
              {/* Row 1: Image first on mobile, text second */}
-             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
-               <div className="bg-white/50 rounded-lg h-80 md:h-96 flex items-center justify-center p-2 order-1 md:order-2">
-                 <div className="w-full h-full rounded-lg overflow-hidden">
+             <div className="grid grid-cols-1 mx-auto max-w-4xl md:grid-cols-2 gap-4 md:gap-6">
+               <div className="bg-white/50 dark:bg-gray-800/50 rounded-2xl h-auto md:h-72 w-96 flex items-center justify-center p-2 order-1 md:order-2">
+                 <div className="w-full h-full rounded-2xl overflow-hidden">
                    <Image
                      src={universityImage}
                      alt="University of Moratuwa"
-                     className="w-full h-full object-cover"
+                     className="w-full h-full rounded-2xl object-cover"
                    />
                  </div>
                </div>
-               <div className="bg-white/50 rounded-lg h-auto md:h-72 flex flex-col justify-center p-4 md:p-6 order-2 md:order-1">
-                 <h4 className="text-base sm:text-lg font-semibold text-gray-900 mb-2">University of Moratuwa (2021 - 2025)</h4>
-                 <p className="text-gray-600 text-sm sm:text-base md:text-lg">
+               <div className="bg-white/50 dark:bg-black rounded-2xl h-auto md:h-72 flex flex-col justify-center p-4 md:p-6 order-2 md:order-1">
+                 <h4 className="text-sm sm:text-sm md:text-md lg:text-lg font-regular text-gray-900 dark:text-gray-100 mb-2">University of Moratuwa (2021 - 2025)</h4>
+                 <p className="text-gray-500 dark:text-gray-400 text-sm sm:text-sm md:text-md lg:text-base text-justify font-thin">
                   Pursued Bachelor of Science (Hons) in Information Technology & Management from Faculty of IT, <a href="https://uom.lk/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">University of Moratuwa</a>. 
                   </p>
                </div>
              </div>
 
              {/* Row 2: Image first on mobile, text second */}
-             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mt-6 md:mt-10">
-               <div className="bg-white/50 rounded-lg h-80 md:h-96 flex items-center justify-center p-2 order-1 md:order-1">
-                 <div className="w-full h-full rounded-lg overflow-hidden">
+             <div className="grid grid-cols-1 max-w-4xl mx-auto md:grid-cols-2 gap-4 md:gap-6 mt-6 md:mt-10">
+               <div className="bg-white/50 dark:bg-gray-800/50 rounded-2xl h-auto md:h-72 w-96 flex items-center justify-center p-2 order-1 md:order-1">
+                 <div className="w-full h-full  rounded-2xl overflow-hidden">
                    <Image
                      src={sibaImage}
                      alt="SIBA Campus"
-                     className="w-full h-full object-cover"
+                     className="w-full h-full rounded-2xl object-cover"
                    />
                  </div>
                </div>
-               <div className="bg-white/50 rounded-lg h-auto md:h-72 flex flex-col justify-center p-4 md:p-6 order-2 md:order-2">
-                 <h4 className="text-base sm:text-lg font-semibold text-gray-900 mb-2">
+               <div className="bg-white/50 dark:bg-black rounded-2xl h-auto md:h-72 flex flex-col justify-center p-4 md:p-6 order-2 md:order-2">
+                 <h4 className="text-base sm:text-sm md:text-md lg:text-lg font-regular text-gray-900 dark:text-gray-100 mb-2">
                      SIBA Campus (2019 - 2020)
                  </h4>
-                 <p className="text-gray-600 text-sm sm:text-base md:text-lg">
+                 <p className="text-gray-500 dark:text-gray-400 text-sm sm:text-sm md:text-md lg:text-base font-thin text-justify">
                   Completed Diploma in IT and Diploma in English at <a href="https://siba.edu.lk/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">SIBA Campus, Kandy</a>. 
                   </p>
                </div>
              </div>
 
              {/* Row 3: Image first on mobile, text second */}
-             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mt-6">
-               <div className="bg-white/50 rounded-lg h-80 md:h-96 flex items-center justify-center p-2 order-1 md:order-2">
-                 <div className="w-full h-full rounded-lg overflow-hidden">
+             <div className="grid grid-cols-1 mx-auto max-w-4xl md:grid-cols-2 gap-4 md:gap-6 mt-6">
+               <div className="bg-white/50 dark:bg-gray-800/50 rounded-2xl h-72 md:h-72 w-96 flex items-center justify-center p-2 order-1 md:order-2">
+                 <div className="w-full h-full rounded-2xl overflow-hidden">
                    <Image
                      src={schoolImage}
                      alt="Kingswood College"
-                     className="w-full h-full object-cover"
+                     className="w-full h-full rounded-2xl object-cover"
                    />
                  </div>
                </div>
-               <div className="bg-white/50 rounded-lg h-auto md:h-72 flex flex-col justify-center p-4 md:p-6 order-2 md:order-1">
-                 <h4 className="text-base sm:text-lg font-semibold text-gray-900 mb-2">Kingswood College, Kandy (2004 - 2017)</h4>
-                 <p className="text-gray-600 text-sm sm:text-base md:text-lg">
+               <div className="bg-white/50 dark:bg-black rounded-2xl h-auto md:h-72 w-96 flex flex-col justify-center p-4 md:p-6 order-2 md:order-1">
+                 <h4 className="text-sm sm:text-sm md:text-md lg:text-lg font-regular text-gray-900 dark:text-gray-100 mb-2">Kingswood College, Kandy (2004 - 2017)</h4>
+                 <p className="text-gray-500 dark:text-gray-400 text-sm sm:text-sm md:text-md lg:text-base font-thin text-justify">
                   studied primary and secondary studies at <a href="https://kingswood.lk/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">Kingswood College, Kandy</a>. I did my A/Ls in the Biology stream and I was able to secure 2As and B passes.
                   </p>
                </div>
@@ -244,24 +243,24 @@ const About = () => {
 
            {/* Horizontal Line */}
            <div className="mt-16 mb-8">
-             <hr className="border-gray-300 border-t-1" />
+             <hr className="border-gray-300 dark:border-gray-600 border-t-1" />
            </div>
 
            {/* My Favorites Section */}
            <div className="space-y-8">
-             <h3 className="text-xl font-regular text-black mb-8">My Favorites</h3>
+             <h3 className="text-sm sm:text-sm md:text-md lg:text-lg font-semibold text-black dark:text-white mb-8">My Favorites</h3>
              
              <div className="space-y-6">
                {/* Rugby and Cricket */}
-               <div className="bg-white/50 rounded-lg p-10">
-                 <h4 className="text-lg font-semibold text-gray-900 mb-4 flex items-center">
+               <div className="bg-white/50 dark:bg-black rounded-2xl p-10">
+                 <h4 className="text-sm sm:text-sm md:text-md lg:text-lg font-regular text-gray-900 dark:text-gray-100 mb-4 flex items-center">
                    Rugby & Cricket
                  </h4>
                  
-                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mt-6">
+                 <div className="grid grid-cols-1 md:grid-cols-2 mx-auto max-w-4xl gap-4 md:gap-6 mt-6">
                    {/* Left Column - Image Carousel */}
                    <div className="flex items-center justify-center order-2 md:order-1">
-                     <div className="w-full h-64 xs:h-72 sm:h-80 md:h-96 rounded-lg overflow-hidden relative">
+                     <div className="w-full h-auto xs:h-72 sm:h-80 md:h-72 w-96 rounded-2xl overflow-hidden relative">
                        <AnimatePresence mode="wait">
                          <motion.div
                            key={currentImageIndex}
@@ -274,7 +273,7 @@ const About = () => {
                            <Image
                              src={sportsImages[currentImageIndex].src}
                              alt={sportsImages[currentImageIndex].alt}
-                             className="w-full h-full object-cover"
+                             className="w-full h-full rounded-2xl object-cover"
                            />
                          </motion.div>
                        </AnimatePresence>
@@ -298,9 +297,9 @@ const About = () => {
                    
                    {/* Right Column - Paragraph */}
                    <div className="flex items-center order-1 md:order-2">
-                     <p className="text-gray-600 text-sm sm:text-base leading-relaxed text-justify">
+                     <p className="text-gray-500 dark:text-gray-400 font-thin text-sm sm:text-sm md:text-md lg:text-base leading-relaxed text-justify">
                        I am a big fan of <span className="font-semibold">Kandy Sports Club</span> and <span className="font-semibold">Springboks</span> rugby teams. I also have a deep love for  
-                        <span className="font-semibold"> Sri Lankan cricket</span> and follow the national team passionately. These sports have been an integral 
+                        <span className="font-semibold"> Sri Lankan Cricket</span> and follow the national team passionately. These sports have been an integral 
                        part of my life, teaching me valuable lessons about teamwork, discipline, and national pride. 
                        Supporting these teams has given me a strong connection to both local and international sports culture.
                      </p>
@@ -309,21 +308,21 @@ const About = () => {
                </div>
                          
                {/* Music */}
-               <div className="bg-white/50 rounded-lg p-10">
-                 <h4 className="text-lg font-semibold text-gray-900 mb-6">
+               <div className="bg-white/50 dark:bg-black rounded-2xl p-10">
+                 <h4 className="text-sm sm:text-sm md:text-md lg:text-lg font-regular text-gray-900 dark:text-gray-100 mb-6">
                    Music
                  </h4>
-                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                    {/* Left Column - Text Content */}
                    <div className="flex items-center justify-center">
                      <div className="space-y-4">
-                       <p className="text-gray-600 leading-relaxed text-sm sm:text-base md:text-lg text-justify">
+                       <p className="text-gray-500 dark:text-gray-400 leading-relaxed text-sm sm:text-sm md:text-md lg:text-base font-thin text-justify">
                          I have a deep passion for Sri Lankan Classical Music, particularly the enchanting <span className="font-semibold">Nadhagama</span> vibe that captures the soul of our cultural heritage. The melodic rhythms and traditional instruments create a unique musical experience that I find truly captivating.
                        </p>
-                       <p className="text-gray-600 leading-relaxed text-sm sm:text-base md:text-lg text-justify">
+                       <p className="text-gray-500 dark:text-gray-400 leading-relaxed text-sm sm:text-sm md:text-md lg:text-base font-thin text-justify">
                          Among my favorite artists, <span className="font-semibold">Dhanith Sri</span> and <span className="font-semibold">Suni Edirisinghe</span> stand out for their exceptional vocal talent and ability to blend traditional elements with contemporary sounds. Their music resonates with me on both emotional and cultural levels.
                        </p>
-                       <p className="text-gray-600 leading-relaxed text-sm sm:text-base md:text-lg text-justify">
+                       <p className="text-gray-500 dark:text-gray-400 leading-relaxed text-sm sm:text-sm md:text-md lg:text-base font-thin text-justify">
                          I also enjoy exploring modern genres, especially EDM artists like <span className="font-semibold">Chainsmokers</span> and <span className="font-semibold">Coldplay</span>, who bring innovative electronic sounds and powerful lyrics. This diverse musical taste allows me to appreciate both the rich traditions of Sri Lankan music and the dynamic energy of contemporary global sounds.
                        </p>
                      </div>
@@ -335,62 +334,83 @@ const About = () => {
                        <div className="grid grid-cols-3 gap-2">
                          {/* First Column - 60% and 40% split */}
                          <div className="flex flex-col gap-2">
-                           <div className="rounded-lg overflow-hidden">
+                           <div className="rounded-2xl overflow-hidden relative group cursor-pointer">
                              <Image
                                src={music5Image}
                                alt="Music 1"
-                               className="w-full h-full object-cover"
+                               className="w-full h-full rounded-2xl object-cover transition-transform duration-300 group-hover:scale-110"
                              />
+                             <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                               <p className="text-zinc-300 text-xs sm:text-sm font-semibold text-center px-2">Chainsmokers</p>
+                             </div>
                            </div>
-                           <div className="rounded-lg overflow-hidden ">
+                           <div className="rounded-2xl overflow-hidden relative group cursor-pointer">
                              <Image
                                src={music3Image}
                                alt="Music 2"
-                               className="w-full h-full object-cover"
+                               className="w-full h-full rounded-2xl object-cover transition-transform duration-300 group-hover:scale-110"
                              />
+                             <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                               <p className="text-white text-xs sm:text-sm font-semibold text-center px-2">Dhanith Sri</p>
+                             </div>
                            </div>
                          </div>
                          
                          {/* Second Column */}
                          <div className="flex flex-col gap-2">
-                           <div className="rounded-lg overflow-hidden aspect-square">
+                           <div className="rounded-2xl overflow-hidden aspect-square relative group cursor-pointer">
                              <Image
                                src={music4Image}
                                alt="Music 3"
-                               className="w-full h-full object-cover"
+                               className="w-full h-full rounded-2xl object-cover transition-transform duration-300 group-hover:scale-110"
                              />
+                             <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                               <p className="text-white text-xs sm:text-sm font-semibold text-center px-2">Sunil Edirisinghe</p>
+                             </div>
                            </div>
-                           <div className="rounded-lg overflow-hidden ">
+                           <div className="rounded-2xl overflow-hidden relative group cursor-pointer">
                              <Image
                                src={music1Image}
                                alt="Music 4"
-                               className="w-full h-full object-cover"
+                               className="w-full h-full rounded-2xl object-cover transition-transform duration-300 group-hover:scale-110"
                              />
+                             <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                               <p className="text-white text-xs sm:text-sm font-semibold text-center px-2">Coldplay x Chainsmokers</p>
+                             </div>
                            </div>
                          </div>
                          
                          {/* Third Column - 30% and 70% split */}
                          <div className="flex flex-col gap-2">
-                           <div className="rounded-lg overflow-hidden">
+                           <div className="rounded-2xl overflow-hidden relative group cursor-pointer">
                              <Image
                                src={music2Image}
                                alt="Music 5"
-                               className="w-full h-full object-cover"
+                               className="w-full h-full rounded-2xl object-cover transition-transform duration-300 group-hover:scale-110"
                              />
+                             <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                               <p className="text-white text-xs sm:text-sm font-semibold text-center px-2">Nadagama</p>
+                             </div>
                            </div>
-                           <div className="rounded-lg overflow-hidden aspect-[3/4]">
+                           <div className="rounded-2xl overflow-hidden aspect-[3/4] relative group cursor-pointer">
                              <Image
                                src={music6Image}
                                alt="Music 6"
-                               className="w-full h-full object-cover"
+                               className="w-full h-full rounded-2xl object-cover transition-transform duration-300 group-hover:scale-110"
                              />
+                             <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                               <p className="text-white text-xs sm:text-sm font-semibold text-center px-2">Coldplay</p>
+                             </div>
                            </div>
-                           <div className="rounded-lg overflow-hidden aspect-square">
+                           <div className="rounded-2xl overflow-hidden aspect-square relative group cursor-pointer">
                              <Image
                                src={music7Image}
                                alt="Music 7"
-                               className="w-full h-full object-cover"
+                               className="w-full h-full rounded-2xl object-cover transition-transform duration-300 group-hover:scale-110"
                              />
+                             <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                               <p className="text-white text-xs sm:text-sm font-semibold text-center px-2">Music Wizard</p>
+                             </div>
                            </div>
                          </div>
                        </div>
@@ -400,28 +420,27 @@ const About = () => {
                </div>
 
                {/* Books and Movies - Side by Side */}
-               <div className="bg-white/50 rounded-lg p-10">
+               <div className="bg-white/50 dark:bg-black rounded-2xl p-10">
                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                    {/* Books Column */}
                    <div className="flex flex-col">
-                     <h4 className="text-lg font-semibold text-gray-900 mb-4">
+                     <h4 className="text-sm sm:text-sm md:text-md lg:text-lg font-regular text-gray-900 dark:text-gray-100 mb-4">
                        Books
                      </h4>
-                     
                      {/* Image Row */}
                      <div className="mb-4">
-                       <div className="rounded-lg overflow-hidden h-96">
+                       <div className="rounded-2xl overflow-hidden h-96">
                          <Image
                            src={books2Image}
                            alt="Books"
-                           className="w-full h-full object-cover"
+                           className="w-full h-full rounded-2xl object-cover"
                          />
                        </div>
                      </div>
                      
                      {/* Text Row */}
                      <div>
-                       <p className="text-gray-600 mb-4 text-justify">
+                       <p className="text-gray-500 dark:text-gray-400 font-thin text-sm sm:text-sm md:text-md lg:text-base mb-4 text-justify">
                          I love reading Sinhala novels most of the time, especially works by <span className="font-semibold">Martin Wickramasinghe</span>. His literary works have deeply influenced my understanding of Sri Lankan culture and society. I also enjoy reading biographies of successful entrepreneurs and tech leaders, as they provide valuable insights into their journey, challenges, and the mindset required to achieve greatness. These books help me understand different perspectives on leadership, innovation, and personal growth.
                        </p>
                        
@@ -430,36 +449,36 @@ const About = () => {
                    
                    {/* Movies Column */}
                    <div className="flex flex-col">
-                     <h4 className="text-lg font-semibold text-gray-900 mb-4">
+                     <h4 className="text-sm sm:text-sm md:text-md lg:text-lg font-regular text-gray-900 dark:text-gray-100 mb-4">
                        Movies & TV Series
                      </h4>
                      
                      {/* Image Row - 2 Columns */}
-                     <div className="mb-4">
+                     <div className="mb-4 max-w-2xl mx-auto">
                        <div className="grid grid-cols-2 gap-2 h-96">
-                         <div className="rounded-lg overflow-hidden">
+                         <div className="rounded-2xl overflow-hidden">
                            <Image
                              src={tvseries1Image}
                              alt="Movies 1"
-                             className="w-full h-full object-cover"
+                             className="w-full h-full rounded-2xl object-cover"
                            />
                          </div>
-                         <div className="rounded-lg overflow-hidden">
+                         <div className="rounded-2xl overflow-hidden">
                            <Image
                              src={movie1Image}
                              alt="Movies 2"
-                             className="w-full h-full object-cover"
+                             className="w-full h-full rounded-2xl object-cover"
                            />
                          </div>
                        </div>
                      </div>
                      
                      {/* Text Row */}
-                     <div>
-                       <p className="text-gray-600 mb-4 text-justify">
+                     <div className="max-w-2xl mx-auto">
+                       <p className="text-gray-500 dark:text-gray-400 font-thin text-sm sm:text-sm md:text-md lg:text-base mb-4 text-justify">
                          I enjoy watching adventure, thriller, and horror movies and series. My favorite TV series 
-                         is <span className="font-semibold">The Day of the Jackal</span>, and I&apos;m a big fan of 
-                         <span className="font-semibold">The Lord of the Rings</span> movies. These genres keep 
+                         is <span className="font-semibold"> The Day of the Jackal</span>, and I&apos;m a big fan of 
+                         <span className="font-semibold"> The Lord of the Rings</span> movies. These genres keep 
                          me engaged with their compelling storytelling and intense narratives. 
                          I particularly appreciate how adventure films take me on journeys to unknown worlds, 
                          while thrillers keep me on the edge of my seat with their suspenseful plots. 
@@ -472,13 +491,13 @@ const About = () => {
 
 
                {/* Hobbies */}
-               <div className="bg-white/50 rounded-lg p-10">
-                 <h4 className="text-lg font-semibold text-gray-900 mb-6 flex items-center">
+               <div className="bg-white/50 dark:bg-black rounded-2xl p-10">
+                 <h4 className="text-sm sm:text-sm md:text-md lg:text-lg font-regular text-gray-900 dark:text-gray-100 mb-6 flex items-center">
                    Hobbies
                  </h4>
-                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                    <div className="flex items-center justify-center">
-                     <p className="text-gray-600 leading-relaxed text-justify text-center">
+                     <p className="text-gray-500 dark:text-gray-400 font-thin text-sm sm:text-sm md:text-md lg:text-base leading-relaxed text-justify">
                        In my free time, I like to go hiking and traveling to explore new places and experience different cultures around the world. There&apos;s something incredibly fulfilling about discovering hidden trails, meeting new people, and immersing myself in diverse traditions and cuisines. I also thoroughly enjoy playing cricket or rugby as these sports not only keep me physically active but also help me stay connected with friends and build lasting relationships through teamwork and camaraderie. Whether it&apos;s trekking through scenic mountain trails, discovering new destinations with rich histories, or playing competitive sports with teammates, these activities bring perfect balance, excitement, and personal growth to my life while creating unforgettable memories and stories to share.
                      </p>
                    </div>

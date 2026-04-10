@@ -12,7 +12,7 @@ export default function ATSResumeGenerator() {
   const pageTitle = 'ATS Resume Generator | Dulaj Personal';
 
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-white dark:bg-gray-950">
       <Head>
         <title>{pageTitle}</title>
         <meta name="description" content="A comprehensive AI-powered CV generation and optimization system that creates ATS-friendly resumes using advanced language models and modern web technologies." />
@@ -29,7 +29,7 @@ export default function ATSResumeGenerator() {
           >
             <Link 
               href="/#projects" 
-              className="inline-flex items-center text-blue-600 hover:text-blue-800 transition-colors duration-200 mb-6 mt-4"
+              className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors duration-200 mb-6 mt-4"
             >
               <IoIosArrowForward className="transform rotate-180 mr-2" />
               Back to Projects
@@ -37,27 +37,27 @@ export default function ATSResumeGenerator() {
             
             <div className="flex flex-col gap-8">
               {/* Project Content */}
-              <div className="bg-white rounded-3xl p-8">
+              <div className="bg-white dark:bg-gray-900 rounded-3xl p-8">
                 <div className="mb-6">
-                  <span className="text-base font-semibold text-gray-500">Final Year Project</span>
-                  <h1 className="text-2xl font-bold text-gray-900 mt-2">ATS Compatible Resume Generator</h1>
+                  <span className="text-base font-semibold text-gray-500 dark:text-gray-400">Final Year Project</span>
+                  <h1 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mt-2">ATS Compatible Resume Generator</h1>
                 </div>
                 
-                <p className="text-gray-600 text-base leading-relaxed mb-8">
+                <p className="text-gray-600 dark:text-gray-300 text-base leading-relaxed mb-8">
                   A comprehensive AI-powered CV generation and optimization system that creates ATS-friendly resumes using advanced language models and modern web technologies.
                 </p>
                 
                 <div className="space-y-6">
-                  <p className="text-gray-600 leading-relaxed">
+                  <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
                     The ATS Compatible Resume Generator is an innovative solution designed to help job seekers create resumes that pass through Applicant Tracking Systems (ATS) successfully. By leveraging advanced natural language processing techniques and modern web technologies, this system not only generates professional resumes but also optimizes them for maximum compatibility with various ATS platforms.
                   </p>
                   
-                  <p className="text-gray-600 leading-relaxed">
+                  <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
                     The system analyzes job descriptions and tailors resumes accordingly, ensuring that relevant keywords and skills are appropriately highlighted. This increases the chances of resumes reaching hiring managers rather than being filtered out by automated systems.
                   </p>
                   
                   <div className="mb-6">
-                    <h3 className="text-lg font-semibold text-gray-900 mb-3">Key Features</h3>
+                    <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-3">Key Features</h3>
                     <ul className="space-y-2">
                       <li className="flex items-start">
                         <span className="text-blue-500 mr-2 mt-1">•</span>
@@ -87,31 +87,31 @@ export default function ATSResumeGenerator() {
                   </div>
                   
                   <div className="mt-8">
-                    <h3 className="text-lg font-semibold text-gray-900 mb-4">Technologies Used</h3>
+                    <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-4">Technologies Used</h3>
                     <div className="flex flex-wrap gap-3">
-                      <div className="text-gray-600 flex items-center justify-center bg-white p-3 rounded-lg" title="Next.js">
+                      <div className="text-gray-600 dark:text-gray-300 flex items-center justify-center bg-white dark:bg-gray-800 p-3 rounded-lg" title="Next.js">
                         <div className="w-8 h-8 bg-gray-200 rounded-full"></div>
                       </div>
-                      <div className="text-gray-600 flex items-center justify-center bg-white p-3 rounded-lg" title="Tailwind CSS">
-                        <div className="w-8 h-8 bg-gray-200 rounded-full"></div>
+                      <div className="text-gray-600 dark:text-gray-300 flex items-center justify-center bg-white dark:bg-gray-800 p-3 rounded-lg" title="Tailwind CSS">
+                        <div className="w-8 h-8 bg-gray-200 dark:bg-gray-700 rounded-full"></div>
                       </div>
-                      <div className="text-gray-600 flex items-center justify-center bg-white p-3 rounded-lg" title="Python">
-                        <div className="w-8 h-8 bg-gray-200 rounded-full"></div>
+                      <div className="text-gray-600 dark:text-gray-300 flex items-center justify-center bg-white dark:bg-gray-800 p-3 rounded-lg" title="Python">
+                        <div className="w-8 h-8 bg-gray-200 dark:bg-gray-700 rounded-full"></div>
                       </div>
-                      <div className="text-gray-600 flex items-center justify-center bg-white p-3 rounded-lg" title="FastAPI">
-                        <div className="w-8 h-8 bg-gray-200 rounded-full"></div>
+                      <div className="text-gray-600 dark:text-gray-300 flex items-center justify-center bg-white dark:bg-gray-800 p-3 rounded-lg" title="FastAPI">
+                        <div className="w-8 h-8 bg-gray-200 dark:bg-gray-700 rounded-full"></div>
                       </div>
-                      <div className="text-gray-600 flex items-center justify-center bg-white p-3 rounded-lg" title="Hugging Face">
-                        <div className="w-8 h-8 bg-gray-200 rounded-full"></div>
+                      <div className="text-gray-600 dark:text-gray-300 flex items-center justify-center bg-white dark:bg-gray-800 p-3 rounded-lg" title="Hugging Face">
+                        <div className="w-8 h-8 bg-gray-200 dark:bg-gray-700 rounded-full"></div>
                       </div>
-                      <div className="text-gray-600 flex items-center justify-center bg-white p-3 rounded-lg" title="Jupyter">
-                        <div className="w-8 h-8 bg-gray-200 rounded-full"></div>
+                      <div className="text-gray-600 dark:text-gray-300 flex items-center justify-center bg-white dark:bg-gray-800 p-3 rounded-lg" title="Jupyter">
+                        <div className="w-8 h-8 bg-gray-200 dark:bg-gray-700 rounded-full"></div>
                       </div>
                     </div>
                   </div>
                   
                   <div className="mb-6">
-                    <h3 className="text-xl font-semibold text-gray-900 mb-3">Technologies Used</h3>
+                    <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-3">Technologies Used</h3>
                     <ul className="space-y-2">
                       <li className="flex items-start">
                         <span className="text-blue-500 mr-2 mt-1">•</span>

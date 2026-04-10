@@ -436,7 +436,7 @@ const Projects = () => {
 
   return (
     <section id="projects" ref={projectsRef} className="py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header Section */}
         <motion.div 
           className="text-left mb-16"
@@ -445,10 +445,10 @@ const Projects = () => {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-gray-900 mb-6">
+          <h2 className="text-sm sm:text-sm md:text-md lg:text-lg font-semibold text-gray-900 dark:text-gray-100 mb-6">
             My Projects
           </h2>
-          <p className="text-black text-sm sm:text-base md:text-lg lg:text-xl max-w-2xl leading-relaxed">
+          <p className="text-black dark:text-gray-300 text-sm sm:text-sm md:text-md lg:text-base max-w-2xl leading-relaxed">
             Here are some of my recent projects that showcase my skills and passion for development
           </p>
         </motion.div>
@@ -468,12 +468,12 @@ const Projects = () => {
                 transition={{ duration: 0.6, ease: "easeOut" }}
               >
                 <motion.div 
-                  className={`bg-gradient-to-br ${project.bgGradient} rounded-3xl p-4 h-full shadow-lg hover:shadow-2xl transition-shadow duration-300 border border-white/20 relative`}
+                  className={`bg-gradient-to-br ${project.bgGradient} dark:from-gray-800 dark:to-gray-900 rounded-3xl p-2 h-full shadow-lg hover:shadow-2xl transition-shadow duration-300 border border-white/20 dark:border-gray-700/50 relative`}
                   variants={hoverVariants}
                   transition={{ duration: 0.3, ease: "easeOut" }}
                 >
                   {/* Project Image/Visual */}
-                  <div className={`w-full h-64 sm:h-72 md:h-80 rounded-2xl mb-6 flex items-center justify-center relative overflow-hidden`}>
+                  <div className={`w-full h-auto md:h-72 rounded-2xl mb-2 flex items-center justify-center relative overflow-hidden`}>
                     {project.image && project.image !== '/api/placeholder/600/400' ? (
                       <Image 
                         src={typeof project.image === 'string' ? project.image : project.image.src} 
@@ -496,10 +496,10 @@ const Projects = () => {
                   
                   {/* Project Header */}
                   <div className="mb-2">
-                    <div className="text-xs sm:text-sm md:text-base lg:text-lg font-semibold text-gray-500">
+                    <div className="text-sm sm:text-sm md:text-md lg:text-md uppercase mb-2 font-semibold text-gray-500 dark:text-gray-400">
                       {project.category}
                     </div>
-                    <h3 className="text-base sm:text-lg md:text-xl font-regular text-gray-900 group-hover:text-[#7697A0] transition-colors duration-300">
+                    <h3 className="text-sm sm:text-sm md:text-md lg:text-base font-regular text-gray-900 dark:text-gray-100 group-hover:text-[#4ECDC4] dark:group-hover:text-[#4ECDC4] transition-colors duration-300">
                       {project.title}
                     </h3>
                   </div>
@@ -507,16 +507,16 @@ const Projects = () => {
                   {/* Project Content */}
                   <div className="space-y-4">
                     {/* Description */}
-                    <p className="text-gray-600 leading-relaxed text-xs sm:text-sm md:text-base lg:text-lg">
+                    <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-sm sm:text-sm md:text-base lg:text-base">
                       {project.description}
                     </p>
               
                     {/* Technologies */}
-                    <div className="flex flex-wrap gap-3">
+                    <div className="flex p-2 flex-wrap gap-3">
                       {project.technologies.map((tech) => (
                         <motion.div
                           key={tech}
-                          className="text-gray-600 flex items-center justify-center"
+                          className="text-gray-600 dark:text-gray-400 flex items-center justify-center"
                           whileHover={{ scale: 1.1 }}
                           transition={{ duration: 0.2 }}
                           title={tech}
@@ -525,14 +525,14 @@ const Projects = () => {
                             if (!tech) return null;
                             const iconData = getTechIcon(tech);
                             return iconData.reactIcon ? (
-                              <div className="w-8 h-8">
+                              <div className="w-6 h-6">
                                 {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
-                                {React.createElement(iconData.reactIcon as any, { className: "w-8 h-8" })}
+                                {React.createElement(iconData.reactIcon as any, { className: "w-6 h-6" })}
                               </div>
                             ) : (
                               <FontAwesomeIcon 
                                 icon={iconData.faIcon} 
-                                className="w-8 h-8"
+                                className="w-6 h-6"
                               />
                             );
                           })()}
@@ -544,7 +544,7 @@ const Projects = () => {
                   {/* View Project Button - Positioned at bottom right */}
                   <div className="absolute bottom-4 right-4">
                     <button 
-                      className="text-gray-600 hover:text-gray-900 font-normal py-2 px-4 rounded-full transition-all duration-300 transform hover:scale-105 text-base flex items-center gap-2 bg-transparent border-none cursor-pointer"
+                      className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 font-normal py-2 px-4 rounded-full transition-all duration-300 transform hover:scale-105 text-base flex items-center gap-2 bg-transparent border-none cursor-pointer"
                       onClick={() => window.location.href = `/projects/${project.id}`}
                     >
                       Learn More

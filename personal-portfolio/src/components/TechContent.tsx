@@ -34,69 +34,71 @@ export default function TechContent() {
 
   return (
     <section id="tech" ref={techRef} className="pt-16 pb-20">
-       <div className="max-w-7xl mx-auto">
+       <div className="max-w-6xl mx-auto">
          <div className="text-left mb-10">
-           <p className="text-gray-700 text-xs sm:text-sm md:text-base lg:text-lg max-w-7xl text-justify text-left mb-6">
+           <p className="text-gray-700 dark:text-gray-300 text-xs sm:text-sm md:text-md lg:text-base max-w-6xl text-justify mb-6">
              As a DevOps and Full-Stack developer, I specialize in creating end-to-end solutions that bridge 
              development and operations. I am passionate about the MERN stack, 
              Spring Boot, Next.js for modern web applications, and Flutter for cross-platform mobile development.
            </p> 
            
-           <h3 className="text-base sm:text-lg md:text-xl font-regular mb-8 text-black text-left">Technologies</h3>
          </div>
 
          {/* Two Column Layout */}
+         <div className="max-w-5xl mx-auto">
+                    <h3 className="text-sm sm:text-sm md:text-md lg:text-lg font-semibold mb-8 text-black dark:text-white text-left">Technologies</h3>
+
          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-12 mb-2">
            {/* Left Column - Programming Languages */}
            <div className="mb-2">
-             <h2 className="text-sm sm:text-base md:text-lg font-regular text-black text-left mb-2">Programming Languages</h2>
+             <h2 className="text-sm sm:text-sm md:text-md lg:text-lg font-regular text-black dark:text-white text-left mb-2">Programming Languages</h2>
              <div className="grid grid-cols-8 gap-4">
                {/* Java */}
-               <div title="Java" className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer hover:bg-white/70 transition-colors">
+               <div title="Java" className="bg-white/50 dark:bg-black rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer  transition-colors">
                  <div className="w-12 h-12 flex items-center justify-center">
-                   <FaJava className="text-3xl text-gray-600" />
+                   <FaJava className="text-3xl text-gray-600 dark:text-gray-300" />
                  </div>
                </div>
 
                {/* Javascript */}
-               <div title="JavaScript" className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer hover:bg-white/70 transition-colors">
+               <div title="JavaScript" className="bg-white/50 dark:bg-black rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer  transition-colors">
                  <div className="w-12 h-12 flex items-center justify-center">
-                   <SiJavascript className="text-3xl text-gray-600" />
+                   <SiJavascript className="text-3xl text-gray-600 dark:text-gray-300" />
                  </div>
                </div>
 
                {/* Typescript */}
-               <div title="TypeScript" className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer hover:bg-white/70 transition-colors">
+               <div title="TypeScript" className="bg-white/50 dark:bg-black rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer  transition-colors">
                  <div className="w-12 h-12 flex items-center justify-center">
-                   <SiTypescript className="text-3xl text-gray-600" />
+                   <SiTypescript className="text-3xl text-gray-600 dark:text-gray-300" />
                  </div>
                </div>
 
                {/* Dart */}
-               <div title="Dart" className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer hover:bg-white/70 transition-colors">
+               <div title="Dart" className="bg-white/50 dark:bg-black rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer  transition-colors">
                  <div className="w-12 h-12 flex items-center justify-center">
-                   <FaDartLang className="text-3xl text-gray-600" />
+                   <FaDartLang className="text-3xl text-gray-600 dark:text-gray-300" />
                  </div>
                </div>
 
                {/* HTML5 */}
-               <div title="HTML5" className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer hover:bg-white/70 transition-colors">
+               <div title="HTML5" className="bg-white/50 dark:bg-black rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer  transition-colors">
                  <div className="w-12 h-12 flex items-center justify-center">
-                   <FaHtml5 className="text-3xl text-gray-600" />
+                   <FaHtml5 className="text-3xl text-gray-600 dark:text-gray-300" />
                  </div>
                </div>
 
                {/* Css3 */}
-               <div title="CSS3" className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer hover:bg-white/70 transition-colors">
+               <div title="CSS3" className="bg-white/50 dark:bg-black rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer  transition-colors">
                  <div className="w-12 h-12 flex items-center justify-center">
-                   <FaCss3 className="text-3xl text-gray-600" />
+                   <FaCss3 className="text-3xl text-gray-600 dark:text-gray-300" />
                  </div>
                </div> 
 
                {/* Python */} 
-               <div title="Python" className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer hover:bg-white/70 transition-colors">
+               <div title="Python" className="bg-white/50 dark:bg-black rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer  transition-colors">
                  <div className="w-12 h-12 flex items-center justify-center">
-                   <FaPython className="text-3xl text-gray-600" />
+                   <FaPython className="text-3xl text-gray-600 dark:text-gray-300" />
                  </div>
                </div>
 
@@ -107,40 +109,40 @@ export default function TechContent() {
 
            {/* Right Column - Frontend Technologies */}
            <div className="mb-2">
-             <h2 className="text-sm sm:text-base md:text-lg font-regular text-black text-left mb-2">Frontend Technologies</h2>
+             <h2 className="text-sm sm:text-base md:text-lg font-regular text-black dark:text-white text-left mb-2">Frontend Technologies</h2>
              <div className="grid grid-cols-8 gap-4">
                {/* React */}
-               <div title="React" className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer hover:bg-white/70 transition-colors">
+               <div title="React" className="bg-white/50 dark:bg-black rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer transition-colors">
                  <div className="w-12 h-12 flex items-center justify-center">
-                   <FaReact className="text-3xl text-gray-600" />
+                   <FaReact className="text-3xl text-gray-600 dark:text-gray-300" />
                  </div>
                </div>
 
                {/* Next.js */}
-               <div title="Next.js" className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer hover:bg-white/70 transition-colors">
+               <div title="Next.js" className="bg-white/50 dark:bg-black rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer  transition-colors">
                  <div className="w-12 h-12 flex items-center justify-center">
-                   <SiNextdotjs className="text-3xl text-gray-600" />
+                   <SiNextdotjs className="text-3xl text-gray-600 dark:text-gray-300" />
                  </div>
                </div>
 
                {/* React Native */}
-               <div title="React Native" className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer hover:bg-white/70 transition-colors">
+               <div title="React Native" className="bg-white/50 dark:bg-black rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer  transition-colors">
                  <div className="w-12 h-12 flex items-center justify-center">
-                   <TbBrandReactNative className="text-3xl text-gray-600" />
+                   <TbBrandReactNative className="text-3xl text-gray-600 dark:text-gray-300" />
                  </div>
                </div>
 
                {/* Flutter */}
-               <div title="Flutter" className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer hover:bg-white/70 transition-colors">
+               <div title="Flutter" className="bg-white/50 dark:bg-black rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer  transition-colors">
                  <div className="w-12 h-12 flex items-center justify-center">
-                   <SiFlutter className="text-3xl text-gray-600" />
+                   <SiFlutter className="text-3xl text-gray-600 dark:text-gray-300" />
                  </div>
                </div>
 
                {/* Tailwind CSS */}
-               <div title="Tailwind CSS" className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer hover:bg-white/70 transition-colors">
+               <div title="Tailwind CSS" className="bg-white/50 dark:bg-black rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer  transition-colors">
                  <div className="w-12 h-12 flex items-center justify-center">
-                   <SiTailwindcss className="text-3xl text-gray-600" />
+                   <SiTailwindcss className="text-3xl text-gray-600 dark:text-gray-300" />
                  </div>
                </div>
 
@@ -153,21 +155,21 @@ export default function TechContent() {
          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-2">
            {/* Left Column - Backend Technologies */}
            <div className="mb-2">
-             <h2 className="text-sm sm:text-base md:text-lg font-regular text-black text-left mb-2">Backend Technologies</h2>
+             <h2 className="text-sm sm:text-base md:text-lg font-regular text-black dark:text-white text-left mb-2">Backend Technologies</h2>
              <div className="grid grid-cols-8 gap-4">
                {/* Node.js */}
-               <div title="Node.js" className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer hover:bg-white/70 transition-colors">
+               <div title="Node.js" className="bg-white/50 dark:bg-black rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer  transition-colors">
                  <div className="w-12 h-12 flex items-center justify-center">
-                   <FaNodeJs className="text-3xl text-gray-600" />
+                   <FaNodeJs className="text-3xl text-gray-600 dark:text-gray-300" />
                  </div>
                </div>
 
               
 
                {/* Spring Boot */}
-               <div title="Spring Boot" className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer hover:bg-white/70 transition-colors">
+               <div title="Spring Boot" className="bg-white/50 dark:bg-black rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer  transition-colors">
                  <div className="w-12 h-12 flex items-center justify-center">
-                   <SiSpringboot className="text-3xl text-gray-600" />
+                   <SiSpringboot className="text-3xl text-gray-600 dark:text-gray-300" />
                  </div>
                </div>
 
@@ -177,33 +179,33 @@ export default function TechContent() {
 
            {/* Right Column - Databases & DevOps */}
            <div className="mb-2">
-             <h2 className="text-sm sm:text-base md:text-lg font-regular text-black text-left mb-2">Databases</h2>
+             <h2 className="text-sm sm:text-base md:text-lg font-regular text-black dark:text-white text-left mb-2">Databases</h2>
              <div className="grid grid-cols-8 gap-4">
                {/* MongoDB */}
-               <div title="MongoDB" className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer hover:bg-white/70 transition-colors">
+               <div title="MongoDB" className="bg-white/50 dark:bg-black rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer  transition-colors">
                  <div className="w-12 h-12 flex items-center justify-center">
-                   <SiMongodb className="text-3xl text-gray-600" />
+                   <SiMongodb className="text-3xl text-gray-600 dark:text-gray-300" />
                  </div>
                </div>
 
                {/* Postgresql */}
-               <div title="PostgreSQL" className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer hover:bg-white/70 transition-colors">
+               <div title="PostgreSQL" className="bg-white/50 dark:bg-black rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer  transition-colors">
                  <div className="w-12 h-12 flex items-center justify-center">
-                   <SiPostgresql className="text-3xl text-gray-600" />
+                   <SiPostgresql className="text-3xl text-gray-600 dark:text-gray-300" />
                  </div>
                </div>
 
                {/* MSSQL */}
-               <div title="Microsoft SQL Server" className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer hover:bg-white/70 transition-colors">
+               <div title="Microsoft SQL Server" className="bg-white/50 dark:bg-black rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer  transition-colors">
                  <div className="w-12 h-12 flex items-center justify-center">
-                   <DiMsqlServer className="text-3xl text-gray-600" />
+                   <DiMsqlServer className="text-3xl text-gray-600 dark:text-gray-300" />
                  </div>
                </div>
 
                {/* MySQL */}
-               <div title="MySQL" className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer hover:bg-white/70 transition-colors">
+               <div title="MySQL" className="bg-white/50 dark:bg-black rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer  transition-colors">
                  <div className="w-12 h-12 flex items-center justify-center">
-                   <SiMysql className="text-3xl text-gray-600" />
+                   <SiMysql className="text-3xl text-gray-600 dark:text-gray-300" />
                  </div>
                </div>
              </div>
@@ -216,40 +218,40 @@ export default function TechContent() {
          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-2">
            {/* Left Column - DevOps Tools */}
            <div className="mb-2">
-             <h2 className="text-sm sm:text-base md:text-lg font-regular text-black text-left mb-2">DevOps Tools</h2>
+             <h2 className="text-sm sm:text-base md:text-lg font-regular text-black dark:text-white text-left mb-2">DevOps Tools</h2>
              <div className="grid grid-cols-8 gap-4">
                {/* Git */}
-               <div title="Git" className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer hover:bg-white/70 transition-colors">
+               <div title="Git" className="bg-white/50 dark:bg-black rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer  transition-colors">
                  <div className="w-12 h-12 flex items-center justify-center">
-                   <FaGitAlt className="text-3xl text-gray-600" />
+                   <FaGitAlt className="text-3xl text-gray-600 dark:text-gray-300" />
                  </div>
                </div>
 
                {/* GitHub */}
-               <div title="GitHub" className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer hover:bg-white/70 transition-colors">
+               <div title="GitHub" className="bg-white/50 dark:bg-black rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer  transition-colors">
                  <div className="w-12 h-12 flex items-center justify-center">
-                   <FaGithub className="text-3xl text-gray-600" />
+                   <FaGithub className="text-3xl text-gray-600 dark:text-gray-300" />
                  </div>
                </div>
 
                {/* Docker */}
-               <div title="Docker" className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer hover:bg-white/70 transition-colors">
+               <div title="Docker" className="bg-white/50 dark:bg-black rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer  transition-colors">
                  <div className="w-12 h-12 flex items-center justify-center">
-                   <FaDocker className="text-3xl text-gray-600" />
+                   <FaDocker className="text-3xl text-gray-600 dark:text-gray-300" />
                  </div>
                </div>
 
                {/* Kubernetes */}
-               <div title="Kubernetes" className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer hover:bg-white/70 transition-colors">
+               <div title="Kubernetes" className="bg-white/50 dark:bg-black rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer  transition-colors">
                  <div className="w-12 h-12 flex items-center justify-center">
-                   <SiKubernetes className="text-3xl text-gray-600" />
+                   <SiKubernetes className="text-3xl text-gray-600 dark:text-gray-300" />
                  </div>
                </div>
 
                {/* AWS */}
-               <div title="Amazon Web Services" className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer hover:bg-white/70 transition-colors">
+               <div title="Amazon Web Services" className="bg-white/50 dark:bg-black rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer  transition-colors">
                  <div className="w-12 h-12 flex items-center justify-center">
-                   <FaAws className="text-3xl text-gray-600" />
+                   <FaAws className="text-3xl text-gray-600 dark:text-gray-300" />
                  </div>
                </div>
              </div>
@@ -257,47 +259,47 @@ export default function TechContent() {
 
            {/* Right Column - IDEs & Editors */}
            <div className="mb-2">
-             <h2 className="text-sm sm:text-base md:text-lg font-regular text-black text-left mb-2">IDEs & Editors</h2>
+             <h2 className="text-sm sm:text-base md:text-lg font-regular text-black dark:text-white text-left mb-2">IDEs & Editors</h2>
              <div className="grid grid-cols-8 gap-4">
                {/* Visual Studio */}
-               <div title="VS Code" className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer hover:bg-white/70 transition-colors">
+               <div title="VS Code" className="bg-white/50 dark:bg-black rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer transition-colors">
                  <div className="w-12 h-12 flex items-center justify-center">
-                   <VscVscode className="text-3xl text-gray-600" />
+                   <VscVscode className="text-3xl text-gray-600 dark:text-gray-300" />
                  </div>
                </div>
 
                {/* Visual Studio Code */}
-               <div title="Visual Studio" className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer hover:bg-white/70 transition-colors">
+               <div title="Visual Studio" className="bg-white/50 dark:bg-black rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer  transition-colors">
                  <div className="w-12 h-12 flex items-center justify-center">
-                   <TbBrandVisualStudio className="text-3xl text-gray-600" />
+                   <TbBrandVisualStudio className="text-3xl text-gray-600 dark:text-gray-300" />
                  </div>
                </div>
 
                {/* CLion */}
-               <div title="CLion" className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer hover:bg-white/70 transition-colors">
+               <div title="CLion" className="bg-white/50 dark:bg-black rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer  transition-colors">
                  <div className="w-12 h-12 flex items-center justify-center">
-                   <SiClion className="text-3xl text-gray-600" />
+                   <SiClion className="text-3xl text-gray-600 dark:text-gray-300" />
                  </div>
                </div>
 
                {/* IntelliJ IDEA */}
-               <div title="IntelliJ IDEA" className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer hover:bg-white/70 transition-colors">
+               <div title="IntelliJ IDEA" className="bg-white/50 dark:bg-black rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer  transition-colors">
                  <div className="w-12 h-12 flex items-center justify-center">
-                   <SiIntellijidea className="text-3xl text-gray-600" />
+                   <SiIntellijidea className="text-3xl text-gray-600 dark:text-gray-300" />
                  </div>
                </div>
 
                {/* NetBeans */}
-               <div title="NetBeans" className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer hover:bg-white/70 transition-colors">
+               <div title="NetBeans" className="bg-white/50 dark:bg-black rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer  transition-colors">
                  <div className="w-12 h-12 flex items-center justify-center">
-                   <SiApachenetbeanside className="text-3xl text-gray-600" />
+                   <SiApachenetbeanside className="text-3xl text-gray-600 dark:text-gray-300" />
                  </div>
                </div>
 
                {/* Eclipse */}
-               <div title="Eclipse" className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer hover:bg-white/70 transition-colors">
+               <div title="Eclipse" className="bg-white/50 dark:bg-black rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer  transition-colors">
                  <div className="w-12 h-12 flex items-center justify-center">
-                   <SiEclipseide className="text-3xl text-gray-600" />
+                   <SiEclipseide className="text-3xl text-gray-600 dark:text-gray-300" />
                  </div>
                </div>
              </div>
@@ -308,26 +310,26 @@ export default function TechContent() {
 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-2">
            {/* Left Column - DevOps Tools */}
            <div className="mb-2">
-             <h2 className="text-sm sm:text-base md:text-lg font-regular text-black text-left mb-2">Other Tools</h2>
+             <h2 className="text-sm sm:text-base md:text-lg font-regular text-black dark:text-white text-left mb-2">Other Tools</h2>
              <div className="grid grid-cols-8 gap-4">
                {/* Git */}
-               <div title="Figma" className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer hover:bg-white/70 transition-colors">
+               <div title="Figma" className="bg-white/50 dark:bg-black rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer  transition-colors">
                  <div className="w-12 h-12 flex items-center justify-center">
-                   <FaFigma className="text-3xl text-gray-600" />
+                   <FaFigma className="text-3xl text-gray-600 dark:text-gray-300" />
                  </div>
                </div>
 
                {/* GitHub */}
-               <div title="Blender" className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer hover:bg-white/70 transition-colors">
+               <div title="Blender" className="bg-white/50 dark:bg-black rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer  transition-colors">
                  <div className="w-12 h-12 flex items-center justify-center">
-                   <SiBlender className="text-3xl text-gray-600" />
+                   <SiBlender className="text-3xl text-gray-600 dark:text-gray-300" />
                  </div>
                </div>
 
                {/* Docker */}
-               <div title="Jira" className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer hover:bg-white/70 transition-colors">
+               <div title="Jira" className="bg-white/50 dark:bg-black rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer  transition-colors">
                  <div className="w-12 h-12 flex items-center justify-center">
-                   <FaJira className="text-3xl text-gray-600" />
+                   <FaJira className="text-3xl text-gray-600 dark:text-gray-300" />
                  </div>
                </div>
 
@@ -338,26 +340,26 @@ export default function TechContent() {
 
            {/* Right Column - IDEs & Editors */}
            <div className="mb-2">
-             <h2 className="text-sm sm:text-base md:text-lg font-regular text-black text-left mb-2">Operating Systems</h2>
+             <h2 className="text-sm sm:text-base md:text-lg font-regular text-black dark:text-white text-left mb-2">Operating Systems</h2>
              <div className="grid grid-cols-8 gap-4">
                {/* Visual Studio */}
-               <div title="Windows" className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer hover:bg-white/70 transition-colors">
+               <div title="Windows" className="bg-white/50 dark:bg-black rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer  transition-colors">
                  <div className="w-12 h-12 flex items-center justify-center">
-                   <FaWindows className="text-3xl text-gray-600" />
+                   <FaWindows className="text-3xl text-gray-600 dark:text-gray-300" />
                  </div>
                </div>
 
                {/* Visual Studio Code */}
-               <div title="Linux" className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer hover:bg-white/70 transition-colors">
+               <div title="Linux" className="bg-white/50 dark:bg-black rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer  transition-colors">
                  <div className="w-12 h-12 flex items-center justify-center">
-                   <FaLinux className="text-3xl text-gray-600" />
+                   <FaLinux className="text-3xl text-gray-600 dark:text-gray-300" />
                  </div>
                </div>
 
                {/* CLion */}
-               <div title="macOS" className="bg-white/50 rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer hover:bg-white/70 transition-colors">
+               <div title="macOS" className="bg-white/50 dark:bg-black rounded-3xl flex flex-col items-center text-center p-4 cursor-pointer  transition-colors">
                  <div className="w-12 h-12 flex items-center justify-center">
-                   <FaApple className="text-3xl text-gray-600" />
+                   <FaApple className="text-3xl text-gray-600 dark:text-gray-300" />
                  </div>
                </div>
 
@@ -365,119 +367,120 @@ export default function TechContent() {
              </div>
            </div>
          </div>
+         </div>
 
          {/* Certifications Section */}
-         <div className="mt-16">
-           <h3 className="text-lg sm:text-xl md:text-2xl font-regular mb-8 text-black text-left">Certifications</h3>
+         <div className="mt-16 max-w-5xl mx-auto">
+           <h3 className="text-xs sm:text-sm md:text-md lg:text-lg font-semibold mb-8 text-black dark:text-white text-left">Certifications</h3>
            <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
              {/* Kubernetes Certification */}
-             <a href="https://kodekloud.com/certificate-verification/" target="_blank" rel="noopener noreferrer" className="bg-white/50 rounded-3xl p-6 flex flex-col items-center text-center hover:bg-white/70 transition-colors duration-200">
+             <a href="https://kodekloud.com/certificate-verification/" target="_blank" rel="noopener noreferrer" className="bg-white/50 dark:bg-gray-800/50 rounded-3xl p-6 flex flex-col items-center text-center hover:bg-white/70 dark:hover:bg-gray-700/50 transition-colors duration-200">
                <div className="w-16 h-16 mb-4 flex items-center justify-center">
-                 <SiKubernetes className="text-4xl text-blue-700" />
+                 <SiKubernetes className="text-4xl text-blue-700 dark:text-blue-400" />
                </div>
-               <h4 className="text-sm sm:text-base md:text-lg font-semibold text-gray-900 mb-2">Kubernetes</h4>
-               <p className="text-xs sm:text-sm text-gray-600">Kodekloud</p>
-               <span className="text-xs text-blue-600 mt-2 hover:underline">View Credential</span>
+               <h4 className="text-sm sm:text-base md:text-lg font-regular text-gray-900 dark:text-gray-100 mb-2">Kubernetes</h4>
+               <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-400">Kodekloud</p>
+               <span className="text-xs text-blue-600 mt-2 hover:text-blue-800">View Credential</span>
              </a>
 
              {/* Docker Certification */}
-             <a href="https://kodekloud.com/certificate-verification/" target="_blank" rel="noopener noreferrer" className="bg-white/50 rounded-3xl p-6 flex flex-col items-center text-center hover:bg-white/70 transition-colors duration-200">
+             <a href="https://kodekloud.com/certificate-verification/" target="_blank" rel="noopener noreferrer" className="bg-white/50 dark:bg-gray-800/50 rounded-3xl p-6 flex flex-col items-center text-center hover:bg-white/70 dark:hover:bg-gray-700/50 transition-colors duration-200">
                <div className="w-16 h-16 mb-4 flex items-center justify-center">
-                 <FaDocker className="text-4xl text-blue-600" />
+                 <FaDocker className="text-4xl text-blue-600 dark:text-blue-400" />
                </div>
-               <h4 className="text-sm sm:text-base md:text-lg font-semibold text-gray-900 mb-2">Docker</h4>
-               <p className="text-xs sm:text-sm text-gray-600">Kodekloud</p>
-               <span className="text-xs text-blue-600 mt-2 hover:underline">View Credential</span>
+               <h4 className="text-sm sm:text-base md:text-lg font-regular text-gray-900 dark:text-gray-100 mb-2">Docker</h4>
+               <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-400">Kodekloud</p>
+               <span className="text-xs text-blue-600 mt-2 hover:text-blue-800">View Credential</span>
              </a>
 
              {/* Linux Certification */}
-             <a href="https://kodekloud.com/certificate-verification/" target="_blank" rel="noopener noreferrer" className="bg-white/50 rounded-3xl p-6 flex flex-col items-center text-center hover:bg-white/70 transition-colors duration-200">
+             <a href="https://kodekloud.com/certificate-verification/" target="_blank" rel="noopener noreferrer" className="bg-white/50 dark:bg-gray-800/50 rounded-3xl p-6 flex flex-col items-center text-center hover:bg-white/70 dark:hover:bg-gray-700/50 transition-colors duration-200">
                <div className="w-16 h-16 mb-4 flex items-center justify-center">
-                 <FaLinux className="text-4xl text-orange-500" />
+                 <FaLinux className="text-4xl text-orange-500 dark:text-orange-400" />
                </div>
-               <h4 className="text-sm sm:text-base md:text-lg font-semibold text-gray-900 mb-2">Linux</h4>
-               <p className="text-xs sm:text-sm text-gray-600">Kodekloud</p>
-               <span className="text-xs text-blue-600 mt-2 hover:underline">View Credential</span>
+               <h4 className="text-sm sm:text-base md:text-lg font-regular text-gray-900 dark:text-gray-100 mb-2">Linux</h4>
+               <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-400">Kodekloud</p>
+               <span className="text-xs text-blue-600 mt-2 hover:text-blue-800">View Credential</span>
              </a>
 
              {/* Jenkins Certification */}
-             <a href="https://kodekloud.com/certificate-verification/" target="_blank" rel="noopener noreferrer" className="bg-white/50 rounded-3xl p-6 flex flex-col items-center text-center hover:bg-white/70 transition-colors duration-200">
+             <a href="https://kodekloud.com/certificate-verification/" target="_blank" rel="noopener noreferrer" className="bg-white/50 dark:bg-gray-800/50 rounded-3xl p-6 flex flex-col items-center text-center hover:bg-white/70 dark:hover:bg-gray-700/50 transition-colors duration-200">
                <div className="w-16 h-16 mb-4 flex items-center justify-center">
-                 <FaJenkins className="text-4xl text-blue-500" />
+                 <FaJenkins className="text-4xl text-blue-500 dark:text-blue-400" />
                </div>
-               <h4 className="text-sm sm:text-base md:text-lg font-semibold text-gray-900 mb-2">Jenkins</h4>
-               <p className="text-xs sm:text-sm text-gray-600">Kodekloud</p>
-               <span className="text-xs text-blue-600 mt-2 hover:underline">View Credential</span>
+               <h4 className="text-sm sm:text-base md:text-lg font-regular text-gray-900 dark:text-gray-100 mb-2">Jenkins</h4>
+               <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-400">Kodekloud</p>
+               <span className="text-xs text-blue-600 mt-2 hover:text-blue-800">View Credential</span>
              </a>
 
              {/* Git Certification */}
-             <a href="https://kodekloud.com/certificate-verification/" target="_blank" rel="noopener noreferrer" className="bg-white/50 rounded-3xl p-6 flex flex-col items-center text-center hover:bg-white/70 transition-colors duration-200">
+             <a href="https://kodekloud.com/certificate-verification/" target="_blank" rel="noopener noreferrer" className="bg-white/50 dark:bg-gray-800/50 rounded-3xl p-6 flex flex-col items-center text-center hover:bg-white/70 dark:hover:bg-gray-700/50 transition-colors duration-200">
                <div className="w-16 h-16 mb-4 flex items-center justify-center">
-                 <FaGitAlt className="text-4xl text-orange-600" />
+                 <FaGitAlt className="text-4xl text-orange-600 dark:text-orange-400" />
                </div>
-               <h4 className="text-sm sm:text-base md:text-lg font-semibold text-gray-900 mb-2">Git</h4>
-               <p className="text-xs sm:text-sm text-gray-600">Kodekloud</p>
-               <span className="text-xs text-blue-600 mt-2 hover:underline">View Credential</span>
+               <h4 className="text-sm sm:text-base md:text-lg font-regular text-gray-900 dark:text-gray-100 mb-2">Git</h4>
+               <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-400">Kodekloud</p>
+               <span className="text-xs text-blue-600 mt-2 hover:text-blue-800">View Credential</span>
              </a>
 
              {/* Shell Scripts Certification */}
-             <a href="https://kodekloud.com/certificate-verification/" target="_blank" rel="noopener noreferrer" className="bg-white/50 rounded-3xl p-6 flex flex-col items-center text-center hover:bg-white/70 transition-colors duration-200">
+             <a href="https://kodekloud.com/certificate-verification/" target="_blank" rel="noopener noreferrer" className="bg-white/50 dark:bg-gray-800/50 rounded-3xl p-6 flex flex-col items-center text-center hover:bg-white/70 dark:hover:bg-gray-700/50 transition-colors duration-200">
                <div className="w-16 h-16 mb-4 flex items-center justify-center">
-                 <SiGnubash className="text-4xl text-gray-600" />
+                 <SiGnubash className="text-4xl text-gray-600 dark:text-gray-300" />
                </div>
-               <h4 className="text-sm sm:text-base md:text-lg font-semibold text-gray-900 mb-2">Shell Scripts</h4>
-               <p className="text-xs sm:text-sm text-gray-600">Kodekloud</p>
-               <span className="text-xs text-blue-600 mt-2 hover:underline">View Credential</span>
+               <h4 className="text-sm sm:text-base md:text-lg font-regular text-gray-900 dark:text-gray-100 mb-2">Shell Scripts</h4>
+               <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-400">Kodekloud</p>
+               <span className="text-xs text-blue-600 mt-2 hover:text-blue-800">View Credential</span>
              </a>
 
              {/* Google Cloud - Generative AI */}
-             <a href="https://www.cloudskillsboost.google/public_profiles/159d40af-d22c-456c-b57c-39c13b8e2409/badges/18157138" target="_blank" rel="noopener noreferrer" className="bg-white/50 rounded-3xl p-6 flex flex-col items-center text-center hover:bg-white/70 transition-colors duration-200">
+             <a href="https://www.cloudskillsboost.google/public_profiles/159d40af-d22c-456c-b57c-39c13b8e2409/badges/18157138" target="_blank" rel="noopener noreferrer" className="bg-white/50 dark:bg-gray-800/50 rounded-3xl p-6 flex flex-col items-center text-center hover:bg-white/70 dark:hover:bg-gray-700/50 transition-colors duration-200">
                <div className="w-16 h-16 mb-4 flex items-center justify-center">
-                 <SiGooglecloud className="text-4xl text-blue-500" />
+                 <SiGooglecloud className="text-4xl text-blue-500 dark:text-blue-400" />
                </div>
-               <h4 className="text-sm sm:text-base md:text-lg font-semibold text-gray-900 mb-2">Introduction to Generative AI</h4>
-               <p className="text-xs sm:text-sm text-gray-600">Google Cloud</p>
-               <span className="text-xs text-blue-600 mt-2 hover:underline">View Credential</span>
+               <h4 className="text-sm sm:text-base md:text-lg font-regular text-gray-900 dark:text-gray-100 mb-2">Introduction to Generative AI</h4>
+               <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-400">Google Cloud</p>
+               <span className="text-xs text-blue-600 mt-2 hover:text-blue-800">View Credential</span>
              </a>
 
              {/* Google Cloud - Large Language Models */}
-             <a href="https://www.cloudskillsboost.google/public_profiles/159d40af-d22c-456c-b57c-39c13b8e2409/badges/18159020" target="_blank" rel="noopener noreferrer" className="bg-white/50 rounded-3xl p-6 flex flex-col items-center text-center hover:bg-white/70 transition-colors duration-200">
+             <a href="https://www.cloudskillsboost.google/public_profiles/159d40af-d22c-456c-b57c-39c13b8e2409/badges/18159020" target="_blank" rel="noopener noreferrer" className="bg-white/50 dark:bg-gray-800/50 rounded-3xl p-6 flex flex-col items-center text-center hover:bg-white/70 dark:hover:bg-gray-700/50 transition-colors duration-200">
                <div className="w-16 h-16 mb-4 flex items-center justify-center">
-                 <SiGooglecloud className="text-4xl text-blue-500" />
+                 <SiGooglecloud className="text-4xl text-blue-500 dark:text-blue-400" />
                </div>
-               <h4 className="text-sm sm:text-base md:text-lg font-semibold text-gray-900 mb-2">Introduction to Large Language Models</h4>
-               <p className="text-xs sm:text-sm text-gray-600">Google Cloud</p>
-               <span className="text-xs text-blue-600 mt-2 hover:underline">View Credential</span>
+               <h4 className="text-sm sm:text-base md:text-lg font-regular text-gray-900 dark:text-gray-100 mb-2">Introduction to Large Language Models</h4>
+               <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-400">Google Cloud</p>
+               <span className="text-xs text-blue-600 mt-2 hover:text-blue-800">View Credential</span>
              </a>
 
              {/* Google Cloud - AI and ML */}
-             <a href="https://www.cloudskillsboost.google/public_profiles/your-profile-id" target="_blank" rel="noopener noreferrer" className="bg-white/50 rounded-3xl p-6 flex flex-col items-center text-center hover:bg-white/70 transition-colors duration-200">
+             <a href="https://www.cloudskillsboost.google/public_profiles/your-profile-id" target="_blank" rel="noopener noreferrer" className="bg-white/50 dark:bg-gray-800/50 rounded-3xl p-6 flex flex-col items-center text-center hover:bg-white/70 dark:hover:bg-gray-700/50 transition-colors duration-200">
                <div className="w-16 h-16 mb-4 flex items-center justify-center">
-                 <SiGooglecloud className="text-4xl text-blue-500" />
+                 <SiGooglecloud className="text-4xl text-blue-500 dark:text-blue-400" />
                </div>
-               <h4 className="text-sm sm:text-base md:text-lg font-semibold text-gray-900 mb-2">Introduction to AI and ML</h4>
-               <p className="text-xs sm:text-sm text-gray-600">Google Cloud</p>
-               <span className="text-xs text-blue-600 mt-2 hover:underline">View Credential</span>
+               <h4 className="text-sm sm:text-base md:text-lg font-regular text-gray-900 dark:text-gray-100 mb-2">Introduction to AI and ML</h4>
+               <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-400">Google Cloud</p>
+               <span className="text-xs text-blue-600 mt-2 hover:text-blue-800">View Credential</span>
              </a>
 
              {/* Oracle DevOps Foundations */}
-             <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=your-badge-id" target="_blank" rel="noopener noreferrer" className="bg-white/50 rounded-3xl p-6 flex flex-col items-center text-center hover:bg-white/70 transition-colors duration-200">
+             <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=your-badge-id" target="_blank" rel="noopener noreferrer" className="bg-white/50 dark:bg-gray-800/50 rounded-3xl p-6 flex flex-col items-center text-center hover:bg-white/70 dark:hover:bg-gray-700/50 transition-colors duration-200">
                <div className="w-16 h-16 mb-4 flex items-center justify-center">
-                 <SiOracle className="text-4xl text-red-600" />
+                 <SiOracle className="text-4xl text-red-600 dark:text-red-400" />
                </div>
-               <h4 className="text-sm sm:text-base md:text-lg font-semibold text-gray-900 mb-2">DevOps Foundations 2025</h4>
-               <p className="text-xs sm:text-sm text-gray-600">Oracle</p>
-               <span className="text-xs text-blue-600 mt-2 hover:underline">View Credential</span>
+               <h4 className="text-sm sm:text-base md:text-lg font-regular text-gray-900 dark:text-gray-100 mb-2">DevOps Foundations 2025</h4>
+               <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-400">Oracle</p>
+               <span className="text-xs text-blue-600 mt-2 hover:text-blue-800">View Credential</span>
              </a>
 
              {/* Linux Foundation */}
-             <a href="https://training.linuxfoundation.org/certificate/verification/" target="_blank" rel="noopener noreferrer" className="bg-white/50 rounded-3xl p-6 flex flex-col items-center text-center hover:bg-white/70 transition-colors duration-200">
+             <a href="https://training.linuxfoundation.org/certificate/verification/" target="_blank" rel="noopener noreferrer" className="bg-white/50 dark:bg-gray-800/50 rounded-3xl p-6 flex flex-col items-center text-center hover:bg-white/70 dark:hover:bg-gray-700/50 transition-colors duration-200">
                <div className="w-16 h-16 mb-4 flex items-center justify-center">
-                 <FaLinux className="text-4xl text-orange-500" />
+                 <FaLinux className="text-4xl text-orange-500 dark:text-orange-400" />
                </div>
-               <h4 className="text-sm sm:text-base md:text-lg font-semibold text-gray-900 mb-2">Introduction to Linux</h4>
-               <p className="text-xs sm:text-sm text-gray-600">Linux Foundation</p>
-               <span className="text-xs text-blue-600 mt-2 hover:underline">View Credential</span>
+               <h4 className="text-sm sm:text-base md:text-lg font-regular text-gray-900 dark:text-gray-100 mb-2">Introduction to Linux</h4>
+               <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-400">Linux Foundation</p>
+               <span className="text-xs text-blue-600 mt-2 hover:text-blue-800">View Credential</span>
              </a>
            </div>
          </div>

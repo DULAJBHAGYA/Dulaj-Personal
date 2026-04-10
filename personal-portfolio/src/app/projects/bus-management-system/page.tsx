@@ -12,7 +12,7 @@ export default function BusManagementSystem() {
   const pageTitle = 'Highway Bus Management System | Dulaj Personal';
 
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-white dark:bg-gray-950">
       <Head>
         <title>{pageTitle}</title>
         <meta name="description" content="Interactive dashboards for business intelligence and data visualization." />
@@ -29,7 +29,7 @@ export default function BusManagementSystem() {
           >
             <Link 
               href="/#projects" 
-              className="inline-flex items-center text-blue-600 hover:text-blue-800 transition-colors duration-200 mb-6 mt-4"
+              className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors duration-200 mb-6 mt-4"
             >
               <IoIosArrowForward className="transform rotate-180 mr-2" />
               Back to Projects
@@ -37,13 +37,13 @@ export default function BusManagementSystem() {
             
             <div className="flex flex-col gap-8">
               {/* Project Content */}
-              <div className="bg-white rounded-3xl p-8">
+              <div className="bg-white dark:bg-gray-900 rounded-3xl p-8">
                 <div className="mb-6">
-                  <span className="text-base font-semibold text-gray-500">Second Year Software Project</span>
-                  <h1 className="text-2xl font-bold text-gray-900 mt-2">Highway Bus Management System</h1>
+                  <span className="text-base font-semibold text-gray-500 dark:text-gray-400">Second Year Software Project</span>
+                  <h1 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mt-2">Highway Bus Management System</h1>
                 </div>
                 
-                <p className="text-gray-600 text-base leading-relaxed mb-8">
+                <p className="text-gray-600 dark:text-gray-300 text-base leading-relaxed mb-8">
                   Interactive dashboards for business intelligence and data visualization.
                 </p>
                 

@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: 'class',
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -28,8 +29,10 @@ module.exports = {
         },
       },
       fontFamily: {
-        sans: ['var(--font-poppins)', 'system-ui', 'sans-serif'],
+        sans: ['var(--font-figtree)', 'system-ui', 'sans-serif'],
+        poppins: ['var(--font-poppins)', 'system-ui', 'sans-serif'],
         blanka: ['var(--font-blanka)', 'monospace'],
+        figtree: ['var(--font-figtree)', 'sans-serif'],
       },
       animation: {
         'float': 'float 6s ease-in-out infinite',

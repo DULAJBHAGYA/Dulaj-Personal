@@ -1,18 +1,18 @@
 import Navbar from "@/components/Navbar";
-import Contact from "@/components/Contact";
+import Gallery from "@/components/Gallery";
 import Footer from "@/components/Footer";
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Contact | Dulaj Personal',
-  description: 'Get in touch with Dulaj Upananda for collaboration, opportunities, or just to say hello',
+  title: 'Gallery | Dulaj Personal',
+  description: 'Explore my photo gallery showcasing memorable moments and experiences',
 };
 
-export default function ContactPage() {
+export default function GalleryPage() {
   return (
     <main className="min-h-screen bg-white dark:bg-gray-950 transition-colors duration-200 flex flex-col">
       <Navbar />
-      <Contact />
+      <Gallery />
       <Footer />
     </main>
   );
