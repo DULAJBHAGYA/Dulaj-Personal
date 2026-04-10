@@ -13,7 +13,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="min-h-screen bg-white dark:bg-gray-950 transition-colors duration-200">
+    <main className="min-h-screen bg-white dark:bg-black transition-colors duration-200">
       <Navbar />
       <Hero />
       <Projects />
