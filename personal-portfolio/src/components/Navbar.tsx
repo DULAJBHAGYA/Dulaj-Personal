@@ -26,7 +26,7 @@ const Navbar = () => {
     { name: 'About', href: '/about', isButton: false },
     { name: 'Tech', href: '/tech', isButton: false },
     { name: 'Blogs', href: '/blogs', isButton: false },
-    { name: 'Gallery', href: '/gallery', isButton: false },
+    { name: 'Life', href: '/gallery', isButton: false },
     { name: 'Contact', href: '/contact', isButton: false },
   ];
 
