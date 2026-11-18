@@ -76,19 +76,19 @@ const Hero = () => {
               </p>
               
               <p className="text-sm sm:text-sm md:text-md lg:text-lg text-black dark:text-gray-300 leading-relaxed mb-4">
-                Software Engineer at{' '}
+                Data Engineer at{' '}
                 <a 
-                  href="https://masgraslaw.ca/" 
+                  href="https://goodhopeholdings.com" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 font-semibold transition-colors duration-200"
                 >
-                  Masgras Professional Corporation
+                  GoodHope Asia Holdings Ltd
                 </a>
               </p>
               
               <p className="text-sm sm:text-sm md:text-md lg:text-lg text-black dark:text-gray-300 leading-relaxed mb-4">
-                DevOps and Full-Stack enthusiast
+                Data Engineering and Full-Stack enthusiast
               </p>
               
               <p className="text-sm sm:text-sm md:text-md lg:text-lg text-gray-500 dark:text-gray-400 leading-relaxed">

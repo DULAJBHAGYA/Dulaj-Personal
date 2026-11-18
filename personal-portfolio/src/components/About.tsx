@@ -151,31 +151,31 @@ const About = () => {
           >
             
             <p className="text-gray-600 dark:text-gray-300 text-sm sm:text-base md:text-md lg:text-base mb-6 max-w-6xl text-justify">
-              I&apos;m a fresh graduate from UOM with a passion for 
-              Full Stack development and DevOps. I love building scalable applications and 
-              implementing efficient deployment pipelines that enhance both development 
+              I&apos;m a graduate from UOM with a passion for 
+              Full Stack development and Data Engineering. I love building scalable applications and 
+              implementing efficient data pipelines that enhance both development 
               productivity and system reliability.
             </p>
           </div>
 
-           <div className="space-y-6">
-             <h3 className="text-xs sm:text-sm md:text-md lg:text-lg font-semibold text-black dark:text-white mb-6">Experience</h3>
-             
-             <div className="bg-white/50 dark:bg-black rounded-lg">
-              <h4 className="text-xs sm:text-sm md:text-md lg:text-lg font-regular text-gray-900 dark:text-gray-100 mb-2 ">Software Engineer (2025 Sep - Present)</h4>
-                <p className="text-gray-500 dark:text-gray-400 text-sm sm:text-sm md:text-md lg:text-base mb-2 max-w-6xl mx-auto font-thin">
-                  Working as a Full Stack Software Engineer at <a href="https://masgraslaw.ca/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 ">Masgras Professional Corporation (Canada)</a>.
+           <div className="bg-white/50 dark:bg-slate-950 rounded-lg">
+              <h4 className="text-xs sm:text-sm md:text-md lg:text-lg font-regular text-gray-900 dark:text-gray-100 mb-2 ">Data Engineer (2026 Jun - Present)</h4>
+                <p className="text-gray-600 dark:text-gray-300 text-sm text-justify sm:text-sm md:text-md lg:text-base mb-2 max-w-6xl mx-auto font-thin">
+                  Working as an Associate Data Engineer at <a href="https://goodhopeholdings.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 ">GoodHope Asia Holdings Ltd</a>, where I design and maintain enterprise ETL workflows using Informatica PowerCenter and Oracle SQL to extract, transform, and load JD Edwards (JDE) data into Oracle data warehouses. I manage daily automated and manual pipeline schedules, run end-to-end reconciliation checks to ensure data integrity, and resolve production bottlenecks across cross-functional teams.
+                </p>
+
+                <h4 className="text-xs sm:text-sm md:text-md lg:text-lg font-regular  text-gray-900 dark:text-gray-100 mb-2 mt-8">Full Stack Software Engineer (2025 Sep - 2026 Sep)</h4>
+                <p className="text-gray-600 dark:text-gray-300 text-sm text-justify sm:text-sm md:text-md lg:text-base mb-2 max-w-6xl mx-auto font-thin">
+                  Worked as a Full Stack Software Engineer at <a href="https://www.mircompaniesgroup.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 ">MIR Group of Companies, Canada</a>, building scalable web applications with React.js and Next.js alongside Spring Boot backend microservices and PostgreSQL databases. I engineered large-scale data transactions, optimized database query efficiency, integrated REST APIs, and maintained high production availability through continuous monitoring and rapid hotfix deployments in Agile workflows.
                 </p>
                 
                <h4 className="text-xs sm:text-sm md:text-md lg:text-lg font-regular text-gray-900 dark:text-gray-100 mb-2 mt-8">Software Engineer Intern (2024 Feb - 2024 Aug)</h4>
-                <p className="text-gray-600 dark:text-gray-300 text-sm sm:text-sm md:text-md lg:text-base mb-2 max-w-6xl mx-auto font-thin">
-                  Completed 6 months internship in <a href="https://futurecx.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 ">Future CX</a> as Software Engineer in the mobile development team.
-                  You can find more about my internship project at <a href="#projects" className="text-blue-600 hover:text-blue-800 ">Projects</a> in the Projects section
+                <p className="text-gray-600 dark:text-gray-300 text-sm text-justify sm:text-sm md:text-md lg:text-base mb-2 max-w-6xl mx-auto font-thin">
+                  Completed a 6-month internship at <a href="https://futurecx.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 ">Future CX</a> as a Software Engineer in the mobile development team, developing responsive cross-platform interfaces with Flutter and integrating RESTful APIs for real-time data flow. I implemented scalable state management patterns, debugged asynchronous operations, and optimized app performance in an Agile environment. You can find more about my work in the <a href="#projects" className="text-blue-600 hover:text-blue-800 ">Projects</a> section.
                 </p>
 
                
                
-             </div>
            </div>
 
            <div className="space-y-6">
@@ -192,9 +192,9 @@ const About = () => {
                    />
                  </div>
                </div>
-               <div className="bg-white/50 dark:bg-black rounded-2xl h-auto md:h-72 flex flex-col justify-center p-4 md:p-6 order-2 md:order-1">
+               <div className="bg-white/50 dark:bg-slate-950 rounded-2xl h-auto md:h-72 flex flex-col justify-center p-4 md:p-6 order-2 md:order-1">
                  <h4 className="text-sm sm:text-sm md:text-md lg:text-lg font-regular text-gray-900 dark:text-gray-100 mb-2">University of Moratuwa (2021 - 2025)</h4>
-                 <p className="text-gray-500 dark:text-gray-400 text-sm sm:text-sm md:text-md lg:text-base text-justify font-thin">
+                 <p className="text-gray-600 dark:text-gray-300 text-sm sm:text-sm md:text-md lg:text-base text-justify font-thin">
                   Pursued Bachelor of Science (Hons) in Information Technology & Management from Faculty of IT, <a href="https://uom.lk/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">University of Moratuwa</a>. 
                   </p>
                </div>
@@ -211,11 +211,11 @@ const About = () => {
                    />
                  </div>
                </div>
-               <div className="bg-white/50 dark:bg-black rounded-2xl h-auto md:h-72 flex flex-col justify-center p-4 md:p-6 order-2 md:order-2">
+               <div className="bg-white/50 dark:bg-slate-950 rounded-2xl h-auto md:h-72 flex flex-col justify-center p-4 md:p-6 order-2 md:order-2">
                  <h4 className="text-base sm:text-sm md:text-md lg:text-lg font-regular text-gray-900 dark:text-gray-100 mb-2">
                      SIBA Campus (2019 - 2020)
                  </h4>
-                 <p className="text-gray-500 dark:text-gray-400 text-sm sm:text-sm md:text-md lg:text-base font-thin text-justify">
+                 <p className="text-gray-600 dark:text-gray-300 text-sm sm:text-sm md:text-md lg:text-base font-thin text-justify">
                   Completed Diploma in IT and Diploma in English at <a href="https://siba.edu.lk/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">SIBA Campus, Kandy</a>. 
                   </p>
                </div>
@@ -232,9 +232,9 @@ const About = () => {
                    />
                  </div>
                </div>
-               <div className="bg-white/50 dark:bg-black rounded-2xl h-auto md:h-72 w-96 flex flex-col justify-center p-4 md:p-6 order-2 md:order-1">
+               <div className="bg-white/50 dark:bg-slate-950 rounded-2xl h-auto md:h-72 w-96 flex flex-col justify-center p-4 md:p-6 order-2 md:order-1">
                  <h4 className="text-sm sm:text-sm md:text-md lg:text-lg font-regular text-gray-900 dark:text-gray-100 mb-2">Kingswood College, Kandy (2004 - 2017)</h4>
-                 <p className="text-gray-500 dark:text-gray-400 text-sm sm:text-sm md:text-md lg:text-base font-thin text-justify">
+                 <p className="text-gray-600 dark:text-gray-300 text-sm sm:text-sm md:text-md lg:text-base font-thin text-justify">
                   studied primary and secondary studies at <a href="https://kingswood.lk/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">Kingswood College, Kandy</a>. I did my A/Ls in the Biology stream and I was able to secure 2As and B passes.
                   </p>
                </div>
@@ -252,7 +252,7 @@ const About = () => {
              
              <div className="space-y-6">
                {/* Rugby and Cricket */}
-               <div className="bg-white/50 dark:bg-black rounded-2xl p-10">
+               <div className="bg-white/50 dark:bg-slate-950 rounded-2xl p-10">
                  <h4 className="text-sm sm:text-sm md:text-md lg:text-lg font-regular text-gray-900 dark:text-gray-100 mb-4 flex items-center">
                    Rugby & Cricket
                  </h4>
@@ -297,7 +297,7 @@ const About = () => {
                    
                    {/* Right Column - Paragraph */}
                    <div className="flex items-center order-1 md:order-2">
-                     <p className="text-gray-500 dark:text-gray-400 font-thin text-sm sm:text-sm md:text-md lg:text-base leading-relaxed text-justify">
+                     <p className="text-gray-600 dark:text-gray-300 font-thin text-sm sm:text-sm md:text-md lg:text-base leading-relaxed text-justify">
                        I am a big fan of <span className="font-semibold">Kandy Sports Club</span> and <span className="font-semibold">Springboks</span> rugby teams. I also have a deep love for  
                         <span className="font-semibold"> Sri Lankan Cricket</span> and follow the national team passionately. These sports have been an integral 
                        part of my life, teaching me valuable lessons about teamwork, discipline, and national pride. 
@@ -308,7 +308,7 @@ const About = () => {
                </div>
                          
                {/* Music */}
-               <div className="bg-white/50 dark:bg-black rounded-2xl p-10">
+               <div className="bg-white/50 dark:bg-slate-950 rounded-2xl p-10">
                  <h4 className="text-sm sm:text-sm md:text-md lg:text-lg font-regular text-gray-900 dark:text-gray-100 mb-6">
                    Music
                  </h4>
@@ -316,13 +316,13 @@ const About = () => {
                    {/* Left Column - Text Content */}
                    <div className="flex items-center justify-center">
                      <div className="space-y-4">
-                       <p className="text-gray-500 dark:text-gray-400 leading-relaxed text-sm sm:text-sm md:text-md lg:text-base font-thin text-justify">
+                       <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-sm sm:text-sm md:text-md lg:text-base font-thin text-justify">
                          I have a deep passion for Sri Lankan Classical Music, particularly the enchanting <span className="font-semibold">Nadhagama</span> vibe that captures the soul of our cultural heritage. The melodic rhythms and traditional instruments create a unique musical experience that I find truly captivating.
                        </p>
-                       <p className="text-gray-500 dark:text-gray-400 leading-relaxed text-sm sm:text-sm md:text-md lg:text-base font-thin text-justify">
+                       <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-sm sm:text-sm md:text-md lg:text-base font-thin text-justify">
                          Among my favorite artists, <span className="font-semibold">Dhanith Sri</span> and <span className="font-semibold">Suni Edirisinghe</span> stand out for their exceptional vocal talent and ability to blend traditional elements with contemporary sounds. Their music resonates with me on both emotional and cultural levels.
                        </p>
-                       <p className="text-gray-500 dark:text-gray-400 leading-relaxed text-sm sm:text-sm md:text-md lg:text-base font-thin text-justify">
+                       <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-sm sm:text-sm md:text-md lg:text-base font-thin text-justify">
                          I also enjoy exploring modern genres, especially EDM artists like <span className="font-semibold">Chainsmokers</span> and <span className="font-semibold">Coldplay</span>, who bring innovative electronic sounds and powerful lyrics. This diverse musical taste allows me to appreciate both the rich traditions of Sri Lankan music and the dynamic energy of contemporary global sounds.
                        </p>
                      </div>
@@ -420,7 +420,7 @@ const About = () => {
                </div>
 
                {/* Books and Movies - Side by Side */}
-               <div className="bg-white/50 dark:bg-black rounded-2xl p-10">
+               <div className="bg-white/50 dark:bg-slate-950 rounded-2xl p-10">
                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                    {/* Books Column */}
                    <div className="flex flex-col">
@@ -440,7 +440,7 @@ const About = () => {
                      
                      {/* Text Row */}
                      <div>
-                       <p className="text-gray-500 dark:text-gray-400 font-thin text-sm sm:text-sm md:text-md lg:text-base mb-4 text-justify">
+                       <p className="text-gray-600 dark:text-gray-300 font-thin text-sm sm:text-sm md:text-md lg:text-base mb-4 text-justify">
                          I love reading Sinhala novels most of the time, especially works by <span className="font-semibold">Martin Wickramasinghe</span>. His literary works have deeply influenced my understanding of Sri Lankan culture and society. I also enjoy reading biographies of successful entrepreneurs and tech leaders, as they provide valuable insights into their journey, challenges, and the mindset required to achieve greatness. These books help me understand different perspectives on leadership, innovation, and personal growth.
                        </p>
                        
@@ -475,7 +475,7 @@ const About = () => {
                      
                      {/* Text Row */}
                      <div className="max-w-2xl mx-auto">
-                       <p className="text-gray-500 dark:text-gray-400 font-thin text-sm sm:text-sm md:text-md lg:text-base mb-4 text-justify">
+                       <p className="text-gray-600 dark:text-gray-300 font-thin text-sm sm:text-sm md:text-md lg:text-base mb-4 text-justify">
                          I enjoy watching adventure, thriller, and horror movies and series. My favorite TV series 
                          is <span className="font-semibold"> The Day of the Jackal</span>, and I&apos;m a big fan of 
                          <span className="font-semibold"> The Lord of the Rings</span> movies. These genres keep 
@@ -491,13 +491,13 @@ const About = () => {
 
 
                {/* Hobbies */}
-               <div className="bg-white/50 dark:bg-black rounded-2xl p-10">
+               <div className="bg-white/50 dark:bg-slate-950 rounded-2xl p-10">
                  <h4 className="text-sm sm:text-sm md:text-md lg:text-lg font-regular text-gray-900 dark:text-gray-100 mb-6 flex items-center">
                    Hobbies
                  </h4>
                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                    <div className="flex items-center justify-center">
-                     <p className="text-gray-500 dark:text-gray-400 font-thin text-sm sm:text-sm md:text-md lg:text-base leading-relaxed text-justify">
+                     <p className="text-gray-600 dark:text-gray-300 font-thin text-sm sm:text-sm md:text-md lg:text-base leading-relaxed text-justify">
                        In my free time, I like to go hiking and traveling to explore new places and experience different cultures around the world. There&apos;s something incredibly fulfilling about discovering hidden trails, meeting new people, and immersing myself in diverse traditions and cuisines. I also thoroughly enjoy playing cricket or rugby as these sports not only keep me physically active but also help me stay connected with friends and build lasting relationships through teamwork and camaraderie. Whether it&apos;s trekking through scenic mountain trails, discovering new destinations with rich histories, or playing competitive sports with teammates, these activities bring perfect balance, excitement, and personal growth to my life while creating unforgettable memories and stories to share.
                      </p>
                    </div>
