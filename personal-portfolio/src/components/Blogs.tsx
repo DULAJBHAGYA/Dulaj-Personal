@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import { ClockIcon, ArrowRightIcon } from "@heroicons/react/24/outline";
+import { ClockIcon } from "@heroicons/react/24/outline";
 import blogDioImage from "@/assets/images/blog-dio.png";
 import blogBlocImage from "@/assets/images/blog-bloc.png";
 import blogMongoImage from "@/assets/images/blog-mongodb.png";

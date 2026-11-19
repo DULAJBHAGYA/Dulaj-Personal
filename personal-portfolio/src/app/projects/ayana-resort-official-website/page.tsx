@@ -8,8 +8,14 @@ import { motion } from "framer-motion";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { IoIosArrowForward } from "react-icons/io";
-import { SiNextdotjs, SiTailwindcss, SiFramer, SiTypescript, SiReact } from "react-icons/si";
-import { FiGithub, FiExternalLink } from "react-icons/fi";
+import {
+  SiNextdotjs,
+  SiTailwindcss,
+  SiFramer,
+  SiTypescript,
+  SiReact,
+} from "react-icons/si";
+import { FiExternalLink } from "react-icons/fi";
 import AyanaWebImg from "@/assets/images/AyanaWeb.png";
 
 export default function AyanaResortWebsite() {
@@ -68,7 +74,12 @@ export default function AyanaResortWebsite() {
                 </div>
 
                 <p className="text-gray-600 dark:text-gray-100 text-base leading-relaxed mb-8">
-                  A high-performance, media-rich platform for a luxury nature retreat located on the border of Sri Lanka&apos;s largest national park (Wilpattu). Built to convert casual browsers into guests by capturing the &quot;luxury-meets-wild&quot; atmosphere while engineered to run efficiently on resource-constrained shared Linux infrastructure.
+                  A high-performance, media-rich platform for a luxury nature
+                  retreat located on the border of Sri Lanka&apos;s largest
+                  national park (Wilpattu). Built to convert casual browsers
+                  into guests by capturing the &quot;luxury-meets-wild&quot;
+                  atmosphere while engineered to run efficiently on
+                  resource-constrained shared Linux infrastructure.
                 </p>
 
                 <div className="space-y-6">
@@ -77,7 +88,16 @@ export default function AyanaResortWebsite() {
                       Project Overview
                     </h3>
                     <p className="text-gray-600 dark:text-gray-100 leading-relaxed">
-                      Ayana Resort Wilpattu is a high-end nature retreat just 5 minutes from Sri Lanka&apos;s largest national park. The digital platform was designed to provide visitors with an immersive experience that reflects the luxury and elegance of the resort while showcasing its unique proximity to wilderness. The website features stunning resort photography, smooth animations, and intuitive navigation to help potential guests explore accommodations, curated safari experiences, dining options, spa services, and special packages.
+                      Ayana Resort Wilpattu is a high-end nature retreat just 5
+                      minutes from Sri Lanka&apos;s largest national park. The
+                      digital platform was designed to provide visitors with an
+                      immersive experience that reflects the luxury and elegance
+                      of the resort while showcasing its unique proximity to
+                      wilderness. The website features stunning resort
+                      photography, smooth animations, and intuitive navigation
+                      to help potential guests explore accommodations, curated
+                      safari experiences, dining options, spa services, and
+                      special packages.
                     </p>
                   </div>
 
@@ -86,7 +106,14 @@ export default function AyanaResortWebsite() {
                       The Challenge
                     </h3>
                     <p className="text-gray-600 dark:text-gray-100 leading-relaxed">
-                      Most Next.js applications are deployed on Vercel or AWS. This project required a different approach: hosting a modern, media-rich Next.js application on shared Linux hosting with limited RAM and CPU resources. The solution needed to maintain premium performance (90+ Lighthouse score on mobile) while staying within infrastructure constraints, ensuring the site could handle international traffic from tourists booking &quot;on the go.&quot;
+                      Most Next.js applications are deployed on Vercel or AWS.
+                      This project required a different approach: hosting a
+                      modern, media-rich Next.js application on shared Linux
+                      hosting with limited RAM and CPU resources. The solution
+                      needed to maintain premium performance (90+ Lighthouse
+                      score on mobile) while staying within infrastructure
+                      constraints, ensuring the site could handle international
+                      traffic from tourists booking &quot;on the go.&quot;
                     </p>
                   </div>
                 </div>
@@ -101,7 +128,10 @@ export default function AyanaResortWebsite() {
                         Smart Booking Gateway
                       </h4>
                       <p className="text-gray-600 dark:text-gray-300 text-sm">
-                        An inquiry-based booking system that captures guest details and safari preferences, funneling them into a management dashboard for streamlined reservation processing.
+                        An inquiry-based booking system that captures guest
+                        details and safari preferences, funneling them into a
+                        management dashboard for streamlined reservation
+                        processing.
                       </p>
                     </div>
                     <div className="pb-4 border-b border-gray-200 dark:border-gray-800 last:border-0 last:pb-0">
@@ -109,7 +139,10 @@ export default function AyanaResortWebsite() {
                         Curated Experiences
                       </h4>
                       <p className="text-gray-600 dark:text-gray-300 text-sm">
-                        A dynamic &quot;Safari & Activities&quot; module showcasing the resort&apos;s unique proximity to Wilpattu National Park with interactive maps and experience descriptions.
+                        A dynamic &quot;Safari & Activities&quot; module
+                        showcasing the resort&apos;s unique proximity to
+                        Wilpattu National Park with interactive maps and
+                        experience descriptions.
                       </p>
                     </div>
                     <div className="pb-4 border-b border-gray-200 dark:border-gray-800 last:border-0 last:pb-0">
@@ -117,7 +150,10 @@ export default function AyanaResortWebsite() {
                         Adaptive Accommodations
                       </h4>
                       <p className="text-gray-600 dark:text-gray-300 text-sm">
-                        A filtered room showcase highlighting room types (Deluxe Double 80m², Deluxe Triple 110m²) with detailed amenity lists (AC, private patios, garden views, premium furnishings).
+                        A filtered room showcase highlighting room types (Deluxe
+                        Double 80m², Deluxe Triple 110m²) with detailed amenity
+                        lists (AC, private patios, garden views, premium
+                        furnishings).
                       </p>
                     </div>
                     <div>
@@ -125,7 +161,10 @@ export default function AyanaResortWebsite() {
                         SEO & Localized Search
                       </h4>
                       <p className="text-gray-600 dark:text-gray-300 text-sm">
-                        Built with JSON-LD Schema Markup for &quot;LodgingBusiness,&quot; helping the resort appear in Google&apos;s Knowledge Graph and local search results for luxury accommodations in Sri Lanka.
+                        Built with JSON-LD Schema Markup for
+                        &quot;LodgingBusiness,&quot; helping the resort appear
+                        in Google&apos;s Knowledge Graph and local search
+                        results for luxury accommodations in Sri Lanka.
                       </p>
                     </div>
                   </div>
@@ -142,12 +181,28 @@ export default function AyanaResortWebsite() {
                       </h4>
                       <ul className="space-y-2 text-gray-600 dark:text-gray-300 text-sm">
                         <li className="flex items-start">
-                          <span className="text-[#4ECDC4] mr-2 mt-1 font-bold">→</span>
-                          <span><strong>Node.js Runtime Configuration:</strong> Configured a custom Node.js environment using `.htaccess` reverse proxy to route traffic from Apache/Litespeed to the underlying Node.js process.</span>
+                          <span className="text-[#4ECDC4] mr-2 mt-1 font-bold">
+                            →
+                          </span>
+                          <span>
+                            <strong>Node.js Runtime Configuration:</strong>{" "}
+                            Configured a custom Node.js environment using
+                            `.htaccess` reverse proxy to route traffic from
+                            Apache/Litespeed to the underlying Node.js process.
+                          </span>
                         </li>
                         <li className="flex items-start">
-                          <span className="text-[#4ECDC4] mr-2 mt-1 font-bold">→</span>
-                          <span><strong>Standalone Build Optimization:</strong> Leveraged `output: 'standalone'` in `next.config.js` to reduce deployment package size, ensuring efficient operation within shared hosting RAM and CPU quotas.</span>
+                          <span className="text-[#4ECDC4] mr-2 mt-1 font-bold">
+                            →
+                          </span>
+                          <span>
+                            <strong>Standalone Build Optimization:</strong>{" "}
+                            Leveraged{" "}
+                            <code>output: &apos;standalone&apos;</code> in{" "}
+                            <code>next.config.js</code> to reduce deployment
+                            package size, ensuring efficient operation within
+                            shared hosting RAM and CPU quotas.
+                          </span>{" "}
                         </li>
                       </ul>
                     </div>
@@ -157,12 +212,27 @@ export default function AyanaResortWebsite() {
                       </h4>
                       <ul className="space-y-2 text-gray-600 dark:text-gray-300 text-sm">
                         <li className="flex items-start">
-                          <span className="text-[#4ECDC4] mr-2 mt-1 font-bold">→</span>
-                          <span><strong>Dynamic Asset Management:</strong> Implemented image optimization using Next/Image and Sharp, converting resort photography into prioritized WebP formats to prevent bounce rates on mobile devices.</span>
+                          <span className="text-[#4ECDC4] mr-2 mt-1 font-bold">
+                            →
+                          </span>
+                          <span>
+                            <strong>Dynamic Asset Management:</strong>{" "}
+                            Implemented image optimization using Next/Image and
+                            Sharp, converting resort photography into
+                            prioritized WebP formats to prevent bounce rates on
+                            mobile devices.
+                          </span>
                         </li>
                         <li className="flex items-start">
-                          <span className="text-[#4ECDC4] mr-2 mt-1 font-bold">→</span>
-                          <span><strong>Motion Branding:</strong> Used Framer Motion for "Reveal-on-Scroll" animations, creating a premium feel with smooth transitions—a hallmark of luxury hospitality websites.</span>
+                          <span className="text-[#4ECDC4] mr-2 mt-1 font-bold">
+                            →
+                          </span>
+                          <span>
+                            <strong>Motion Branding:</strong> Used Framer Motion
+                            for &quot;Reveal-on-Scroll&quot; animations,
+                            creating a premium feel with smooth transitions—a
+                            hallmark of luxury hospitality websites.
+                          </span>
                         </li>
                       </ul>
                     </div>
@@ -175,16 +245,35 @@ export default function AyanaResortWebsite() {
                   </h3>
                   <ul className="space-y-3">
                     <li className="flex items-start">
-                      <span className="text-[#4ECDC4] mr-3 mt-1 text-lg font-bold">✓</span>
-                      <span className="text-gray-700 dark:text-gray-200"><strong>99.9% Uptime:</strong> Maintained zero-downtime reliability on shared hosting through careful resource management and optimization.</span>
+                      <span className="text-[#4ECDC4] mr-3 mt-1 text-lg font-bold">
+                        ✓
+                      </span>
+                      <span className="text-gray-700 dark:text-gray-200">
+                        <strong>99.9% Uptime:</strong> Maintained zero-downtime
+                        reliability on shared hosting through careful resource
+                        management and optimization.
+                      </span>
                     </li>
                     <li className="flex items-start">
-                      <span className="text-[#4ECDC4] mr-3 mt-1 text-lg font-bold">✓</span>
-                      <span className="text-gray-700 dark:text-gray-200"><strong>90+ Lighthouse Score:</strong> Achieved premium performance on mobile devices, essential for tourists booking while traveling.</span>
+                      <span className="text-[#4ECDC4] mr-3 mt-1 text-lg font-bold">
+                        ✓
+                      </span>
+                      <span className="text-gray-700 dark:text-gray-200">
+                        <strong>90+ Lighthouse Score:</strong> Achieved premium
+                        performance on mobile devices, essential for tourists
+                        booking while traveling.
+                      </span>
                     </li>
                     <li className="flex items-start">
-                      <span className="text-[#4ECDC4] mr-3 mt-1 text-lg font-bold">✓</span>
-                      <span className="text-gray-700 dark:text-gray-200"><strong>Brand Translation:</strong> Successfully captured the physical resort experience—warm textures, earthy tones, and peaceful wilderness—into a cohesive digital UI.</span>
+                      <span className="text-[#4ECDC4] mr-3 mt-1 text-lg font-bold">
+                        ✓
+                      </span>
+                      <span className="text-gray-700 dark:text-gray-200">
+                        <strong>Brand Translation:</strong> Successfully
+                        captured the physical resort experience—warm textures,
+                        earthy tones, and peaceful wilderness—into a cohesive
+                        digital UI.
+                      </span>
                     </li>
                   </ul>
                 </div>
