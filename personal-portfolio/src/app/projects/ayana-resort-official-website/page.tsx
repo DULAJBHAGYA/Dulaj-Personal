@@ -22,7 +22,7 @@ export default function AyanaResortWebsite() {
   const pageTitle = "Ayana Resort Official Website | Dulaj Personal";
 
   return (
-    <main className="min-h-screen bg-white dark:bg-gray-950">
+    <main className="min-h-screen bg-white max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 dark:bg-gray-950">
       <Head>
         <title>{pageTitle}</title>
         <meta
